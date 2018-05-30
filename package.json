@@ -12,7 +12,8 @@
   "scripts": {
     "start": "node red.js",
     "test": "grunt",
-    "build": "grunt build"
+    "build": "grunt build",
+    "postinstall": "grunt build"
   },
   "bin": {
     "node-red": "./red.js",
