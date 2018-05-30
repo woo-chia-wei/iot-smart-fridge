@@ -66,7 +66,7 @@ module.exports = {
 
     // To enabled pretty-printing of the flow within the flow file, set the following
     //  property to true:
-    //flowFilePretty: true,
+    flowFilePretty: true,
 
     // By default, credentials are encrypted in storage using a generated key. To
     // specify your own secret, set the following property.
@@ -127,12 +127,25 @@ module.exports = {
     //    }]
     //},
 
+    
+    adminAuth: {
+           type: "credentials",
+           users: [{
+               username: "iot",
+               password: "$2a$08$8PJWqf2kBLlxj8t1o7hRzu9LM/yb4XYDaowXB2mQOA9Clog3/GH0K",
+               permissions: "*"
+           }]
+        },
+
     // To password protect the node-defined HTTP endpoints (httpNodeRoot), or
     // the static content (httpStatic), the following properties can be used.
     // The pass field is a bcrypt hash of the password.
     // See http://nodered.org/docs/security.html#generating-the-password-hash
     //httpNodeAuth: {user:"user",pass:"$2a$08$zZWtXTja0fB1pzD4sHCMyOCMYz2Z6dNbM6tl8sJogENOMcxWV9DN."},
     //httpStaticAuth: {user:"user",pass:"$2a$08$zZWtXTja0fB1pzD4sHCMyOCMYz2Z6dNbM6tl8sJogENOMcxWV9DN."},
+
+    httpNodeAuth: {user:"iot",pass:"$2a$08$8PJWqf2kBLlxj8t1o7hRzu9LM/yb4XYDaowXB2mQOA9Clog3/GH0K"},
+    httpStaticAuth: {user:"iot",pass:"$2a$08$8PJWqf2kBLlxj8t1o7hRzu9LM/yb4XYDaowXB2mQOA9Clog3/GH0K"},
 
     // The following property can be used to enable HTTPS
     // See http://nodejs.org/api/https.html#https_https_createserver_options_requestlistener
