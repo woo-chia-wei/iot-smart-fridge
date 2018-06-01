@@ -1,0 +1,87 @@
+[
+    {
+        "id": "626d8ed7.6f6a2",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "ff546e51.ac6a4",
+        "type": "inject",
+        "z": "626d8ed7.6f6a2",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 160,
+        "y": 140,
+        "wires": [
+            [
+                "b789003d.0e09f"
+            ]
+        ]
+    },
+    {
+        "id": "b789003d.0e09f",
+        "type": "debug",
+        "z": "626d8ed7.6f6a2",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 450,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "5616f0bd.aa8bb",
+        "type": "http in",
+        "z": "626d8ed7.6f6a2",
+        "name": "",
+        "url": "sensor",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 160,
+        "y": 300,
+        "wires": [
+            [
+                "c2472293.d8b0f"
+            ]
+        ]
+    },
+    {
+        "id": "e96fc8ca.c66aa8",
+        "type": "http response",
+        "z": "626d8ed7.6f6a2",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 600,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "c2472293.d8b0f",
+        "type": "function",
+        "z": "626d8ed7.6f6a2",
+        "name": "",
+        "func": "msg.payload = {\n    \"temperature\": 23\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 380,
+        "y": 400,
+        "wires": [
+            [
+                "e96fc8ca.c66aa8"
+            ]
+        ]
+    }
+]
