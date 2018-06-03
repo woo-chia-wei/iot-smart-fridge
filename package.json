@@ -64,6 +64,7 @@
     "node-red-node-email": "0.1.*",
     "node-red-node-feedparser": "0.1.*",
     "node-red-node-rbe": "0.2.*",
+    "node-red-node-twilio": "^0.1.0",
     "node-red-node-twitter": "*",
     "nopt": "4.0.1",
     "oauth2orize": "1.11.0",

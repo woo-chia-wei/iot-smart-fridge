@@ -1,20 +1,269 @@
 [
     {
-        "id": "626d8ed7.6f6a2",
+        "id": "c1c4467a.7f7358",
         "type": "tab",
-        "label": "Flow 1",
+        "label": "Dashboard",
         "disabled": false,
         "info": ""
     },
     {
-        "id": "ff546e51.ac6a4",
-        "type": "inject",
-        "z": "626d8ed7.6f6a2",
+        "id": "61702be5.096ae4",
+        "type": "tab",
+        "label": "Notification",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "8ef820f.7bcd5e",
+        "type": "tab",
+        "label": "API",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "662f5ea2.45d0b",
+        "type": "tab",
+        "label": "Data Prep",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "20f43bba.d95ca4",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "3978f7e8.31b968",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#b43905",
+                "baseFont": "Tahoma,Geneva,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            }
+        },
+        "site": {
+            "name": "Raspberry PI Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 50,
+                "sy": 50,
+                "gx": 12,
+                "gy": 12,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "cbf44028.7360c",
+        "type": "ui_tab",
+        "z": "",
+        "name": "Home",
+        "icon": "dashboard"
+    },
+    {
+        "id": "53c335d9.8fbbdc",
+        "type": "mongodb2",
+        "z": "",
+        "uri": "mongodb://dbadmin:Admin123@ds213338.mlab.com:13338/smart-fridge",
         "name": "",
+        "options": "",
+        "parallelism": "-1"
+    },
+    {
+        "id": "4885b5d.c1b764c",
+        "type": "ui_group",
+        "z": "",
+        "name": "Statistics",
+        "tab": "cbf44028.7360c",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "7fc7cc5d.31c0a4",
+        "type": "ui_group",
+        "z": "",
+        "name": "Recent Readings",
+        "tab": "cbf44028.7360c",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "52a8a458.be48fc",
+        "type": "ui_group",
+        "z": "",
+        "name": "Ingredient List",
+        "tab": "cbf44028.7360c",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "8adca74f.dbc868",
+        "type": "inject",
+        "z": "c1c4467a.7f7358",
+        "name": "Run every 5 seconds",
         "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "repeat": "",
+        "payload": "{}",
+        "payloadType": "json",
+        "repeat": "5",
         "crontab": "",
         "once": false,
         "onceDelay": 0.1,
@@ -22,65 +271,2134 @@
         "y": 140,
         "wires": [
             [
-                "b789003d.0e09f"
+                "93534665.139e08",
+                "6beeadd.2393f54",
+                "9ccf22a0.2f826"
             ]
         ]
     },
     {
-        "id": "b789003d.0e09f",
-        "type": "debug",
-        "z": "626d8ed7.6f6a2",
+        "id": "22be2e19.0c3662",
+        "type": "comment",
+        "z": "61702be5.096ae4",
+        "name": "Email to remind freshness (Daily)",
+        "info": "",
+        "x": 190,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "928eb018.c45c7",
+        "type": "comment",
+        "z": "61702be5.096ae4",
+        "name": "Email to recommend receipe (Daily)",
+        "info": "",
+        "x": 200,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "1dfd735d.b6ac9d",
+        "type": "ui_text",
+        "z": "c1c4467a.7f7358",
+        "group": "4885b5d.c1b764c",
+        "order": 1,
+        "width": 0,
+        "height": 0,
         "name": "",
+        "label": "Total Readings",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 640,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "93534665.139e08",
+        "type": "http request",
+        "z": "c1c4467a.7f7358",
+        "name": "Get sensor data count",
+        "method": "GET",
+        "ret": "obj",
+        "url": "https://smart-fridge-ke.herokuapp.com/sensorData/count",
+        "tls": "",
+        "x": 440,
+        "y": 200,
+        "wires": [
+            [
+                "1dfd735d.b6ac9d"
+            ]
+        ]
+    },
+    {
+        "id": "a7a5c494.5f18e8",
+        "type": "comment",
+        "z": "61702be5.096ae4",
+        "name": "Email to warn abnormal readings (hourly)",
+        "info": "",
+        "x": 220,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "348892b7.e24d4e",
+        "type": "inject",
+        "z": "61702be5.096ae4",
+        "name": "Run",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 130,
+        "y": 100,
+        "wires": [
+            [
+                "3dc45cea.afc714"
+            ]
+        ]
+    },
+    {
+        "id": "e140a947.b5a1b8",
+        "type": "inject",
+        "z": "61702be5.096ae4",
+        "name": "Run everyday at 7am",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "00 07 * * *",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 180,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a0654a17.d1c818",
+        "type": "inject",
+        "z": "61702be5.096ae4",
+        "name": "Run",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 130,
+        "y": 260,
+        "wires": [
+            [
+                "c58997aa.e5a538"
+            ]
+        ]
+    },
+    {
+        "id": "c6e161ea.a9bbb",
+        "type": "inject",
+        "z": "61702be5.096ae4",
+        "name": "Run everyday at 12pm",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "00 12 * * *",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 190,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a3b1bb03.15e5f8",
+        "type": "inject",
+        "z": "61702be5.096ae4",
+        "name": "Run",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 130,
+        "y": 440,
+        "wires": [
+            [
+                "b6ffd12c.0bf7a"
+            ]
+        ]
+    },
+    {
+        "id": "5c3e3704.ab7af8",
+        "type": "inject",
+        "z": "61702be5.096ae4",
+        "name": "Run every 1 hour",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "3600",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 170,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "de0a142f.dfa1c8",
+        "type": "comment",
+        "z": "c1c4467a.7f7358",
+        "name": "Production: Every 15 minutes",
+        "info": "",
+        "x": 140,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "1c329b45.d80db5",
+        "type": "comment",
+        "z": "c1c4467a.7f7358",
+        "name": "Testing: Every 1 second",
+        "info": "",
+        "x": 120,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "320f101b.a59c9",
+        "type": "http in",
+        "z": "8ef820f.7bcd5e",
+        "name": "",
+        "url": "sensorData/all",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 130,
+        "y": 120,
+        "wires": [
+            [
+                "46801eac.3a617"
+            ]
+        ]
+    },
+    {
+        "id": "46801eac.3a617",
+        "type": "mongodb2 in",
+        "z": "8ef820f.7bcd5e",
+        "service": "_ext_",
+        "configNode": "53c335d9.8fbbdc",
+        "name": "find all",
+        "collection": "sensor_data",
+        "operation": "find.toArray",
+        "x": 350,
+        "y": 120,
+        "wires": [
+            [
+                "5a17398d.4df898"
+            ]
+        ]
+    },
+    {
+        "id": "5a17398d.4df898",
+        "type": "http response",
+        "z": "8ef820f.7bcd5e",
+        "name": "Response",
+        "statusCode": "",
+        "headers": {},
+        "x": 500,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "2cff4f40.1f254",
+        "type": "http in",
+        "z": "8ef820f.7bcd5e",
+        "name": "",
+        "url": "sensorData/deleteAll",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 160,
+        "y": 160,
+        "wires": [
+            [
+                "11f28089.cf03bf"
+            ]
+        ]
+    },
+    {
+        "id": "11f28089.cf03bf",
+        "type": "mongodb2 in",
+        "z": "8ef820f.7bcd5e",
+        "service": "_ext_",
+        "configNode": "53c335d9.8fbbdc",
+        "name": "delete all",
+        "collection": "sensor_data",
+        "operation": "drop",
+        "x": 360,
+        "y": 160,
+        "wires": [
+            [
+                "16a3a3e0.11157c"
+            ]
+        ]
+    },
+    {
+        "id": "16a3a3e0.11157c",
+        "type": "http response",
+        "z": "8ef820f.7bcd5e",
+        "name": "Response",
+        "statusCode": "",
+        "headers": {},
+        "x": 500,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "2b5641cc.ac865e",
+        "type": "http in",
+        "z": "8ef820f.7bcd5e",
+        "name": "",
+        "url": "sensorData/add",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 140,
+        "y": 200,
+        "wires": [
+            [
+                "36365450.a3756c"
+            ]
+        ]
+    },
+    {
+        "id": "36365450.a3756c",
+        "type": "mongodb2 in",
+        "z": "8ef820f.7bcd5e",
+        "service": "_ext_",
+        "configNode": "53c335d9.8fbbdc",
+        "name": "add",
+        "collection": "sensor_data",
+        "operation": "insert",
+        "x": 350,
+        "y": 200,
+        "wires": [
+            [
+                "33e8b8cb.8ac1d8"
+            ]
+        ]
+    },
+    {
+        "id": "33e8b8cb.8ac1d8",
+        "type": "http response",
+        "z": "8ef820f.7bcd5e",
+        "name": "Response",
+        "statusCode": "",
+        "headers": {},
+        "x": 500,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "18b49ca6.841cf3",
+        "type": "http in",
+        "z": "8ef820f.7bcd5e",
+        "name": "",
+        "url": "sensorData/addMany",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 160,
+        "y": 240,
+        "wires": [
+            [
+                "8f896286.6e138"
+            ]
+        ]
+    },
+    {
+        "id": "c2bf0bb5.3c4628",
+        "type": "mongodb2 in",
+        "z": "8ef820f.7bcd5e",
+        "service": "_ext_",
+        "configNode": "53c335d9.8fbbdc",
+        "name": "add many",
+        "collection": "sensor_data",
+        "operation": "insertMany",
+        "x": 500,
+        "y": 240,
+        "wires": [
+            [
+                "68434577.23f90c"
+            ]
+        ]
+    },
+    {
+        "id": "68434577.23f90c",
+        "type": "http response",
+        "z": "8ef820f.7bcd5e",
+        "name": "Response",
+        "statusCode": "",
+        "headers": {},
+        "x": 640,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "304fd913.251e86",
+        "type": "http in",
+        "z": "8ef820f.7bcd5e",
+        "name": "",
+        "url": "sensorData/count",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 140,
+        "y": 80,
+        "wires": [
+            [
+                "af339aef.b6fb68"
+            ]
+        ]
+    },
+    {
+        "id": "af339aef.b6fb68",
+        "type": "mongodb2 in",
+        "z": "8ef820f.7bcd5e",
+        "service": "_ext_",
+        "configNode": "53c335d9.8fbbdc",
+        "name": "count",
+        "collection": "sensor_data",
+        "operation": "count",
+        "x": 350,
+        "y": 80,
+        "wires": [
+            [
+                "84a62830.5c1db8"
+            ]
+        ]
+    },
+    {
+        "id": "84a62830.5c1db8",
+        "type": "http response",
+        "z": "8ef820f.7bcd5e",
+        "name": "Response",
+        "statusCode": "",
+        "headers": {},
+        "x": 500,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "4890c36c.eabf3c",
+        "type": "http in",
+        "z": "8ef820f.7bcd5e",
+        "name": "",
+        "url": "ingredient/all",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 130,
+        "y": 480,
+        "wires": [
+            [
+                "d3c33c23.a8109"
+            ]
+        ]
+    },
+    {
+        "id": "d3c33c23.a8109",
+        "type": "mongodb2 in",
+        "z": "8ef820f.7bcd5e",
+        "service": "_ext_",
+        "configNode": "53c335d9.8fbbdc",
+        "name": "find all",
+        "collection": "ingredient",
+        "operation": "find.toArray",
+        "x": 330,
+        "y": 480,
+        "wires": [
+            [
+                "be2a58d9.235ea8"
+            ]
+        ]
+    },
+    {
+        "id": "be2a58d9.235ea8",
+        "type": "http response",
+        "z": "8ef820f.7bcd5e",
+        "name": "Response",
+        "statusCode": "",
+        "headers": {},
+        "x": 480,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "2404c26b.e2b74e",
+        "type": "http in",
+        "z": "8ef820f.7bcd5e",
+        "name": "",
+        "url": "ingredient/deleteAll",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 150,
+        "y": 520,
+        "wires": [
+            [
+                "8f6a5e28.d6557"
+            ]
+        ]
+    },
+    {
+        "id": "8f6a5e28.d6557",
+        "type": "mongodb2 in",
+        "z": "8ef820f.7bcd5e",
+        "service": "_ext_",
+        "configNode": "53c335d9.8fbbdc",
+        "name": "delete all",
+        "collection": "ingredient",
+        "operation": "drop",
+        "x": 340,
+        "y": 520,
+        "wires": [
+            [
+                "78e195ec.f4345c"
+            ]
+        ]
+    },
+    {
+        "id": "78e195ec.f4345c",
+        "type": "http response",
+        "z": "8ef820f.7bcd5e",
+        "name": "Response",
+        "statusCode": "",
+        "headers": {},
+        "x": 480,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "2043d175.3f9a7e",
+        "type": "http in",
+        "z": "8ef820f.7bcd5e",
+        "name": "",
+        "url": "ingredient/add",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 140,
+        "y": 680,
+        "wires": [
+            [
+                "87839317.baa8"
+            ]
+        ]
+    },
+    {
+        "id": "615e008e.3c301",
+        "type": "mongodb2 in",
+        "z": "8ef820f.7bcd5e",
+        "service": "_ext_",
+        "configNode": "53c335d9.8fbbdc",
+        "name": "add",
+        "collection": "ingredient",
+        "operation": "insert",
+        "x": 330,
+        "y": 720,
+        "wires": [
+            [
+                "67d3d026.eccb"
+            ]
+        ]
+    },
+    {
+        "id": "67d3d026.eccb",
+        "type": "http response",
+        "z": "8ef820f.7bcd5e",
+        "name": "Response",
+        "statusCode": "",
+        "headers": {},
+        "x": 460,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "542a0853.9081f8",
+        "type": "http in",
+        "z": "8ef820f.7bcd5e",
+        "name": "",
+        "url": "ingredient/delete",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 140,
+        "y": 560,
+        "wires": [
+            [
+                "b4adad8d.26771"
+            ]
+        ]
+    },
+    {
+        "id": "b4adad8d.26771",
+        "type": "mongodb2 in",
+        "z": "8ef820f.7bcd5e",
+        "service": "_ext_",
+        "configNode": "53c335d9.8fbbdc",
+        "name": "delete",
+        "collection": "ingredient",
+        "operation": "deleteOne",
+        "x": 330,
+        "y": 560,
+        "wires": [
+            [
+                "ba1494bc.93c1b8"
+            ]
+        ]
+    },
+    {
+        "id": "ba1494bc.93c1b8",
+        "type": "http response",
+        "z": "8ef820f.7bcd5e",
+        "name": "Response",
+        "statusCode": "",
+        "headers": {},
+        "x": 480,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "e0b14c34.66a95",
+        "type": "http in",
+        "z": "8ef820f.7bcd5e",
+        "name": "",
+        "url": "storage/deleteAll",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 860,
+        "y": 120,
+        "wires": [
+            [
+                "655f23f.6cde7dc"
+            ]
+        ]
+    },
+    {
+        "id": "655f23f.6cde7dc",
+        "type": "mongodb2 in",
+        "z": "8ef820f.7bcd5e",
+        "service": "_ext_",
+        "configNode": "53c335d9.8fbbdc",
+        "name": "delete all",
+        "collection": "storage",
+        "operation": "drop",
+        "x": 1040,
+        "y": 120,
+        "wires": [
+            [
+                "459ebc41.85a984"
+            ]
+        ]
+    },
+    {
+        "id": "459ebc41.85a984",
+        "type": "http response",
+        "z": "8ef820f.7bcd5e",
+        "name": "Response",
+        "statusCode": "",
+        "headers": {},
+        "x": 1200,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "6c75329d.17656c",
+        "type": "http in",
+        "z": "8ef820f.7bcd5e",
+        "name": "",
+        "url": "storage/all",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 840,
+        "y": 80,
+        "wires": [
+            [
+                "8a3ac0be.6cb66"
+            ]
+        ]
+    },
+    {
+        "id": "8a3ac0be.6cb66",
+        "type": "mongodb2 in",
+        "z": "8ef820f.7bcd5e",
+        "service": "_ext_",
+        "configNode": "53c335d9.8fbbdc",
+        "name": "find all",
+        "collection": "storage",
+        "operation": "find.toArray",
+        "x": 1030,
+        "y": 80,
+        "wires": [
+            [
+                "6d8b015c.cd8ef"
+            ]
+        ]
+    },
+    {
+        "id": "6d8b015c.cd8ef",
+        "type": "http response",
+        "z": "8ef820f.7bcd5e",
+        "name": "Response",
+        "statusCode": "",
+        "headers": {},
+        "x": 1200,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "295f6971.5258e6",
+        "type": "http in",
+        "z": "8ef820f.7bcd5e",
+        "name": "",
+        "url": "storage/addMany",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 860,
+        "y": 160,
+        "wires": [
+            [
+                "d944103.779abf"
+            ]
+        ]
+    },
+    {
+        "id": "73f13d58.023624",
+        "type": "mongodb2 in",
+        "z": "8ef820f.7bcd5e",
+        "service": "_ext_",
+        "configNode": "53c335d9.8fbbdc",
+        "name": "add many",
+        "collection": "storage",
+        "operation": "insertMany",
+        "x": 1180,
+        "y": 160,
+        "wires": [
+            [
+                "a009beaf.688f"
+            ]
+        ]
+    },
+    {
+        "id": "a009beaf.688f",
+        "type": "http response",
+        "z": "8ef820f.7bcd5e",
+        "name": "Response",
+        "statusCode": "",
+        "headers": {},
+        "x": 1320,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "efe93766.0017a8",
+        "type": "http in",
+        "z": "8ef820f.7bcd5e",
+        "name": "",
+        "url": "receipe/deleteAll",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 860,
+        "y": 340,
+        "wires": [
+            [
+                "cb0d3af6.277d78"
+            ]
+        ]
+    },
+    {
+        "id": "cb0d3af6.277d78",
+        "type": "mongodb2 in",
+        "z": "8ef820f.7bcd5e",
+        "service": "_ext_",
+        "configNode": "53c335d9.8fbbdc",
+        "name": "delete all",
+        "collection": "receipe",
+        "operation": "drop",
+        "x": 1040,
+        "y": 340,
+        "wires": [
+            [
+                "2302bcb1.9a6ba4"
+            ]
+        ]
+    },
+    {
+        "id": "2302bcb1.9a6ba4",
+        "type": "http response",
+        "z": "8ef820f.7bcd5e",
+        "name": "Response",
+        "statusCode": "",
+        "headers": {},
+        "x": 1200,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "476ef69.8dc5508",
+        "type": "http in",
+        "z": "8ef820f.7bcd5e",
+        "name": "",
+        "url": "receipe/all",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 840,
+        "y": 300,
+        "wires": [
+            [
+                "72ccc73a.00adc8"
+            ]
+        ]
+    },
+    {
+        "id": "72ccc73a.00adc8",
+        "type": "mongodb2 in",
+        "z": "8ef820f.7bcd5e",
+        "service": "_ext_",
+        "configNode": "53c335d9.8fbbdc",
+        "name": "find all",
+        "collection": "receipe",
+        "operation": "find.toArray",
+        "x": 1030,
+        "y": 300,
+        "wires": [
+            [
+                "20ca4aad.b107b6"
+            ]
+        ]
+    },
+    {
+        "id": "20ca4aad.b107b6",
+        "type": "http response",
+        "z": "8ef820f.7bcd5e",
+        "name": "Response",
+        "statusCode": "",
+        "headers": {},
+        "x": 1200,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "57695cbd.821a24",
+        "type": "http in",
+        "z": "8ef820f.7bcd5e",
+        "name": "",
+        "url": "receipe/addMany",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 860,
+        "y": 380,
+        "wires": [
+            [
+                "174f6601.eb2fba"
+            ]
+        ]
+    },
+    {
+        "id": "46cece23.d4992",
+        "type": "mongodb2 in",
+        "z": "8ef820f.7bcd5e",
+        "service": "_ext_",
+        "configNode": "53c335d9.8fbbdc",
+        "name": "add many",
+        "collection": "receipe",
+        "operation": "insertMany",
+        "x": 1180,
+        "y": 380,
+        "wires": [
+            [
+                "1692f6b8.2ef349"
+            ]
+        ]
+    },
+    {
+        "id": "1692f6b8.2ef349",
+        "type": "http response",
+        "z": "8ef820f.7bcd5e",
+        "name": "Response",
+        "statusCode": "",
+        "headers": {},
+        "x": 1320,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "1561b1e5.fca3fe",
+        "type": "debug",
+        "z": "662f5ea2.45d0b",
+        "name": "print",
         "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
-        "complete": "false",
-        "x": 450,
-        "y": 140,
+        "complete": "payload",
+        "x": 550,
+        "y": 120,
         "wires": []
     },
     {
-        "id": "5616f0bd.aa8bb",
-        "type": "http in",
-        "z": "626d8ed7.6f6a2",
-        "name": "",
-        "url": "sensor",
-        "method": "get",
-        "upload": false,
-        "swaggerDoc": "",
-        "x": 160,
-        "y": 300,
+        "id": "36be947a.b908bc",
+        "type": "http request",
+        "z": "662f5ea2.45d0b",
+        "name": "storage/addMany",
+        "method": "POST",
+        "ret": "obj",
+        "url": "https://smart-fridge-ke.herokuapp.com/storage/addMany",
+        "tls": "",
+        "x": 290,
+        "y": 120,
         "wires": [
             [
-                "c2472293.d8b0f"
+                "1561b1e5.fca3fe"
             ]
         ]
     },
     {
-        "id": "e96fc8ca.c66aa8",
-        "type": "http response",
-        "z": "626d8ed7.6f6a2",
+        "id": "b66e6bb7.aea328",
+        "type": "function",
+        "z": "662f5ea2.45d0b",
+        "name": "demo data",
+        "func": "var data = [\n  {\n    \"qrcode\": \"d0949188-d028-4429-83c4-8ed1a78ae3f8\",\n    \"name\": \"salmon\",\n    \"expiry_date\": 1527465600000\n  },\n  {\n    \"qrcode\": \"20e541f5-60a7-41f6-8b77-364a6d7261b4\",\n    \"name\": \"bok choy\",\n    \"expiry_date\": 1527465600000\n  },\n  {\n    \"qrcode\": \"d67083a0-3d9d-49ed-b6b8-7d5a90eaa5f9\",\n    \"name\": \"beef\",\n    \"expiry_date\": 1527465600000\n  },\n  {\n    \"qrcode\": \"b118e58c-ca30-4566-a227-e8824c92647f\",\n    \"name\": \"onion\",\n    \"expiry_date\": 1527465600000\n  },\n  {\n    \"qrcode\": \"0b7d931d-024e-4b5f-8e2c-9ceb2805c785\",\n    \"name\": \"bell pepper\",\n    \"expiry_date\": 1527465600000\n  },\n  {\n    \"qrcode\": \"96e10865-263e-4e23-8518-88ef0f1581eb\",\n    \"name\": \"carrot\",\n    \"expiry_date\": 1527465600000\n  },\n  {\n    \"qrcode\": \"bae26b53-40b5-4942-accf-96b29edd9c4f\",\n    \"name\": \"corn\",\n    \"expiry_date\": 1527465600000\n  },\n  {\n    \"qrcode\": \"a3fb13b5-8774-4180-bf29-6de2d28ab2c3\",\n    \"name\": \"pork\",\n    \"expiry_date\": 1527465600000\n  },\n  {\n    \"qrcode\": \"b6ec00a7-97de-4d97-b017-aca2a11e0197\",\n    \"name\": \"egg\",\n    \"expiry_date\": 1527465600000\n  },\n  {\n    \"qrcode\": \"ab04218d-194a-43be-8258-89e3e16e934a\",\n    \"name\": \"chickpea\",\n    \"expiry_date\": 1527465600000\n  },\n  {\n    \"qrcode\": \"a57aeb56-2892-45b2-a069-2ffc50be4a41\",\n    \"name\": \"fennel\",\n    \"expiry_date\": 1527465600000\n  },\n  {\n    \"qrcode\": \"2240e559-df9a-4438-9e0d-42fd807b120e\",\n    \"name\": \"red onion\",\n    \"expiry_date\": 1527465600000\n  },\n  {\n    \"qrcode\": \"67acab44-6773-436a-8786-c0bb67511928\",\n    \"name\": \"lemon\",\n    \"expiry_date\": 1527465600000\n  },\n  {\n    \"qrcode\": \"074dfd8d-ec38-4d7d-b6c7-5fb48b485bc6\",\n    \"name\": \"chicken\",\n    \"expiry_date\": 1527465600000\n  },\n  {\n    \"qrcode\": \"4de20c38-8a46-4e28-b932-a324005687d2\",\n    \"name\": \"tomato\",\n    \"expiry_date\": 1527465600000\n  },\n  {\n    \"qrcode\": \"e09b4091-5fb3-47da-8639-088a9252ded6\",\n    \"name\": \"parsley\",\n    \"expiry_date\": 1527465600000\n  },\n  {\n    \"qrcode\": \"30b15831-d276-4a16-8eed-d90820b93a55\",\n    \"name\": \"green bean\",\n    \"expiry_date\": 1527465600000\n  },\n  {\n    \"qrcode\": \"b9ac3d95-3c01-45b8-8540-5776ea2d085e\",\n    \"name\": \"lamb\",\n    \"expiry_date\": 1527465600000\n  },\n  {\n    \"qrcode\": \"cd47daed-4b8e-4694-a5e2-6a33bcdc7f24\",\n    \"name\": \"steak\",\n    \"expiry_date\": 1527465600000\n  },\n  {\n    \"qrcode\": \"146181c7-dd8b-43d6-a67f-be0c299809ce\",\n    \"name\": \"thyme\",\n    \"expiry_date\": 1527465600000\n  },\n  {\n    \"qrcode\": \"13e5b47e-8ee5-4379-a366-670736b4e97e\",\n    \"name\": \"scallion\",\n    \"expiry_date\": 1527465600000\n  },\n  {\n    \"qrcode\": \"8ede991c-aefa-486b-bbd1-9f1580c66f82\",\n    \"name\": \"cherry tomato\",\n    \"expiry_date\": 1527465600000\n  },\n  {\n    \"qrcode\": \"a2cc9804-b1a6-47a8-80cf-76ddb75225fc\",\n    \"name\": \"parsnip\",\n    \"expiry_date\": 1527465600000\n  }\n];\n\nreturn {payload: data};",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 270,
+        "y": 80,
+        "wires": [
+            [
+                "36be947a.b908bc"
+            ]
+        ]
+    },
+    {
+        "id": "58128031.cfd08",
+        "type": "inject",
+        "z": "662f5ea2.45d0b",
+        "name": "Run",
+        "topic": "",
+        "payload": "{\"payload\":{\"barcode\":\"12345y\"}}",
+        "payloadType": "json",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 110,
+        "y": 80,
+        "wires": [
+            [
+                "b66e6bb7.aea328"
+            ]
+        ]
+    },
+    {
+        "id": "979e35f4.76d788",
+        "type": "http request",
+        "z": "662f5ea2.45d0b",
+        "name": "storage/deleteAll",
+        "method": "POST",
+        "ret": "obj",
+        "url": "https://smart-fridge-ke.herokuapp.com/storage/deleteAll",
+        "tls": "",
+        "x": 290,
+        "y": 40,
+        "wires": [
+            [
+                "1561b1e5.fca3fe"
+            ]
+        ]
+    },
+    {
+        "id": "5134ba24.5bc714",
+        "type": "inject",
+        "z": "662f5ea2.45d0b",
+        "name": "Run",
+        "topic": "",
+        "payload": "{\"payload\":{\"barcode\":\"12345y\"}}",
+        "payloadType": "json",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 110,
+        "y": 40,
+        "wires": [
+            [
+                "979e35f4.76d788"
+            ]
+        ]
+    },
+    {
+        "id": "5f749e31.266ee",
+        "type": "http request",
+        "z": "662f5ea2.45d0b",
+        "name": "receipe/addMany",
+        "method": "POST",
+        "ret": "obj",
+        "url": "https://smart-fridge-ke.herokuapp.com/receipe/addMany",
+        "tls": "",
+        "x": 290,
+        "y": 260,
+        "wires": [
+            [
+                "1561b1e5.fca3fe"
+            ]
+        ]
+    },
+    {
+        "id": "25934f4e.86b46",
+        "type": "function",
+        "z": "662f5ea2.45d0b",
+        "name": "demo data",
+        "func": "var data = [\n  {\n    \"name\": \"Spicy Salmon With Bok Choy and Rice\",\n    \"description\": \"<p>We would like to recommend you below receipe based on the available ingredients in your fridge!</p>\\n\\n<h3>Spicy Salmon With Bok Choy and Rice</h3>\\n\\n<p>As satisfying as take-out, but much healthier—and ready in 20 minutes. Our recipe for Spicy Salmon with Bok Choy and Rice couldn’t be easier. Versatile salmon fillets, the most commonly used cut of the fish, cook quickly in the oven. While you boil the rice, whip up a quick glaze for the salmon before throwing it under the broiler for a few minutes. Look for baby bok choy in specialty Asian markets if your grocery store doesn’t carry the vegetable. Our perfectly cooked fish, basted in a sweet-and-spicy honey-chile sauce, proves the ideal complement to steamed bok choy and long-grain rice.</p>\\n\\n<h3>Steps</h3>\\n\\n<ol>\\n <li>Cook the rice according to the package directions.</li>\\n <li>Meanwhile, combine the honey, soy sauce, and red pepper. On a foil-lined rimmed baking sheet, broil the salmon fillets until opaque throughout, 8 to 10 minutes, basting with the honey mixture during the last 3 minutes.</li>\\n <li>Steam baby bok choy (cut into quarters) until tender, 8 to 10 minutes. Serve with the salmon and rice.</li>\\n</ol>\\n\\n<p>We hope you enjoy the food!</p>\\n\\n<p>\\n Regards, <br>\\n Smart Fridge\\n</p>\",\n    \"ingredients\": \"salmon, bok choy\"\n  },\n  {\n    \"name\": \"Southwestern Beef Chili With Corn\",\n    \"description\": \"<p>We would like to recommend you below receipe based on the available ingredients in your fridge!</p>\\n\\n<h3>Southwestern Beef Chili With Corn</h3>\\n\\n<p>Packed with flavor but not too spicy, this chili gets its southwestern flare from poblano peppers and chili powder. After cooking a base of onion, carrots, and peppers, you’ll brown the meat and stir in beans, tomato paste, and more. Serve the chili on its own, with hot sauce at the table, or with tortilla chips or a dollop of sour cream. Another plus: Our Southwestern Beef Chili with Corn freezes well. Double or even triple the recipe when you cook, then freeze the extra servings in separate containers to thaw and enjoy later in the season; on a cold, busy night, your future self will thank you.</p>\\n\\n<h3>Steps</h3>\\n\\n<ol>\\n  <li>Heat the oil in a large saucepan over medium-high heat. Add the carrots, onion, and poblano and cook, stirring, for 3 minutes.</li>\\n <li>Add the beef and cook, breaking it up with a spoon, until no longer pink, 3 to 5 minutes.</li>\\n <li>Add the tomato paste and cook, stirring, until it is slightly darkened, 1 minute.</li>\\n <li>Stir in the beans, chili powder, 3 cups water, ½ teaspoon salt, and ¼ teaspoon pepper.</li>\\n <li>Simmer over medium heat until the vegetables are tender, 8 to 10 minutes. Stir in the corn.</li>\\n <li>Divide the chili among bowls and top with the Cheddar and scallions.</li>\\n</ol>\\n\\n<p>We hope you enjoy the food!</p>\\n\\n<p>\\n Regards, <br>\\n Smart Fridge\\n</p>\",\n    \"ingredients\": \"beef, onion, bell pepper, carrot, corn\"\n  },\n  {\n    \"name\": \"Crispy Pork Cutlets With Fennel-Chickpea Slaw\",\n    \"description\": \"<p>We would like to recommend you below receipe based on the available ingredients in your fridge!</p>\\n\\n<h3>Crispy Pork Cutlets With Fennel-Chickpea Slaw</h3>\\n\\n<p>Don’t let the five-step procedure or the somewhat lengthy ingredient list fool you. Our Crispy Pork Cutlets With Fennel-Chickpea Slaw really do come together in half an hour. And, better yet, they don’t fall back on store-bought short cuts. With just a food processor and some sliced bread, you can make homemade bread crumbs, which will create the crunchy exterior for your “oven-fried” pork. If you can’t locate pork cutlets, place pork steaks on a cutting board. Hold the piece of meat flat with the palm of your hand and carefully slice it in half horizontally. Use a meat tenderizer to flatten the cutlets further, if desired.</p>\\n\\n<h3>Steps</h3>\\n\\n<ol>\\n <li>Heat oven to 425° F. Place an oven-proof wire rack set in a baking sheet. Pulse the bread until fine crumbs form in a food processor (you should have about 2½ cups). Add 1 tablespoon of the oil, ½ teaspoon salt, and ¼ teaspoon pepper and pulse once or twice to moisten.</li>\\n<li>Spread the bread crumbs on a rimmed baking sheet and bake, tossing once, until golden brown, 4 to 6 minutes. Let cool and transfer to a shallow bowl.</li>\\n<li>Place the flour in a second shallow bowl. Beat the egg whites with 1 tablespoon water in a third shallow bowl.</li>\\n<li>Season the pork with ½ teaspoon salt and ¼ teaspoon pepper. Coat with the flour (tapping off any excess), dip in the egg whites (shaking off any excess), then coat with the bread crumbs (pressing gently to help them adhere). Place on the prepared pan and bake until cooked through, 8 to 10 minutes.</li>\\n<li>Meanwhile, toss together the chickpeas, fennel, celery stalks and leaves, onion, lemon juice, the remaining 2 tablespoons of oil, ½ teaspoon salt, and ¼ teaspoon pepper in a medium bowl. Serve over the pork with the lemon wedges.</li>\\n</ol>\\n\\n<p>We hope you enjoy the food!</p>\\n\\n<p>\\n Regards, <br>\\n Smart Fridge\\n</p>\",\n    \"ingredients\": \"pork, egg, chickpeas, fennel, red onion, lemon\"\n  },\n  {\n    \"name\": \"Quick Spring Lamb and Vegetable Stew\",\n    \"description\": \"<p>We would like to recommend you below receipe based on the available ingredients in your fridge!</p>\\n\\n<h3>Quick Spring Lamb and Vegetable Stew</h3>\\n\\n<p>Hearty, satisfying, and warming, this lamb and vegetable stew is prepared in a single large pot. First, you’ll cut the lamb steaks into small pieces and brown the meat, then transfer it to a plate. Next, you’ll cook the carrots and onion, before adding a tablespoon of flour, which helps to thicken the brothy stew as it cooks. Simmer the remaining ingredients for about 10 minutes more, stir it all together, and you’re done. Since our recipe boasts carrots, green beans, and tomatoes, you won’t feel guilty about this all-in-one meal. On a chilly night, it’s the ideal simple supper.</p>\\n\\n<h3>Steps</h3>\\n\\n<ol>\\n<li>Heat 1 tablespoon of the oil in a large pot over medium-high heat. Season the lamb with 1/2 teaspoon each salt and pepper. Cook, turning occasionally, until medium-rare, 6 to 8 minutes; transfer to a plate.</li>\\n<li>Add the carrots, onion, and the remaining oil to the pot. Cook until beginning to soften, 3 to 4 minutes. Add the flour and cook for 1 minute. Add the wine and scrape up any brown bits.</li>\\n<li>Add the broth, tomatoes, and beans. Simmer until the vegetables are tender, 8 to 10 minutes. Stir in the lamb, parsley, 1/2 teaspoon salt, and 1/4 teaspoon pepper. Serve immediately.</li>\\n<li>To freeze: Cool the stew to room temperature and spoon into a freezer container or bag. Freeze for up to 3 months. To cook, thaw the stew in a bowl of cold water or overnight in the refrigerator. Transfer to a pot and cook, covered, stirring occasionally, until heated through, 10 to 20 minutes.</li>\\n</ol>\\n\\n<p>We hope you enjoy the food!</p>\\n\\n<p>\\n Regards, <br>\\n Smart Fridge\\n</p>\",\n    \"ingredients\": \"chicken, tomato, parsley, green beans, lamb, carrot\"\n  },\n  {\n    \"name\": \"Steak With Roasted Parsnips and Tomatoes\",\n    \"description\": \"<p>We would like to recommend you below receipe based on the available ingredients in your fridge!</p>\\n\\n<h3>Steak With Roasted Parsnips and Tomatoes</h3>\\n\\n<p>Simple enough to make for just two or four, but impressive enough to serve at a dinner party. This two-part meal appears, on its surface, to be much more involved than what the recipe actually requires. The vegetables, tossed with oil, herbs, salt, and pepper, roast in the oven at a high temperature, while you quickly sear the steaks over the stovetop. Serve the meat along your roasted vegetables, and add a green salad, if you’d like, for a delicious, protein-packed (and low-carb) supper. And the roasting trick works for any root vegetable; try it with potatoes, carrots, or beets for a twist.</p>\\n\\n<h3>Steps</h3>\\n\\n<ol>\\n<li>Heat oven to 450° F. Toss the parsnips, tomatoes, scallions, thyme, ¼ cup of the oil, and ¼ teaspoon each salt and pepper in a 9-by-13-inch baking dish.</li>\\n\\n<li>Cover the dish with foil and roast until the juices are bubbling, 15 to 20 minutes. Remove the foil and continue to roast until the parsnips are tender, 10 to 15 minutes more.</li>\\n\\n<li>Meanwhile, heat the remaining teaspoon of oil in a large skillet over medium-high heat. Season the steaks with ½ teaspoon each salt and pepper., Cook, in batches, until an instant-read thermometer inserted in the center of each piece registers 130° F, 2 to 3 minutes per side for medium-rare.</li>\\n\\n<li>Let the steaks rest for at least 5 minutes before slicing. Serve with the vegetables.</li>\\n</ol>\\n\\n<p>We hope you enjoy the food!</p>\\n\\n<p>\\n Regards, <br>\\n Smart Fridge\\n</p>\",\n    \"ingredients\": \"steak, thyme, scallion, cherry tomato, parsnip\"\n  }\n];\nreturn {payload: data};",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 270,
+        "y": 220,
+        "wires": [
+            [
+                "5f749e31.266ee"
+            ]
+        ]
+    },
+    {
+        "id": "d0aedc4d.f1ada",
+        "type": "inject",
+        "z": "662f5ea2.45d0b",
+        "name": "Run",
+        "topic": "",
+        "payload": "{\"payload\":{\"barcode\":\"12345y\"}}",
+        "payloadType": "json",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 110,
+        "y": 220,
+        "wires": [
+            [
+                "25934f4e.86b46"
+            ]
+        ]
+    },
+    {
+        "id": "f9a1ab8.d3a1158",
+        "type": "http request",
+        "z": "662f5ea2.45d0b",
+        "name": "receipe/deleteAll",
+        "method": "POST",
+        "ret": "obj",
+        "url": "https://smart-fridge-ke.herokuapp.com/receipe/deleteAll",
+        "tls": "",
+        "x": 290,
+        "y": 180,
+        "wires": [
+            [
+                "1561b1e5.fca3fe"
+            ]
+        ]
+    },
+    {
+        "id": "aa9a52b4.4bd07",
+        "type": "inject",
+        "z": "662f5ea2.45d0b",
+        "name": "Run",
+        "topic": "",
+        "payload": "{\"payload\":{\"barcode\":\"12345y\"}}",
+        "payloadType": "json",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 110,
+        "y": 180,
+        "wires": [
+            [
+                "f9a1ab8.d3a1158"
+            ]
+        ]
+    },
+    {
+        "id": "3f3ba596.c8868a",
+        "type": "http in",
+        "z": "8ef820f.7bcd5e",
         "name": "",
+        "url": "ingredient/status",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 140,
+        "y": 600,
+        "wires": [
+            [
+                "4dcf9991.2c2c18"
+            ]
+        ]
+    },
+    {
+        "id": "4dcf9991.2c2c18",
+        "type": "mongodb2 in",
+        "z": "8ef820f.7bcd5e",
+        "service": "_ext_",
+        "configNode": "53c335d9.8fbbdc",
+        "name": "search storage",
+        "collection": "storage",
+        "operation": "find.toArray",
+        "x": 360,
+        "y": 600,
+        "wires": [
+            [
+                "1d6629e2.b9b926"
+            ]
+        ]
+    },
+    {
+        "id": "1d6629e2.b9b926",
+        "type": "function",
+        "z": "8ef820f.7bcd5e",
+        "name": "get name",
+        "func": "return {\n    payload: {\n        qrcode: msg.payload[0].qrcode\n    },\n    req: msg.req,\n    res: msg.res,\n    name: msg.payload[0].name\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 540,
+        "y": 600,
+        "wires": [
+            [
+                "bc567df9.6c617"
+            ]
+        ]
+    },
+    {
+        "id": "d50fa806.dfb8d8",
+        "type": "http response",
+        "z": "8ef820f.7bcd5e",
+        "name": "Response",
         "statusCode": "",
         "headers": {},
-        "x": 600,
-        "y": 420,
+        "x": 700,
+        "y": 560,
         "wires": []
     },
     {
-        "id": "c2472293.d8b0f",
-        "type": "function",
-        "z": "626d8ed7.6f6a2",
-        "name": "",
-        "func": "msg.payload = {\n    \"temperature\": 23\n}\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 380,
-        "y": 400,
+        "id": "bc567df9.6c617",
+        "type": "mongodb2 in",
+        "z": "8ef820f.7bcd5e",
+        "service": "_ext_",
+        "configNode": "53c335d9.8fbbdc",
+        "name": "search ingredient",
+        "collection": "ingredient",
+        "operation": "find.toArray",
+        "x": 370,
+        "y": 640,
         "wires": [
             [
-                "e96fc8ca.c66aa8"
+                "e5751424.9f3ed8"
+            ]
+        ]
+    },
+    {
+        "id": "e5751424.9f3ed8",
+        "type": "function",
+        "z": "8ef820f.7bcd5e",
+        "name": "get status",
+        "func": "return {\n    payload: {\n        name: msg.name,\n        status: msg.payload.length > 0\n    },\n    req: msg.req,\n    res: msg.res,\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 540,
+        "y": 640,
+        "wires": [
+            [
+                "d50fa806.dfb8d8"
+            ]
+        ]
+    },
+    {
+        "id": "854079c7.109c98",
+        "type": "comment",
+        "z": "8ef820f.7bcd5e",
+        "name": "Collection: Receipe",
+        "info": "",
+        "x": 850,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "9e2b4209.7ee0e",
+        "type": "comment",
+        "z": "8ef820f.7bcd5e",
+        "name": "Collection: Storage",
+        "info": "",
+        "x": 850,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "1e5387f4.c63cb8",
+        "type": "comment",
+        "z": "8ef820f.7bcd5e",
+        "name": "Collection: Sensor Data",
+        "info": "",
+        "x": 140,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "917c95d1.358548",
+        "type": "comment",
+        "z": "8ef820f.7bcd5e",
+        "name": "Collection: Ingredient",
+        "info": "",
+        "x": 140,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "654ee92.1667218",
+        "type": "ui_template",
+        "z": "c1c4467a.7f7358",
+        "group": "52a8a458.be48fc",
+        "name": "Ingredients",
+        "order": 0,
+        "width": "6",
+        "height": "5",
+        "format": "<div>\n    <p>You have {{msg.payload.length}} item(s):</p>\n    <ul>\n        <li ng-repeat=\"item in msg.payload\" style=\"text-transform:capitalize;\">{{item.name}}</li>\n    </ul>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "templateScope": "local",
+        "x": 630,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6beeadd.2393f54",
+        "type": "http request",
+        "z": "c1c4467a.7f7358",
+        "name": "Get all ingredients",
+        "method": "GET",
+        "ret": "obj",
+        "url": "https://smart-fridge-ke.herokuapp.com/ingredient/all",
+        "tls": "",
+        "x": 430,
+        "y": 240,
+        "wires": [
+            [
+                "654ee92.1667218"
+            ]
+        ]
+    },
+    {
+        "id": "87839317.baa8",
+        "type": "mongodb2 in",
+        "z": "8ef820f.7bcd5e",
+        "service": "_ext_",
+        "configNode": "53c335d9.8fbbdc",
+        "name": "search storage",
+        "collection": "storage",
+        "operation": "find.toArray",
+        "x": 360,
+        "y": 680,
+        "wires": [
+            [
+                "d85f2b72.ce4078"
+            ]
+        ]
+    },
+    {
+        "id": "d85f2b72.ce4078",
+        "type": "function",
+        "z": "8ef820f.7bcd5e",
+        "name": "get name & expiry",
+        "func": "return {\n    payload: {\n        qrcode: msg.payload[0].qrcode,\n        name: msg.payload[0].name,\n        expiry_date: msg.payload[0]['expiry_date']\n    },\n    req: msg.req,\n    res: msg.res,\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 550,
+        "y": 680,
+        "wires": [
+            [
+                "615e008e.3c301"
+            ]
+        ]
+    },
+    {
+        "id": "e13d3721.0392b8",
+        "type": "http in",
+        "z": "8ef820f.7bcd5e",
+        "name": "",
+        "url": "sensorData/latest",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 140,
+        "y": 280,
+        "wires": [
+            [
+                "a7042a02.5d9518"
+            ]
+        ]
+    },
+    {
+        "id": "d4445579.1c7308",
+        "type": "mongodb2 in",
+        "z": "8ef820f.7bcd5e",
+        "service": "_ext_",
+        "configNode": "53c335d9.8fbbdc",
+        "name": "find all",
+        "collection": "sensor_data",
+        "operation": "find.toArray",
+        "x": 510,
+        "y": 280,
+        "wires": [
+            [
+                "7ccd3af8.ea79a4"
+            ]
+        ]
+    },
+    {
+        "id": "7ccd3af8.ea79a4",
+        "type": "http response",
+        "z": "8ef820f.7bcd5e",
+        "name": "Response",
+        "statusCode": "",
+        "headers": {},
+        "x": 640,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "a7042a02.5d9518",
+        "type": "function",
+        "z": "8ef820f.7bcd5e",
+        "name": "set limit & sort",
+        "func": "msg.payload = [\n    {},\n    {\n        limit: parseInt(msg.req.query[\"limit\"]),\n        sort: {timestamp: -1} \n    }\n]\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 360,
+        "y": 280,
+        "wires": [
+            [
+                "d4445579.1c7308"
+            ]
+        ]
+    },
+    {
+        "id": "9ccf22a0.2f826",
+        "type": "http request",
+        "z": "c1c4467a.7f7358",
+        "name": "Get last 12 data",
+        "method": "GET",
+        "ret": "obj",
+        "url": "https://smart-fridge-ke.herokuapp.com/sensorData/latest?limit=12",
+        "tls": "",
+        "x": 420,
+        "y": 80,
+        "wires": [
+            [
+                "879981bc.549a4"
+            ]
+        ]
+    },
+    {
+        "id": "9457813c.636e",
+        "type": "function",
+        "z": "c1c4467a.7f7358",
+        "name": "Get temperatures",
+        "func": "var temperatures = [];\n\nfor (var i = msg.payload.length - 1; i >=1; i--) {\n    temperatures.push({\n        \"x\": msg.payload[i].timestamp, \n        \"y\": msg.payload[i].temperature\n    });\n}\n\nreturn {payload: [{\n        \"series\": [\"temperature\"],\n        \"data\": [temperatures],\n        \"labels\": [\"\"]\n    }]\n};",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 830,
+        "y": 40,
+        "wires": [
+            [
+                "a30f9b9f.2c8178"
+            ]
+        ]
+    },
+    {
+        "id": "a30f9b9f.2c8178",
+        "type": "ui_chart",
+        "z": "c1c4467a.7f7358",
+        "name": "",
+        "group": "7fc7cc5d.31c0a4",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "label": "Temperatures Series",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#ff0000",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "useOldStyle": false,
+        "x": 1060,
+        "y": 40,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "703f353b.536adc",
+        "type": "function",
+        "z": "c1c4467a.7f7358",
+        "name": "Get humidities",
+        "func": "var humidities = [];\n\nfor (var i = msg.payload.length - 1; i >=1; i--) {\n    humidities.push({\n        \"x\": msg.payload[i].timestamp, \n        \"y\": msg.payload[i].humidity\n    });\n}\n\nreturn {payload: [{\n        \"series\": [\"humidity\"],\n        \"data\": [humidities],\n        \"labels\": [\"\"]\n    }]\n};",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 820,
+        "y": 80,
+        "wires": [
+            [
+                "92581223.aa2a6"
+            ]
+        ]
+    },
+    {
+        "id": "92581223.aa2a6",
+        "type": "ui_chart",
+        "z": "c1c4467a.7f7358",
+        "name": "",
+        "group": "7fc7cc5d.31c0a4",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "label": "Humidity Series",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "useOldStyle": false,
+        "x": 1040,
+        "y": 80,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "98832508.75b858",
+        "type": "ui_gauge",
+        "z": "c1c4467a.7f7358",
+        "name": "",
+        "group": "4885b5d.c1b764c",
+        "order": 2,
+        "width": "3",
+        "height": "4",
+        "gtype": "wave",
+        "title": "Temperature",
+        "label": "° C",
+        "format": "{{value | number:2}}",
+        "min": 0,
+        "max": "40",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 1030,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "248fb63d.30f10a",
+        "type": "ui_gauge",
+        "z": "c1c4467a.7f7358",
+        "name": "",
+        "group": "4885b5d.c1b764c",
+        "order": 3,
+        "width": "3",
+        "height": "4",
+        "gtype": "gage",
+        "title": "Humidity",
+        "label": "",
+        "format": "{{value*100 | number:2}}%",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#5fc521",
+            "#2b552e"
+        ],
+        "seg1": "25",
+        "seg2": "75",
+        "x": 1020,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "ab5a9443.243f38",
+        "type": "function",
+        "z": "c1c4467a.7f7358",
+        "name": "Get last temperature",
+        "func": "return {payload: msg.payload[0].temperature};",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 840,
+        "y": 120,
+        "wires": [
+            [
+                "98832508.75b858"
+            ]
+        ]
+    },
+    {
+        "id": "79a5f5de.51036c",
+        "type": "function",
+        "z": "c1c4467a.7f7358",
+        "name": "Get last humidity",
+        "func": "return {payload: msg.payload[0].humidity};",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 830,
+        "y": 160,
+        "wires": [
+            [
+                "248fb63d.30f10a"
+            ]
+        ]
+    },
+    {
+        "id": "8f896286.6e138",
+        "type": "function",
+        "z": "8ef820f.7bcd5e",
+        "name": "set array",
+        "func": "msg.payload = [msg.payload]\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 360,
+        "y": 240,
+        "wires": [
+            [
+                "c2bf0bb5.3c4628"
+            ]
+        ]
+    },
+    {
+        "id": "174f6601.eb2fba",
+        "type": "function",
+        "z": "8ef820f.7bcd5e",
+        "name": "set array",
+        "func": "msg.payload = [msg.payload]\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1040,
+        "y": 380,
+        "wires": [
+            [
+                "46cece23.d4992"
+            ]
+        ]
+    },
+    {
+        "id": "d944103.779abf",
+        "type": "function",
+        "z": "8ef820f.7bcd5e",
+        "name": "set array",
+        "func": "msg.payload = [msg.payload]\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1040,
+        "y": 160,
+        "wires": [
+            [
+                "73f13d58.023624"
+            ]
+        ]
+    },
+    {
+        "id": "744da0fe.b6783",
+        "type": "e-mail",
+        "z": "61702be5.096ae4",
+        "server": "smtp.gmail.com",
+        "port": "465",
+        "secure": true,
+        "name": "chiaweiwoo123@gmail.com",
+        "dname": "send email",
+        "x": 1230,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "ebbe4303.5ec4f",
+        "type": "function",
+        "z": "61702be5.096ae4",
+        "name": "construct email",
+        "func": "function getRandomInt(max) {\n  return Math.floor(Math.random() * Math.floor(max));\n}\n\nvar index = getRandomInt(msg.payload.length)\nmsg.topic = \"Recommended receipe for your day!\"\nmsg.from = \"Smart Fridge\"\nmsg.payload = \"<p>Dear customer,<p> \" + msg.payload[index].description\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 840,
+        "y": 260,
+        "wires": [
+            [
+                "744da0fe.b6783",
+                "7a60eb5f.615474"
+            ]
+        ]
+    },
+    {
+        "id": "1c51e742.653679",
+        "type": "switch",
+        "z": "61702be5.096ae4",
+        "name": "is empty?",
+        "property": "payload.length",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "gt",
+                "v": "0",
+                "vt": "num"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 660,
+        "y": 280,
+        "wires": [
+            [
+                "ebbe4303.5ec4f"
+            ],
+            [
+                "d8d5e8c7.7d0de8"
+            ]
+        ]
+    },
+    {
+        "id": "d8d5e8c7.7d0de8",
+        "type": "function",
+        "z": "61702be5.096ae4",
+        "name": "no receipe",
+        "func": "return {payload: \"No matches found.\"}",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 830,
+        "y": 300,
+        "wires": [
+            [
+                "7a60eb5f.615474"
+            ]
+        ]
+    },
+    {
+        "id": "7ffacd72.f52e54",
+        "type": "http in",
+        "z": "8ef820f.7bcd5e",
+        "name": "",
+        "url": "receipe/recommend",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 870,
+        "y": 420,
+        "wires": [
+            [
+                "918b722a.67b5"
+            ]
+        ]
+    },
+    {
+        "id": "918b722a.67b5",
+        "type": "mongodb2 in",
+        "z": "8ef820f.7bcd5e",
+        "service": "_ext_",
+        "configNode": "53c335d9.8fbbdc",
+        "name": "find all receipes",
+        "collection": "receipe",
+        "operation": "find.toArray",
+        "x": 1080,
+        "y": 420,
+        "wires": [
+            [
+                "b7e93adf.0375f8"
+            ]
+        ]
+    },
+    {
+        "id": "d9c12c6d.1f089",
+        "type": "http response",
+        "z": "8ef820f.7bcd5e",
+        "name": "Response",
+        "statusCode": "",
+        "headers": {},
+        "x": 1440,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "b7e93adf.0375f8",
+        "type": "function",
+        "z": "8ef820f.7bcd5e",
+        "name": "convert to array",
+        "func": "receipes = msg.payload\n\nfor (var i = 0; i < receipes.length; i++) {\n    receipes[i][\"ingredients_array\"] = receipes[i].ingredients.split(\",\").map(function (str) {\n      return str.trim().toLowerCase();\n    });\n}\n\nmsg.receipes = msg.payload;\nmsg.payload = {};\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1280,
+        "y": 420,
+        "wires": [
+            [
+                "f26f25ae.1cf0f8"
+            ]
+        ]
+    },
+    {
+        "id": "f26f25ae.1cf0f8",
+        "type": "mongodb2 in",
+        "z": "8ef820f.7bcd5e",
+        "service": "_ext_",
+        "configNode": "53c335d9.8fbbdc",
+        "name": "find all ingredients",
+        "collection": "ingredient",
+        "operation": "find.toArray",
+        "x": 1090,
+        "y": 460,
+        "wires": [
+            [
+                "83071785.fdb9e8"
+            ]
+        ]
+    },
+    {
+        "id": "83071785.fdb9e8",
+        "type": "function",
+        "z": "8ef820f.7bcd5e",
+        "name": "find matches",
+        "func": "ingredients = msg.payload;\nreceipes = msg.receipes\n\nfor (var i = 0; i < ingredients.length; i++) {\n    for (var j = 0; j < receipes.length; j++) {\n        var item = ingredients[i].name.trim().toLowerCase();\n        var required_items = receipes[j][\"ingredients_array\"];\n        var index = required_items.indexOf(item);\n        if(index >= 0)\n            required_items = required_items.splice(index, 1);\n    }\n}\n\nrecommended_receipes = [];\nfor (var i = 0; i < receipes.length; i++) {\n    if(receipes[i][\"ingredients_array\"].length === 0){\n        delete receipes[i][\"ingredients_array\"]\n        recommended_receipes.push(receipes[i]);\n    }\n        \n}\n\nmsg.payload = recommended_receipes\ndelete msg[\"receipes\"]\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1270,
+        "y": 460,
+        "wires": [
+            [
+                "d9c12c6d.1f089"
+            ]
+        ]
+    },
+    {
+        "id": "c58997aa.e5a538",
+        "type": "http request",
+        "z": "61702be5.096ae4",
+        "name": "Get recommended receipe",
+        "method": "GET",
+        "ret": "obj",
+        "url": "https://smart-fridge-ke.herokuapp.com/receipe/recommend",
+        "tls": "",
+        "x": 460,
+        "y": 280,
+        "wires": [
+            [
+                "1c51e742.653679"
+            ]
+        ]
+    },
+    {
+        "id": "b6ffd12c.0bf7a",
+        "type": "http request",
+        "z": "61702be5.096ae4",
+        "name": "Get warning status",
+        "method": "GET",
+        "ret": "obj",
+        "url": "https://smart-fridge-ke.herokuapp.com/sensorData/warn",
+        "tls": "",
+        "x": 430,
+        "y": 460,
+        "wires": [
+            [
+                "9f1701da.c3067"
+            ]
+        ]
+    },
+    {
+        "id": "9f1701da.c3067",
+        "type": "switch",
+        "z": "61702be5.096ae4",
+        "name": "to warn?",
+        "property": "payload.warning",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "true",
+                "vt": "jsonata"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 660,
+        "y": 460,
+        "wires": [
+            [
+                "aabb9a61.0f5048"
+            ],
+            [
+                "72f57089.34541"
+            ]
+        ]
+    },
+    {
+        "id": "7a60eb5f.615474",
+        "type": "debug",
+        "z": "61702be5.096ae4",
+        "name": "logging",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "x": 1220,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "aabb9a61.0f5048",
+        "type": "function",
+        "z": "61702be5.096ae4",
+        "name": "construct email",
+        "func": "msg.topic = \"Your fridge is getting too warm!\"\nmsg.from = \"Smart Fridge\"\nmsg.payload = \"<p>Dear customer,</p> <p>Based on the last hour observation, the average temperature of the fridge is \" + msg.payload.average_temperature.toFixed(2) + \"°C which is considered unusual reading.</p> <p>Please check your power supply and fridge.</p> <p>Regards, <br> Smart Fridge</p>\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 840,
+        "y": 440,
+        "wires": [
+            [
+                "7a60eb5f.615474",
+                "744da0fe.b6783"
+            ]
+        ]
+    },
+    {
+        "id": "72f57089.34541",
+        "type": "function",
+        "z": "61702be5.096ae4",
+        "name": "no warning",
+        "func": "return {payload: \"Everything looks fine!\"}",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 830,
+        "y": 480,
+        "wires": [
+            [
+                "7a60eb5f.615474"
+            ]
+        ]
+    },
+    {
+        "id": "3dc45cea.afc714",
+        "type": "http request",
+        "z": "61702be5.096ae4",
+        "name": "Get expiring ingredients",
+        "method": "GET",
+        "ret": "obj",
+        "url": "https://smart-fridge-ke.herokuapp.com/ingredient/expiring",
+        "tls": "",
+        "x": 450,
+        "y": 100,
+        "wires": [
+            [
+                "aba8de9.5985d2"
+            ]
+        ]
+    },
+    {
+        "id": "f7c29265.c5ca8",
+        "type": "http in",
+        "z": "8ef820f.7bcd5e",
+        "name": "",
+        "url": "ingredient/expiring",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 140,
+        "y": 760,
+        "wires": [
+            [
+                "ba89c7fb.50d1b8"
+            ]
+        ]
+    },
+    {
+        "id": "ba89c7fb.50d1b8",
+        "type": "mongodb2 in",
+        "z": "8ef820f.7bcd5e",
+        "service": "_ext_",
+        "configNode": "53c335d9.8fbbdc",
+        "name": "find all",
+        "collection": "ingredient",
+        "operation": "find.toArray",
+        "x": 330,
+        "y": 760,
+        "wires": [
+            [
+                "fcfb5085.b1727"
+            ]
+        ]
+    },
+    {
+        "id": "fcfb5085.b1727",
+        "type": "function",
+        "z": "8ef820f.7bcd5e",
+        "name": "check expiry",
+        "func": "function getDate(date){\n    return new Date(date.toDateString());\n}\n\nfunction getDaysDifference(d1, d2){\n    var timeDiff = d2.getTime() - d1.getTime();\n    var diffDays = timeDiff / (1000 * 3600 * 24); \n    return diffDays;\n}\n\nvar today = new Date();\nvar ingredients = msg.payload;\nvar expirying_ingredients = [];\n\nfor (var i = 0; i < ingredients.length; i++) {\n    var expiry = getDate(new Date(ingredients[i].expiry_date));\n    difference = getDaysDifference(today, expiry)\n        \n    if(difference <= 1)\n        expirying_ingredients.push(ingredients[i].name);\n    \n}\n\nmsg.payload = expirying_ingredients;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 470,
+        "y": 760,
+        "wires": [
+            [
+                "32096783.e85168"
+            ]
+        ]
+    },
+    {
+        "id": "32096783.e85168",
+        "type": "http response",
+        "z": "8ef820f.7bcd5e",
+        "name": "Response",
+        "statusCode": "",
+        "headers": {},
+        "x": 620,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "aba8de9.5985d2",
+        "type": "switch",
+        "z": "61702be5.096ae4",
+        "name": "is empty?",
+        "property": "payload.length",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "gt",
+                "v": "0",
+                "vt": "num"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 660,
+        "y": 100,
+        "wires": [
+            [
+                "85e7e69b.9adf48"
+            ],
+            [
+                "ffe7faf2.33b2b8"
+            ]
+        ]
+    },
+    {
+        "id": "85e7e69b.9adf48",
+        "type": "function",
+        "z": "61702be5.096ae4",
+        "name": "construct email",
+        "func": "var items = \"\";\nvar ingredients = msg.payload;\nfor (var i = 0; i < ingredients.length; i++) {\n    items += \"<li>\" + ingredients[i] + \"</li>\"\n}\nitems = \"<ul>\" + items + \"</ul>\"\n\nmsg.from = \"Smart Fridge\"\nmsg.payload = \"<p>Dear customer,</p> <p>Just a kind reminder to inform you that below foods are expiring: </p>\" + items + \" <p>Regards, <br> Smart Fridge</p>\"\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 840,
+        "y": 80,
+        "wires": [
+            [
+                "744da0fe.b6783",
+                "7a60eb5f.615474"
+            ]
+        ]
+    },
+    {
+        "id": "ffe7faf2.33b2b8",
+        "type": "function",
+        "z": "61702be5.096ae4",
+        "name": "everything fresh",
+        "func": "return {payload: \"All ingredients are fine.\"}",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 840,
+        "y": 120,
+        "wires": [
+            [
+                "7a60eb5f.615474"
+            ]
+        ]
+    },
+    {
+        "id": "a9b72b9f.024dc8",
+        "type": "http in",
+        "z": "8ef820f.7bcd5e",
+        "name": "",
+        "url": "sensorData/warn",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 140,
+        "y": 320,
+        "wires": [
+            [
+                "3069f101.8acf8e"
+            ]
+        ]
+    },
+    {
+        "id": "3069f101.8acf8e",
+        "type": "function",
+        "z": "8ef820f.7bcd5e",
+        "name": "set limit & sort",
+        "func": "msg.payload = [\n    {},\n    {\n        limit: 12,\n        sort: {timestamp: -1} \n    }\n]\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 360,
+        "y": 320,
+        "wires": [
+            [
+                "6ba3d3b3.aed0dc"
+            ]
+        ]
+    },
+    {
+        "id": "6ba3d3b3.aed0dc",
+        "type": "mongodb2 in",
+        "z": "8ef820f.7bcd5e",
+        "service": "_ext_",
+        "configNode": "53c335d9.8fbbdc",
+        "name": "find all",
+        "collection": "sensor_data",
+        "operation": "find.toArray",
+        "x": 510,
+        "y": 320,
+        "wires": [
+            [
+                "20375c26.af7674"
+            ]
+        ]
+    },
+    {
+        "id": "7b2fa386.a04e9c",
+        "type": "http response",
+        "z": "8ef820f.7bcd5e",
+        "name": "Response",
+        "statusCode": "",
+        "headers": {},
+        "x": 520,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "20375c26.af7674",
+        "type": "function",
+        "z": "8ef820f.7bcd5e",
+        "name": "check tolerance",
+        "func": "var tolerance = 28;\nvar average_temperature = 0;\nvar readings = msg.payload;\n\nfor (var i = 0; i < readings.length; i++) {\n    average_temperature += readings[i].temperature;\n}\n\naverage_temperature /= readings.length;\nmsg.payload = {\n    average_temperature: average_temperature,\n    warning: average_temperature >= tolerance\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 360,
+        "y": 360,
+        "wires": [
+            [
+                "7b2fa386.a04e9c"
+            ]
+        ]
+    },
+    {
+        "id": "879981bc.549a4",
+        "type": "switch",
+        "z": "c1c4467a.7f7358",
+        "name": "is empty?",
+        "property": "payload.length",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "gt",
+                "v": "0",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 600,
+        "y": 80,
+        "wires": [
+            [
+                "9457813c.636e",
+                "703f353b.536adc",
+                "ab5a9443.243f38",
+                "79a5f5de.51036c"
             ]
         ]
     }

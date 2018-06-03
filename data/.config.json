@@ -667,6 +667,24 @@
      "file": "C:\\Users\\ChiaWei\\Desktop\\iot-project\\node-red-test\\node_modules\\node-red-contrib-mongodb2\\mongodb2\\mongodb2.js"
     }
    }
+  },
+  "node-red-node-twilio": {
+   "name": "node-red-node-twilio",
+   "version": "0.1.0",
+   "local": false,
+   "nodes": {
+    "twilio": {
+     "name": "twilio",
+     "types": [
+      "twilio out",
+      "twilio-api"
+     ],
+     "enabled": true,
+     "local": false,
+     "module": "node-red-node-twilio",
+     "file": "C:\\Users\\ChiaWei\\Desktop\\iot-project\\node-red-test\\node_modules\\node-red-node-twilio\\56-twilio.js"
+    }
+   }
   }
  },
  "_credentialSecret": "8bba941b344bb6cc25ae441fe3e7205361d82bfe962b76f1fe322e0430512c25",
