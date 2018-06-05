@@ -117,96 +117,6 @@
         }
     },
     {
-        "id": "3978f7e8.31b968",
-        "type": "ui_base",
-        "theme": {
-            "name": "theme-light",
-            "lightTheme": {
-                "default": "#0094CE",
-                "baseColor": "#0094CE",
-                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
-                "edited": true,
-                "reset": false
-            },
-            "darkTheme": {
-                "default": "#097479",
-                "baseColor": "#b43905",
-                "baseFont": "Tahoma,Geneva,sans-serif",
-                "edited": true,
-                "reset": false
-            },
-            "customTheme": {
-                "name": "Untitled Theme 1",
-                "default": "#4B7930",
-                "baseColor": "#4B7930",
-                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
-            },
-            "themeState": {
-                "base-color": {
-                    "default": "#0094CE",
-                    "value": "#0094CE",
-                    "edited": true
-                },
-                "page-titlebar-backgroundColor": {
-                    "value": "#0094CE",
-                    "edited": false
-                },
-                "page-backgroundColor": {
-                    "value": "#fafafa",
-                    "edited": false
-                },
-                "page-sidebar-backgroundColor": {
-                    "value": "#ffffff",
-                    "edited": false
-                },
-                "group-textColor": {
-                    "value": "#1bbfff",
-                    "edited": false
-                },
-                "group-borderColor": {
-                    "value": "#ffffff",
-                    "edited": false
-                },
-                "group-backgroundColor": {
-                    "value": "#ffffff",
-                    "edited": false
-                },
-                "widget-textColor": {
-                    "value": "#111111",
-                    "edited": false
-                },
-                "widget-backgroundColor": {
-                    "value": "#0094ce",
-                    "edited": false
-                },
-                "widget-borderColor": {
-                    "value": "#ffffff",
-                    "edited": false
-                },
-                "base-font": {
-                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
-                }
-            }
-        },
-        "site": {
-            "name": "Raspberry PI Dashboard",
-            "hideToolbar": "false",
-            "allowSwipe": "false",
-            "allowTempTheme": "true",
-            "dateFormat": "DD/MM/YYYY",
-            "sizes": {
-                "sx": 50,
-                "sy": 50,
-                "gx": 12,
-                "gy": 12,
-                "cx": 6,
-                "cy": 6,
-                "px": 0,
-                "py": 0
-            }
-        }
-    },
-    {
         "id": "cbf44028.7360c",
         "type": "ui_tab",
         "z": "",
@@ -299,7 +209,7 @@
         "id": "f84302ec.18c26",
         "type": "comment",
         "z": "9d194143.c296d",
-        "name": "Email to recommend receipe (Daily)",
+        "name": "Email to recommend recipe (Daily)",
         "info": "",
         "x": 200,
         "y": 200,
@@ -1009,7 +919,7 @@
         "type": "http in",
         "z": "9f6f748.a950888",
         "name": "",
-        "url": "receipe/deleteAll",
+        "url": "recipe/deleteAll",
         "method": "post",
         "upload": false,
         "swaggerDoc": "",
@@ -1028,7 +938,7 @@
         "service": "_ext_",
         "configNode": "53c335d9.8fbbdc",
         "name": "delete all",
-        "collection": "receipe",
+        "collection": "recipe",
         "operation": "drop",
         "x": 1040,
         "y": 340,
@@ -1054,7 +964,7 @@
         "type": "http in",
         "z": "9f6f748.a950888",
         "name": "",
-        "url": "receipe/all",
+        "url": "recipe/all",
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
@@ -1073,7 +983,7 @@
         "service": "_ext_",
         "configNode": "53c335d9.8fbbdc",
         "name": "find all",
-        "collection": "receipe",
+        "collection": "recipe",
         "operation": "find.toArray",
         "x": 1030,
         "y": 300,
@@ -1099,7 +1009,7 @@
         "type": "http in",
         "z": "9f6f748.a950888",
         "name": "",
-        "url": "receipe/addMany",
+        "url": "recipe/addMany",
         "method": "post",
         "upload": false,
         "swaggerDoc": "",
@@ -1118,7 +1028,7 @@
         "service": "_ext_",
         "configNode": "53c335d9.8fbbdc",
         "name": "add many",
-        "collection": "receipe",
+        "collection": "recipe",
         "operation": "insertMany",
         "x": 1180,
         "y": 380,
@@ -1247,10 +1157,10 @@
         "id": "f1f89c91.d615f",
         "type": "http request",
         "z": "2f87e40d.7b5d7c",
-        "name": "receipe/addMany",
+        "name": "recipe/addMany",
         "method": "POST",
         "ret": "obj",
-        "url": "https://smart-fridge-ke.herokuapp.com/receipe/addMany",
+        "url": "https://smart-fridge-ke.herokuapp.com/recipe/addMany",
         "tls": "",
         "x": 290,
         "y": 260,
@@ -1265,7 +1175,7 @@
         "type": "function",
         "z": "2f87e40d.7b5d7c",
         "name": "demo data",
-        "func": "var data = [\n  {\n    \"name\": \"Spicy Salmon With Bok Choy and Rice\",\n    \"description\": \"<p>We would like to recommend you below receipe based on the available ingredients in your fridge!</p>\\n\\n<h3>Spicy Salmon With Bok Choy and Rice</h3>\\n\\n<p>As satisfying as take-out, but much healthier—and ready in 20 minutes. Our recipe for Spicy Salmon with Bok Choy and Rice couldn’t be easier. Versatile salmon fillets, the most commonly used cut of the fish, cook quickly in the oven. While you boil the rice, whip up a quick glaze for the salmon before throwing it under the broiler for a few minutes. Look for baby bok choy in specialty Asian markets if your grocery store doesn’t carry the vegetable. Our perfectly cooked fish, basted in a sweet-and-spicy honey-chile sauce, proves the ideal complement to steamed bok choy and long-grain rice.</p>\\n\\n<h3>Steps</h3>\\n\\n<ol>\\n <li>Cook the rice according to the package directions.</li>\\n <li>Meanwhile, combine the honey, soy sauce, and red pepper. On a foil-lined rimmed baking sheet, broil the salmon fillets until opaque throughout, 8 to 10 minutes, basting with the honey mixture during the last 3 minutes.</li>\\n <li>Steam baby bok choy (cut into quarters) until tender, 8 to 10 minutes. Serve with the salmon and rice.</li>\\n</ol>\\n\\n<p>We hope you enjoy the food!</p>\\n\\n<p>\\n Regards, <br>\\n Smart Fridge\\n</p>\",\n    \"ingredients\": \"salmon, bok choy\"\n  },\n  {\n    \"name\": \"Southwestern Beef Chili With Corn\",\n    \"description\": \"<p>We would like to recommend you below receipe based on the available ingredients in your fridge!</p>\\n\\n<h3>Southwestern Beef Chili With Corn</h3>\\n\\n<p>Packed with flavor but not too spicy, this chili gets its southwestern flare from poblano peppers and chili powder. After cooking a base of onion, carrots, and peppers, you’ll brown the meat and stir in beans, tomato paste, and more. Serve the chili on its own, with hot sauce at the table, or with tortilla chips or a dollop of sour cream. Another plus: Our Southwestern Beef Chili with Corn freezes well. Double or even triple the recipe when you cook, then freeze the extra servings in separate containers to thaw and enjoy later in the season; on a cold, busy night, your future self will thank you.</p>\\n\\n<h3>Steps</h3>\\n\\n<ol>\\n  <li>Heat the oil in a large saucepan over medium-high heat. Add the carrots, onion, and poblano and cook, stirring, for 3 minutes.</li>\\n <li>Add the beef and cook, breaking it up with a spoon, until no longer pink, 3 to 5 minutes.</li>\\n <li>Add the tomato paste and cook, stirring, until it is slightly darkened, 1 minute.</li>\\n <li>Stir in the beans, chili powder, 3 cups water, ½ teaspoon salt, and ¼ teaspoon pepper.</li>\\n <li>Simmer over medium heat until the vegetables are tender, 8 to 10 minutes. Stir in the corn.</li>\\n <li>Divide the chili among bowls and top with the Cheddar and scallions.</li>\\n</ol>\\n\\n<p>We hope you enjoy the food!</p>\\n\\n<p>\\n Regards, <br>\\n Smart Fridge\\n</p>\",\n    \"ingredients\": \"beef, onion, bell pepper, carrot, corn\"\n  },\n  {\n    \"name\": \"Crispy Pork Cutlets With Fennel-Chickpea Slaw\",\n    \"description\": \"<p>We would like to recommend you below receipe based on the available ingredients in your fridge!</p>\\n\\n<h3>Crispy Pork Cutlets With Fennel-Chickpea Slaw</h3>\\n\\n<p>Don’t let the five-step procedure or the somewhat lengthy ingredient list fool you. Our Crispy Pork Cutlets With Fennel-Chickpea Slaw really do come together in half an hour. And, better yet, they don’t fall back on store-bought short cuts. With just a food processor and some sliced bread, you can make homemade bread crumbs, which will create the crunchy exterior for your “oven-fried” pork. If you can’t locate pork cutlets, place pork steaks on a cutting board. Hold the piece of meat flat with the palm of your hand and carefully slice it in half horizontally. Use a meat tenderizer to flatten the cutlets further, if desired.</p>\\n\\n<h3>Steps</h3>\\n\\n<ol>\\n <li>Heat oven to 425° F. Place an oven-proof wire rack set in a baking sheet. Pulse the bread until fine crumbs form in a food processor (you should have about 2½ cups). Add 1 tablespoon of the oil, ½ teaspoon salt, and ¼ teaspoon pepper and pulse once or twice to moisten.</li>\\n<li>Spread the bread crumbs on a rimmed baking sheet and bake, tossing once, until golden brown, 4 to 6 minutes. Let cool and transfer to a shallow bowl.</li>\\n<li>Place the flour in a second shallow bowl. Beat the egg whites with 1 tablespoon water in a third shallow bowl.</li>\\n<li>Season the pork with ½ teaspoon salt and ¼ teaspoon pepper. Coat with the flour (tapping off any excess), dip in the egg whites (shaking off any excess), then coat with the bread crumbs (pressing gently to help them adhere). Place on the prepared pan and bake until cooked through, 8 to 10 minutes.</li>\\n<li>Meanwhile, toss together the chickpeas, fennel, celery stalks and leaves, onion, lemon juice, the remaining 2 tablespoons of oil, ½ teaspoon salt, and ¼ teaspoon pepper in a medium bowl. Serve over the pork with the lemon wedges.</li>\\n</ol>\\n\\n<p>We hope you enjoy the food!</p>\\n\\n<p>\\n Regards, <br>\\n Smart Fridge\\n</p>\",\n    \"ingredients\": \"pork, egg, chickpeas, fennel, red onion, lemon\"\n  },\n  {\n    \"name\": \"Quick Spring Lamb and Vegetable Stew\",\n    \"description\": \"<p>We would like to recommend you below receipe based on the available ingredients in your fridge!</p>\\n\\n<h3>Quick Spring Lamb and Vegetable Stew</h3>\\n\\n<p>Hearty, satisfying, and warming, this lamb and vegetable stew is prepared in a single large pot. First, you’ll cut the lamb steaks into small pieces and brown the meat, then transfer it to a plate. Next, you’ll cook the carrots and onion, before adding a tablespoon of flour, which helps to thicken the brothy stew as it cooks. Simmer the remaining ingredients for about 10 minutes more, stir it all together, and you’re done. Since our recipe boasts carrots, green beans, and tomatoes, you won’t feel guilty about this all-in-one meal. On a chilly night, it’s the ideal simple supper.</p>\\n\\n<h3>Steps</h3>\\n\\n<ol>\\n<li>Heat 1 tablespoon of the oil in a large pot over medium-high heat. Season the lamb with 1/2 teaspoon each salt and pepper. Cook, turning occasionally, until medium-rare, 6 to 8 minutes; transfer to a plate.</li>\\n<li>Add the carrots, onion, and the remaining oil to the pot. Cook until beginning to soften, 3 to 4 minutes. Add the flour and cook for 1 minute. Add the wine and scrape up any brown bits.</li>\\n<li>Add the broth, tomatoes, and beans. Simmer until the vegetables are tender, 8 to 10 minutes. Stir in the lamb, parsley, 1/2 teaspoon salt, and 1/4 teaspoon pepper. Serve immediately.</li>\\n<li>To freeze: Cool the stew to room temperature and spoon into a freezer container or bag. Freeze for up to 3 months. To cook, thaw the stew in a bowl of cold water or overnight in the refrigerator. Transfer to a pot and cook, covered, stirring occasionally, until heated through, 10 to 20 minutes.</li>\\n</ol>\\n\\n<p>We hope you enjoy the food!</p>\\n\\n<p>\\n Regards, <br>\\n Smart Fridge\\n</p>\",\n    \"ingredients\": \"chicken, tomato, parsley, green beans, lamb, carrot\"\n  },\n  {\n    \"name\": \"Steak With Roasted Parsnips and Tomatoes\",\n    \"description\": \"<p>We would like to recommend you below receipe based on the available ingredients in your fridge!</p>\\n\\n<h3>Steak With Roasted Parsnips and Tomatoes</h3>\\n\\n<p>Simple enough to make for just two or four, but impressive enough to serve at a dinner party. This two-part meal appears, on its surface, to be much more involved than what the recipe actually requires. The vegetables, tossed with oil, herbs, salt, and pepper, roast in the oven at a high temperature, while you quickly sear the steaks over the stovetop. Serve the meat along your roasted vegetables, and add a green salad, if you’d like, for a delicious, protein-packed (and low-carb) supper. And the roasting trick works for any root vegetable; try it with potatoes, carrots, or beets for a twist.</p>\\n\\n<h3>Steps</h3>\\n\\n<ol>\\n<li>Heat oven to 450° F. Toss the parsnips, tomatoes, scallions, thyme, ¼ cup of the oil, and ¼ teaspoon each salt and pepper in a 9-by-13-inch baking dish.</li>\\n\\n<li>Cover the dish with foil and roast until the juices are bubbling, 15 to 20 minutes. Remove the foil and continue to roast until the parsnips are tender, 10 to 15 minutes more.</li>\\n\\n<li>Meanwhile, heat the remaining teaspoon of oil in a large skillet over medium-high heat. Season the steaks with ½ teaspoon each salt and pepper., Cook, in batches, until an instant-read thermometer inserted in the center of each piece registers 130° F, 2 to 3 minutes per side for medium-rare.</li>\\n\\n<li>Let the steaks rest for at least 5 minutes before slicing. Serve with the vegetables.</li>\\n</ol>\\n\\n<p>We hope you enjoy the food!</p>\\n\\n<p>\\n Regards, <br>\\n Smart Fridge\\n</p>\",\n    \"ingredients\": \"steak, thyme, scallion, cherry tomato, parsnip\"\n  }\n];\nreturn {payload: data};",
+        "func": "var data = [\n  {\n    \"name\": \"Spicy Salmon With Bok Choy and Rice\",\n    \"description\": \"<p>We would like to recommend you below recipe based on the available ingredients in your fridge!</p>\\n\\n<h3>Spicy Salmon With Bok Choy and Rice</h3>\\n\\n<p>As satisfying as take-out, but much healthier—and ready in 20 minutes. Our recipe for Spicy Salmon with Bok Choy and Rice couldn’t be easier. Versatile salmon fillets, the most commonly used cut of the fish, cook quickly in the oven. While you boil the rice, whip up a quick glaze for the salmon before throwing it under the broiler for a few minutes. Look for baby bok choy in specialty Asian markets if your grocery store doesn’t carry the vegetable. Our perfectly cooked fish, basted in a sweet-and-spicy honey-chile sauce, proves the ideal complement to steamed bok choy and long-grain rice.</p>\\n\\n<h3>Steps</h3>\\n\\n<ol>\\n <li>Cook the rice according to the package directions.</li>\\n <li>Meanwhile, combine the honey, soy sauce, and red pepper. On a foil-lined rimmed baking sheet, broil the salmon fillets until opaque throughout, 8 to 10 minutes, basting with the honey mixture during the last 3 minutes.</li>\\n <li>Steam baby bok choy (cut into quarters) until tender, 8 to 10 minutes. Serve with the salmon and rice.</li>\\n</ol>\\n\\n<p>We hope you enjoy the food!</p>\\n\\n<p>\\n Regards, <br>\\n Smart Fridge\\n</p>\",\n    \"ingredients\": \"salmon, bok choy\"\n  },\n  {\n    \"name\": \"Southwestern Beef Chili With Corn\",\n    \"description\": \"<p>We would like to recommend you below recipe based on the available ingredients in your fridge!</p>\\n\\n<h3>Southwestern Beef Chili With Corn</h3>\\n\\n<p>Packed with flavor but not too spicy, this chili gets its southwestern flare from poblano peppers and chili powder. After cooking a base of onion, carrots, and peppers, you’ll brown the meat and stir in beans, tomato paste, and more. Serve the chili on its own, with hot sauce at the table, or with tortilla chips or a dollop of sour cream. Another plus: Our Southwestern Beef Chili with Corn freezes well. Double or even triple the recipe when you cook, then freeze the extra servings in separate containers to thaw and enjoy later in the season; on a cold, busy night, your future self will thank you.</p>\\n\\n<h3>Steps</h3>\\n\\n<ol>\\n  <li>Heat the oil in a large saucepan over medium-high heat. Add the carrots, onion, and poblano and cook, stirring, for 3 minutes.</li>\\n <li>Add the beef and cook, breaking it up with a spoon, until no longer pink, 3 to 5 minutes.</li>\\n <li>Add the tomato paste and cook, stirring, until it is slightly darkened, 1 minute.</li>\\n <li>Stir in the beans, chili powder, 3 cups water, ½ teaspoon salt, and ¼ teaspoon pepper.</li>\\n <li>Simmer over medium heat until the vegetables are tender, 8 to 10 minutes. Stir in the corn.</li>\\n <li>Divide the chili among bowls and top with the Cheddar and scallions.</li>\\n</ol>\\n\\n<p>We hope you enjoy the food!</p>\\n\\n<p>\\n Regards, <br>\\n Smart Fridge\\n</p>\",\n    \"ingredients\": \"beef, onion, bell pepper, carrot, corn\"\n  },\n  {\n    \"name\": \"Crispy Pork Cutlets With Fennel-Chickpea Slaw\",\n    \"description\": \"<p>We would like to recommend you below recipe based on the available ingredients in your fridge!</p>\\n\\n<h3>Crispy Pork Cutlets With Fennel-Chickpea Slaw</h3>\\n\\n<p>Don’t let the five-step procedure or the somewhat lengthy ingredient list fool you. Our Crispy Pork Cutlets With Fennel-Chickpea Slaw really do come together in half an hour. And, better yet, they don’t fall back on store-bought short cuts. With just a food processor and some sliced bread, you can make homemade bread crumbs, which will create the crunchy exterior for your “oven-fried” pork. If you can’t locate pork cutlets, place pork steaks on a cutting board. Hold the piece of meat flat with the palm of your hand and carefully slice it in half horizontally. Use a meat tenderizer to flatten the cutlets further, if desired.</p>\\n\\n<h3>Steps</h3>\\n\\n<ol>\\n <li>Heat oven to 425° F. Place an oven-proof wire rack set in a baking sheet. Pulse the bread until fine crumbs form in a food processor (you should have about 2½ cups). Add 1 tablespoon of the oil, ½ teaspoon salt, and ¼ teaspoon pepper and pulse once or twice to moisten.</li>\\n<li>Spread the bread crumbs on a rimmed baking sheet and bake, tossing once, until golden brown, 4 to 6 minutes. Let cool and transfer to a shallow bowl.</li>\\n<li>Place the flour in a second shallow bowl. Beat the egg whites with 1 tablespoon water in a third shallow bowl.</li>\\n<li>Season the pork with ½ teaspoon salt and ¼ teaspoon pepper. Coat with the flour (tapping off any excess), dip in the egg whites (shaking off any excess), then coat with the bread crumbs (pressing gently to help them adhere). Place on the prepared pan and bake until cooked through, 8 to 10 minutes.</li>\\n<li>Meanwhile, toss together the chickpeas, fennel, celery stalks and leaves, onion, lemon juice, the remaining 2 tablespoons of oil, ½ teaspoon salt, and ¼ teaspoon pepper in a medium bowl. Serve over the pork with the lemon wedges.</li>\\n</ol>\\n\\n<p>We hope you enjoy the food!</p>\\n\\n<p>\\n Regards, <br>\\n Smart Fridge\\n</p>\",\n    \"ingredients\": \"pork, egg, chickpeas, fennel, red onion, lemon\"\n  },\n  {\n    \"name\": \"Quick Spring Lamb and Vegetable Stew\",\n    \"description\": \"<p>We would like to recommend you below recipe based on the available ingredients in your fridge!</p>\\n\\n<h3>Quick Spring Lamb and Vegetable Stew</h3>\\n\\n<p>Hearty, satisfying, and warming, this lamb and vegetable stew is prepared in a single large pot. First, you’ll cut the lamb steaks into small pieces and brown the meat, then transfer it to a plate. Next, you’ll cook the carrots and onion, before adding a tablespoon of flour, which helps to thicken the brothy stew as it cooks. Simmer the remaining ingredients for about 10 minutes more, stir it all together, and you’re done. Since our recipe boasts carrots, green beans, and tomatoes, you won’t feel guilty about this all-in-one meal. On a chilly night, it’s the ideal simple supper.</p>\\n\\n<h3>Steps</h3>\\n\\n<ol>\\n<li>Heat 1 tablespoon of the oil in a large pot over medium-high heat. Season the lamb with 1/2 teaspoon each salt and pepper. Cook, turning occasionally, until medium-rare, 6 to 8 minutes; transfer to a plate.</li>\\n<li>Add the carrots, onion, and the remaining oil to the pot. Cook until beginning to soften, 3 to 4 minutes. Add the flour and cook for 1 minute. Add the wine and scrape up any brown bits.</li>\\n<li>Add the broth, tomatoes, and beans. Simmer until the vegetables are tender, 8 to 10 minutes. Stir in the lamb, parsley, 1/2 teaspoon salt, and 1/4 teaspoon pepper. Serve immediately.</li>\\n<li>To freeze: Cool the stew to room temperature and spoon into a freezer container or bag. Freeze for up to 3 months. To cook, thaw the stew in a bowl of cold water or overnight in the refrigerator. Transfer to a pot and cook, covered, stirring occasionally, until heated through, 10 to 20 minutes.</li>\\n</ol>\\n\\n<p>We hope you enjoy the food!</p>\\n\\n<p>\\n Regards, <br>\\n Smart Fridge\\n</p>\",\n    \"ingredients\": \"chicken, tomato, parsley, green beans, lamb, carrot\"\n  },\n  {\n    \"name\": \"Steak With Roasted Parsnips and Tomatoes\",\n    \"description\": \"<p>We would like to recommend you below recipe based on the available ingredients in your fridge!</p>\\n\\n<h3>Steak With Roasted Parsnips and Tomatoes</h3>\\n\\n<p>Simple enough to make for just two or four, but impressive enough to serve at a dinner party. This two-part meal appears, on its surface, to be much more involved than what the recipe actually requires. The vegetables, tossed with oil, herbs, salt, and pepper, roast in the oven at a high temperature, while you quickly sear the steaks over the stovetop. Serve the meat along your roasted vegetables, and add a green salad, if you’d like, for a delicious, protein-packed (and low-carb) supper. And the roasting trick works for any root vegetable; try it with potatoes, carrots, or beets for a twist.</p>\\n\\n<h3>Steps</h3>\\n\\n<ol>\\n<li>Heat oven to 450° F. Toss the parsnips, tomatoes, scallions, thyme, ¼ cup of the oil, and ¼ teaspoon each salt and pepper in a 9-by-13-inch baking dish.</li>\\n\\n<li>Cover the dish with foil and roast until the juices are bubbling, 15 to 20 minutes. Remove the foil and continue to roast until the parsnips are tender, 10 to 15 minutes more.</li>\\n\\n<li>Meanwhile, heat the remaining teaspoon of oil in a large skillet over medium-high heat. Season the steaks with ½ teaspoon each salt and pepper., Cook, in batches, until an instant-read thermometer inserted in the center of each piece registers 130° F, 2 to 3 minutes per side for medium-rare.</li>\\n\\n<li>Let the steaks rest for at least 5 minutes before slicing. Serve with the vegetables.</li>\\n</ol>\\n\\n<p>We hope you enjoy the food!</p>\\n\\n<p>\\n Regards, <br>\\n Smart Fridge\\n</p>\",\n    \"ingredients\": \"steak, thyme, scallion, cherry tomato, parsnip\"\n  }\n];\nreturn {payload: data};",
         "outputs": 1,
         "noerr": 0,
         "x": 270,
@@ -1300,10 +1210,10 @@
         "id": "39e300e3.168dd",
         "type": "http request",
         "z": "2f87e40d.7b5d7c",
-        "name": "receipe/deleteAll",
+        "name": "recipe/deleteAll",
         "method": "POST",
         "ret": "obj",
-        "url": "https://smart-fridge-ke.herokuapp.com/receipe/deleteAll",
+        "url": "https://smart-fridge-ke.herokuapp.com/recipe/deleteAll",
         "tls": "",
         "x": 290,
         "y": 180,
@@ -1431,7 +1341,7 @@
         "id": "3fe795ee.0b7d2a",
         "type": "comment",
         "z": "9f6f748.a950888",
-        "name": "Collection: Receipe",
+        "name": "Collection: recipe",
         "info": "",
         "x": 850,
         "y": 260,
@@ -1880,7 +1790,7 @@
         "type": "function",
         "z": "9d194143.c296d",
         "name": "construct email",
-        "func": "function getRandomInt(max) {\n  return Math.floor(Math.random() * Math.floor(max));\n}\n\nvar index = getRandomInt(msg.payload.length)\nmsg.topic = \"Recommended receipe for your day!\"\nmsg.from = \"Smart Fridge\"\nmsg.payload = \"<p>Dear customer,<p> \" + msg.payload[index].description\nreturn msg;",
+        "func": "function getRandomInt(max) {\n  return Math.floor(Math.random() * Math.floor(max));\n}\n\nvar index = getRandomInt(msg.payload.length)\nmsg.topic = \"Recommended recipe for your day!\"\nmsg.from = \"Smart Fridge\"\nmsg.payload = \"<p>Dear customer,<p> \" + msg.payload[index].description\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "x": 840,
@@ -1927,11 +1837,11 @@
         "id": "9af9dd56.5c2e4",
         "type": "function",
         "z": "9d194143.c296d",
-        "name": "no receipe",
+        "name": "no recipe",
         "func": "return {payload: \"No matches found.\"}",
         "outputs": 1,
         "noerr": 0,
-        "x": 830,
+        "x": 820,
         "y": 300,
         "wires": [
             [
@@ -1944,7 +1854,7 @@
         "type": "http in",
         "z": "9f6f748.a950888",
         "name": "",
-        "url": "receipe/recommend",
+        "url": "recipe/recommend",
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
@@ -1962,8 +1872,8 @@
         "z": "9f6f748.a950888",
         "service": "_ext_",
         "configNode": "53c335d9.8fbbdc",
-        "name": "find all receipes",
-        "collection": "receipe",
+        "name": "find all recipes",
+        "collection": "recipe",
         "operation": "find.toArray",
         "x": 1080,
         "y": 420,
@@ -1989,7 +1899,7 @@
         "type": "function",
         "z": "9f6f748.a950888",
         "name": "convert to array",
-        "func": "receipes = msg.payload\n\nfor (var i = 0; i < receipes.length; i++) {\n    receipes[i][\"ingredients_array\"] = receipes[i].ingredients.split(\",\").map(function (str) {\n      return str.trim().toLowerCase();\n    });\n}\n\nmsg.receipes = msg.payload;\nmsg.payload = {};\n\nreturn msg;",
+        "func": "recipes = msg.payload\n\nfor (var i = 0; i < recipes.length; i++) {\n    recipes[i][\"ingredients_array\"] = recipes[i].ingredients.split(\",\").map(function (str) {\n      return str.trim().toLowerCase();\n    });\n}\n\nmsg.recipes = msg.payload;\nmsg.payload = {};\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "x": 1280,
@@ -2022,7 +1932,7 @@
         "type": "function",
         "z": "9f6f748.a950888",
         "name": "find matches",
-        "func": "ingredients = msg.payload;\nreceipes = msg.receipes\n\nfor (var i = 0; i < ingredients.length; i++) {\n    for (var j = 0; j < receipes.length; j++) {\n        var item = ingredients[i].name.trim().toLowerCase();\n        var required_items = receipes[j][\"ingredients_array\"];\n        var index = required_items.indexOf(item);\n        if(index >= 0)\n            required_items = required_items.splice(index, 1);\n    }\n}\n\nrecommended_receipes = [];\nfor (var i = 0; i < receipes.length; i++) {\n    if(receipes[i][\"ingredients_array\"].length === 0){\n        delete receipes[i][\"ingredients_array\"]\n        recommended_receipes.push(receipes[i]);\n    }\n        \n}\n\nmsg.payload = recommended_receipes\ndelete msg[\"receipes\"]\n\nreturn msg;",
+        "func": "ingredients = msg.payload;\nrecipes = msg.recipes\n\nfor (var i = 0; i < ingredients.length; i++) {\n    for (var j = 0; j < recipes.length; j++) {\n        var item = ingredients[i].name.trim().toLowerCase();\n        var required_items = recipes[j][\"ingredients_array\"];\n        var index = required_items.indexOf(item);\n        if(index >= 0)\n            required_items = required_items.splice(index, 1);\n    }\n}\n\nrecommended_recipes = [];\nfor (var i = 0; i < recipes.length; i++) {\n    if(recipes[i][\"ingredients_array\"].length === 0){\n        delete recipes[i][\"ingredients_array\"]\n        recommended_recipes.push(recipes[i]);\n    }\n        \n}\n\nmsg.payload = recommended_recipes\ndelete msg[\"recipes\"]\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "x": 1270,
@@ -2037,12 +1947,12 @@
         "id": "f5ff552b.b38838",
         "type": "http request",
         "z": "9d194143.c296d",
-        "name": "Get recommended receipe",
+        "name": "Get recommended recipe",
         "method": "GET",
         "ret": "obj",
-        "url": "https://smart-fridge-ke.herokuapp.com/receipe/recommend",
+        "url": "https://smart-fridge-ke.herokuapp.com/recipe/recommend",
         "tls": "",
-        "x": 460,
+        "x": 450,
         "y": 280,
         "wires": [
             [

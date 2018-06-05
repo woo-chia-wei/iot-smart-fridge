@@ -1,27 +1,27 @@
 [
     {
-        "id": "dc65f90a.8ac5f8",
+        "id": "11f95ded.662fc2",
         "type": "tab",
         "label": "Dashboard",
         "disabled": false,
         "info": ""
     },
     {
-        "id": "4a623330.943f7c",
+        "id": "9d194143.c296d",
         "type": "tab",
         "label": "Notification",
         "disabled": false,
         "info": ""
     },
     {
-        "id": "101c2e45.e27f82",
+        "id": "9f6f748.a950888",
         "type": "tab",
         "label": "API",
         "disabled": false,
         "info": ""
     },
     {
-        "id": "fb56380d.4de328",
+        "id": "2f87e40d.7b5d7c",
         "type": "tab",
         "label": "Data Prep",
         "disabled": false,
@@ -256,9 +256,17 @@
         "collapse": false
     },
     {
-        "id": "5651b579.bb434c",
+        "id": "4c42d0b2.92e01",
+        "type": "twilio-api",
+        "z": "",
+        "name": "",
+        "sid": "AC2f8a4b91469042b184f2bfc102ac1dd7",
+        "from": "+12516629158"
+    },
+    {
+        "id": "93348030.e6933",
         "type": "inject",
-        "z": "dc65f90a.8ac5f8",
+        "z": "11f95ded.662fc2",
         "name": "Run every 5 seconds",
         "topic": "",
         "payload": "{}",
@@ -271,16 +279,16 @@
         "y": 140,
         "wires": [
             [
-                "b7537e47.ab498",
-                "ea1290ec.1ef82",
-                "a2eaf12a.6839e"
+                "1016b1ae.0ec87e",
+                "f6ec97a4.f026c8",
+                "cf86c45b.b0aa18"
             ]
         ]
     },
     {
-        "id": "c95cbb2a.4d5308",
+        "id": "17a5a7b.2b1fc58",
         "type": "comment",
-        "z": "4a623330.943f7c",
+        "z": "9d194143.c296d",
         "name": "Email to remind freshness (Daily)",
         "info": "",
         "x": 190,
@@ -288,19 +296,19 @@
         "wires": []
     },
     {
-        "id": "3631138e.5ec33c",
+        "id": "f84302ec.18c26",
         "type": "comment",
-        "z": "4a623330.943f7c",
-        "name": "Email to recommend receipe (Daily)",
+        "z": "9d194143.c296d",
+        "name": "Email to recommend recipe (Daily)",
         "info": "",
         "x": 200,
         "y": 200,
         "wires": []
     },
     {
-        "id": "cdf41f49.44f22",
+        "id": "5891f141.fc69c",
         "type": "ui_text",
-        "z": "dc65f90a.8ac5f8",
+        "z": "11f95ded.662fc2",
         "group": "4885b5d.c1b764c",
         "order": 1,
         "width": 0,
@@ -314,9 +322,9 @@
         "wires": []
     },
     {
-        "id": "b7537e47.ab498",
+        "id": "1016b1ae.0ec87e",
         "type": "http request",
-        "z": "dc65f90a.8ac5f8",
+        "z": "11f95ded.662fc2",
         "name": "Get sensor data count",
         "method": "GET",
         "ret": "obj",
@@ -326,14 +334,14 @@
         "y": 200,
         "wires": [
             [
-                "cdf41f49.44f22"
+                "5891f141.fc69c"
             ]
         ]
     },
     {
-        "id": "82e1b3b2.257cc",
+        "id": "127a2dd2.46c3e2",
         "type": "comment",
-        "z": "4a623330.943f7c",
+        "z": "9d194143.c296d",
         "name": "Email to warn abnormal readings (hourly)",
         "info": "",
         "x": 220,
@@ -341,9 +349,9 @@
         "wires": []
     },
     {
-        "id": "7b8dd77.6034028",
+        "id": "3b3bdfe.b857b2",
         "type": "inject",
-        "z": "4a623330.943f7c",
+        "z": "9d194143.c296d",
         "name": "Run",
         "topic": "",
         "payload": "",
@@ -356,14 +364,14 @@
         "y": 100,
         "wires": [
             [
-                "c52f19f8.2fba38"
+                "bac53852.6efc58"
             ]
         ]
     },
     {
-        "id": "e4959b33.725248",
+        "id": "29a1af8d.d63cb",
         "type": "inject",
-        "z": "4a623330.943f7c",
+        "z": "9d194143.c296d",
         "name": "Run everyday at 7am",
         "topic": "",
         "payload": "",
@@ -375,15 +383,13 @@
         "x": 180,
         "y": 140,
         "wires": [
-            [
-                "c52f19f8.2fba38"
-            ]
+            []
         ]
     },
     {
-        "id": "9bc7417f.b5c3d",
+        "id": "9999a91b.06d8b8",
         "type": "inject",
-        "z": "4a623330.943f7c",
+        "z": "9d194143.c296d",
         "name": "Run",
         "topic": "",
         "payload": "",
@@ -396,14 +402,14 @@
         "y": 260,
         "wires": [
             [
-                "6a8dc110.68f9f"
+                "f5ff552b.b38838"
             ]
         ]
     },
     {
-        "id": "f446c78b.389518",
+        "id": "3507137e.020e0c",
         "type": "inject",
-        "z": "4a623330.943f7c",
+        "z": "9d194143.c296d",
         "name": "Run",
         "topic": "",
         "payload": "",
@@ -416,14 +422,14 @@
         "y": 440,
         "wires": [
             [
-                "93301707.8e6b68"
+                "fd5d7682.e11368"
             ]
         ]
     },
     {
-        "id": "d0c452f4.5b18b",
+        "id": "5f99b56e.593fcc",
         "type": "inject",
-        "z": "4a623330.943f7c",
+        "z": "9d194143.c296d",
         "name": "Run every 1 hour",
         "topic": "",
         "payload": "",
@@ -435,15 +441,13 @@
         "x": 170,
         "y": 480,
         "wires": [
-            [
-                "93301707.8e6b68"
-            ]
+            []
         ]
     },
     {
-        "id": "c0d57aa7.ea2a78",
+        "id": "db80b1aa.48bc2",
         "type": "comment",
-        "z": "dc65f90a.8ac5f8",
+        "z": "11f95ded.662fc2",
         "name": "Production: Every 15 minutes",
         "info": "",
         "x": 140,
@@ -451,9 +455,9 @@
         "wires": []
     },
     {
-        "id": "ff3f72d3.8075f",
+        "id": "a0277c48.79994",
         "type": "comment",
-        "z": "dc65f90a.8ac5f8",
+        "z": "11f95ded.662fc2",
         "name": "Testing: Every 1 second",
         "info": "",
         "x": 120,
@@ -461,9 +465,9 @@
         "wires": []
     },
     {
-        "id": "edf7dca1.3721f",
+        "id": "b32f18a6.3f0668",
         "type": "http in",
-        "z": "101c2e45.e27f82",
+        "z": "9f6f748.a950888",
         "name": "",
         "url": "sensorData/all",
         "method": "get",
@@ -473,14 +477,14 @@
         "y": 120,
         "wires": [
             [
-                "cf68604d.2f023"
+                "7231e5c6.fabe8c"
             ]
         ]
     },
     {
-        "id": "cf68604d.2f023",
+        "id": "7231e5c6.fabe8c",
         "type": "mongodb2 in",
-        "z": "101c2e45.e27f82",
+        "z": "9f6f748.a950888",
         "service": "_ext_",
         "configNode": "53c335d9.8fbbdc",
         "name": "find all",
@@ -490,14 +494,14 @@
         "y": 120,
         "wires": [
             [
-                "a4010786.34e1f8"
+                "5cb1a910.9056f8"
             ]
         ]
     },
     {
-        "id": "a4010786.34e1f8",
+        "id": "5cb1a910.9056f8",
         "type": "http response",
-        "z": "101c2e45.e27f82",
+        "z": "9f6f748.a950888",
         "name": "Response",
         "statusCode": "",
         "headers": {},
@@ -506,9 +510,9 @@
         "wires": []
     },
     {
-        "id": "4e48530f.c56f8c",
+        "id": "d42f4f4e.0eb33",
         "type": "http in",
-        "z": "101c2e45.e27f82",
+        "z": "9f6f748.a950888",
         "name": "",
         "url": "sensorData/deleteAll",
         "method": "post",
@@ -518,14 +522,14 @@
         "y": 160,
         "wires": [
             [
-                "4f5cdcbb.76e674"
+                "a17655af.117308"
             ]
         ]
     },
     {
-        "id": "4f5cdcbb.76e674",
+        "id": "a17655af.117308",
         "type": "mongodb2 in",
-        "z": "101c2e45.e27f82",
+        "z": "9f6f748.a950888",
         "service": "_ext_",
         "configNode": "53c335d9.8fbbdc",
         "name": "delete all",
@@ -535,14 +539,14 @@
         "y": 160,
         "wires": [
             [
-                "712a9c1c.cb1004"
+                "f9c4cd36.d0664"
             ]
         ]
     },
     {
-        "id": "712a9c1c.cb1004",
+        "id": "f9c4cd36.d0664",
         "type": "http response",
-        "z": "101c2e45.e27f82",
+        "z": "9f6f748.a950888",
         "name": "Response",
         "statusCode": "",
         "headers": {},
@@ -551,9 +555,9 @@
         "wires": []
     },
     {
-        "id": "14520de2.d49b62",
+        "id": "72363fb5.5f977",
         "type": "http in",
-        "z": "101c2e45.e27f82",
+        "z": "9f6f748.a950888",
         "name": "",
         "url": "sensorData/add",
         "method": "post",
@@ -563,14 +567,14 @@
         "y": 200,
         "wires": [
             [
-                "6f587be.074ea84"
+                "1970eeb.8814911"
             ]
         ]
     },
     {
-        "id": "6f587be.074ea84",
+        "id": "1970eeb.8814911",
         "type": "mongodb2 in",
-        "z": "101c2e45.e27f82",
+        "z": "9f6f748.a950888",
         "service": "_ext_",
         "configNode": "53c335d9.8fbbdc",
         "name": "add",
@@ -580,14 +584,14 @@
         "y": 200,
         "wires": [
             [
-                "f1722ffe.fb06f"
+                "3a2c76b3.851e3a"
             ]
         ]
     },
     {
-        "id": "f1722ffe.fb06f",
+        "id": "3a2c76b3.851e3a",
         "type": "http response",
-        "z": "101c2e45.e27f82",
+        "z": "9f6f748.a950888",
         "name": "Response",
         "statusCode": "",
         "headers": {},
@@ -596,9 +600,9 @@
         "wires": []
     },
     {
-        "id": "e146c619.9344e8",
+        "id": "5feb9a55.e92144",
         "type": "http in",
-        "z": "101c2e45.e27f82",
+        "z": "9f6f748.a950888",
         "name": "",
         "url": "sensorData/addMany",
         "method": "post",
@@ -608,14 +612,14 @@
         "y": 240,
         "wires": [
             [
-                "be2e8674.83f4f8"
+                "7ff2cf55.709bd"
             ]
         ]
     },
     {
-        "id": "5b245936.723908",
+        "id": "4711813.0f8a88",
         "type": "mongodb2 in",
-        "z": "101c2e45.e27f82",
+        "z": "9f6f748.a950888",
         "service": "_ext_",
         "configNode": "53c335d9.8fbbdc",
         "name": "add many",
@@ -625,14 +629,14 @@
         "y": 240,
         "wires": [
             [
-                "bc94aef9.4faa4"
+                "e9d21dc4.60ef"
             ]
         ]
     },
     {
-        "id": "bc94aef9.4faa4",
+        "id": "e9d21dc4.60ef",
         "type": "http response",
-        "z": "101c2e45.e27f82",
+        "z": "9f6f748.a950888",
         "name": "Response",
         "statusCode": "",
         "headers": {},
@@ -641,9 +645,9 @@
         "wires": []
     },
     {
-        "id": "1ff29962.9c6667",
+        "id": "79857ca6.d73a34",
         "type": "http in",
-        "z": "101c2e45.e27f82",
+        "z": "9f6f748.a950888",
         "name": "",
         "url": "sensorData/count",
         "method": "get",
@@ -653,14 +657,14 @@
         "y": 80,
         "wires": [
             [
-                "f825c853.1db848"
+                "71309e3e.c6d53"
             ]
         ]
     },
     {
-        "id": "f825c853.1db848",
+        "id": "71309e3e.c6d53",
         "type": "mongodb2 in",
-        "z": "101c2e45.e27f82",
+        "z": "9f6f748.a950888",
         "service": "_ext_",
         "configNode": "53c335d9.8fbbdc",
         "name": "count",
@@ -670,14 +674,14 @@
         "y": 80,
         "wires": [
             [
-                "2d92957b.4df26a"
+                "2f2aa694.8608da"
             ]
         ]
     },
     {
-        "id": "2d92957b.4df26a",
+        "id": "2f2aa694.8608da",
         "type": "http response",
-        "z": "101c2e45.e27f82",
+        "z": "9f6f748.a950888",
         "name": "Response",
         "statusCode": "",
         "headers": {},
@@ -686,9 +690,9 @@
         "wires": []
     },
     {
-        "id": "97c3f2ca.92dff",
+        "id": "46ac552a.ae47ac",
         "type": "http in",
-        "z": "101c2e45.e27f82",
+        "z": "9f6f748.a950888",
         "name": "",
         "url": "ingredient/all",
         "method": "get",
@@ -698,14 +702,14 @@
         "y": 480,
         "wires": [
             [
-                "c489a339.9fc28"
+                "620b4c8e.c9a884"
             ]
         ]
     },
     {
-        "id": "c489a339.9fc28",
+        "id": "620b4c8e.c9a884",
         "type": "mongodb2 in",
-        "z": "101c2e45.e27f82",
+        "z": "9f6f748.a950888",
         "service": "_ext_",
         "configNode": "53c335d9.8fbbdc",
         "name": "find all",
@@ -715,14 +719,14 @@
         "y": 480,
         "wires": [
             [
-                "8070ce52.3b15a"
+                "9ec0a4f5.ac6128"
             ]
         ]
     },
     {
-        "id": "8070ce52.3b15a",
+        "id": "9ec0a4f5.ac6128",
         "type": "http response",
-        "z": "101c2e45.e27f82",
+        "z": "9f6f748.a950888",
         "name": "Response",
         "statusCode": "",
         "headers": {},
@@ -731,9 +735,9 @@
         "wires": []
     },
     {
-        "id": "bcef5bf5.931c38",
+        "id": "a93c9cb2.be3cf",
         "type": "http in",
-        "z": "101c2e45.e27f82",
+        "z": "9f6f748.a950888",
         "name": "",
         "url": "ingredient/deleteAll",
         "method": "post",
@@ -743,14 +747,14 @@
         "y": 520,
         "wires": [
             [
-                "50aa86d9.9d3608"
+                "743fbef.f12f94"
             ]
         ]
     },
     {
-        "id": "50aa86d9.9d3608",
+        "id": "743fbef.f12f94",
         "type": "mongodb2 in",
-        "z": "101c2e45.e27f82",
+        "z": "9f6f748.a950888",
         "service": "_ext_",
         "configNode": "53c335d9.8fbbdc",
         "name": "delete all",
@@ -760,14 +764,14 @@
         "y": 520,
         "wires": [
             [
-                "4636b14f.8af03"
+                "471c2b7.797a7d4"
             ]
         ]
     },
     {
-        "id": "4636b14f.8af03",
+        "id": "471c2b7.797a7d4",
         "type": "http response",
-        "z": "101c2e45.e27f82",
+        "z": "9f6f748.a950888",
         "name": "Response",
         "statusCode": "",
         "headers": {},
@@ -776,9 +780,9 @@
         "wires": []
     },
     {
-        "id": "137ae8c1.85d1e7",
+        "id": "ad2322a1.c0481",
         "type": "http in",
-        "z": "101c2e45.e27f82",
+        "z": "9f6f748.a950888",
         "name": "",
         "url": "ingredient/add",
         "method": "post",
@@ -788,14 +792,14 @@
         "y": 680,
         "wires": [
             [
-                "a70c6799.207878"
+                "dee5151f.cc8b58"
             ]
         ]
     },
     {
-        "id": "6f0226c2.7fad28",
+        "id": "56cc912b.4e526",
         "type": "mongodb2 in",
-        "z": "101c2e45.e27f82",
+        "z": "9f6f748.a950888",
         "service": "_ext_",
         "configNode": "53c335d9.8fbbdc",
         "name": "add",
@@ -805,14 +809,14 @@
         "y": 720,
         "wires": [
             [
-                "45cf00da.85215"
+                "d8b0b4dc.b19a68"
             ]
         ]
     },
     {
-        "id": "45cf00da.85215",
+        "id": "d8b0b4dc.b19a68",
         "type": "http response",
-        "z": "101c2e45.e27f82",
+        "z": "9f6f748.a950888",
         "name": "Response",
         "statusCode": "",
         "headers": {},
@@ -821,9 +825,9 @@
         "wires": []
     },
     {
-        "id": "7b8215c6.18002c",
+        "id": "a0128ab9.98c378",
         "type": "http in",
-        "z": "101c2e45.e27f82",
+        "z": "9f6f748.a950888",
         "name": "",
         "url": "ingredient/delete",
         "method": "post",
@@ -833,14 +837,14 @@
         "y": 560,
         "wires": [
             [
-                "5a5467a9.3e30a8"
+                "e79e3637.c3d348"
             ]
         ]
     },
     {
-        "id": "5a5467a9.3e30a8",
+        "id": "e79e3637.c3d348",
         "type": "mongodb2 in",
-        "z": "101c2e45.e27f82",
+        "z": "9f6f748.a950888",
         "service": "_ext_",
         "configNode": "53c335d9.8fbbdc",
         "name": "delete",
@@ -850,14 +854,14 @@
         "y": 560,
         "wires": [
             [
-                "b2c1c6c4.98b158"
+                "edda22c5.7a2a8"
             ]
         ]
     },
     {
-        "id": "b2c1c6c4.98b158",
+        "id": "edda22c5.7a2a8",
         "type": "http response",
-        "z": "101c2e45.e27f82",
+        "z": "9f6f748.a950888",
         "name": "Response",
         "statusCode": "",
         "headers": {},
@@ -866,9 +870,9 @@
         "wires": []
     },
     {
-        "id": "aa6e1d6f.32da3",
+        "id": "a484cec1.a0e62",
         "type": "http in",
-        "z": "101c2e45.e27f82",
+        "z": "9f6f748.a950888",
         "name": "",
         "url": "storage/deleteAll",
         "method": "post",
@@ -878,14 +882,14 @@
         "y": 120,
         "wires": [
             [
-                "cc119855.27b868"
+                "1818e2c6.85cbed"
             ]
         ]
     },
     {
-        "id": "cc119855.27b868",
+        "id": "1818e2c6.85cbed",
         "type": "mongodb2 in",
-        "z": "101c2e45.e27f82",
+        "z": "9f6f748.a950888",
         "service": "_ext_",
         "configNode": "53c335d9.8fbbdc",
         "name": "delete all",
@@ -895,14 +899,14 @@
         "y": 120,
         "wires": [
             [
-                "7430d9d6.b68e08"
+                "b7cc6982.2d5718"
             ]
         ]
     },
     {
-        "id": "7430d9d6.b68e08",
+        "id": "b7cc6982.2d5718",
         "type": "http response",
-        "z": "101c2e45.e27f82",
+        "z": "9f6f748.a950888",
         "name": "Response",
         "statusCode": "",
         "headers": {},
@@ -911,9 +915,9 @@
         "wires": []
     },
     {
-        "id": "1a6d4b39.53cf05",
+        "id": "bbebc142.ef728",
         "type": "http in",
-        "z": "101c2e45.e27f82",
+        "z": "9f6f748.a950888",
         "name": "",
         "url": "storage/all",
         "method": "get",
@@ -923,14 +927,14 @@
         "y": 80,
         "wires": [
             [
-                "e9cf177a.5a85f8"
+                "ab82dcc0.0810f"
             ]
         ]
     },
     {
-        "id": "e9cf177a.5a85f8",
+        "id": "ab82dcc0.0810f",
         "type": "mongodb2 in",
-        "z": "101c2e45.e27f82",
+        "z": "9f6f748.a950888",
         "service": "_ext_",
         "configNode": "53c335d9.8fbbdc",
         "name": "find all",
@@ -940,14 +944,14 @@
         "y": 80,
         "wires": [
             [
-                "ada767c.b185498"
+                "475af499.174cbc"
             ]
         ]
     },
     {
-        "id": "ada767c.b185498",
+        "id": "475af499.174cbc",
         "type": "http response",
-        "z": "101c2e45.e27f82",
+        "z": "9f6f748.a950888",
         "name": "Response",
         "statusCode": "",
         "headers": {},
@@ -956,9 +960,9 @@
         "wires": []
     },
     {
-        "id": "60f1a57e.8ce6cc",
+        "id": "de105078.7b57d",
         "type": "http in",
-        "z": "101c2e45.e27f82",
+        "z": "9f6f748.a950888",
         "name": "",
         "url": "storage/addMany",
         "method": "post",
@@ -968,14 +972,14 @@
         "y": 160,
         "wires": [
             [
-                "56acec83.b668b4"
+                "319ecb8b.a4d714"
             ]
         ]
     },
     {
-        "id": "d5bc7f00.7ab94",
+        "id": "4c282365.8f3aec",
         "type": "mongodb2 in",
-        "z": "101c2e45.e27f82",
+        "z": "9f6f748.a950888",
         "service": "_ext_",
         "configNode": "53c335d9.8fbbdc",
         "name": "add many",
@@ -985,14 +989,14 @@
         "y": 160,
         "wires": [
             [
-                "c13adcdd.9afc6"
+                "2422efa5.43ec5"
             ]
         ]
     },
     {
-        "id": "c13adcdd.9afc6",
+        "id": "2422efa5.43ec5",
         "type": "http response",
-        "z": "101c2e45.e27f82",
+        "z": "9f6f748.a950888",
         "name": "Response",
         "statusCode": "",
         "headers": {},
@@ -1001,11 +1005,11 @@
         "wires": []
     },
     {
-        "id": "575af0d0.e1368",
+        "id": "52d93a90.1b3be4",
         "type": "http in",
-        "z": "101c2e45.e27f82",
+        "z": "9f6f748.a950888",
         "name": "",
-        "url": "receipe/deleteAll",
+        "url": "recipe/deleteAll",
         "method": "post",
         "upload": false,
         "swaggerDoc": "",
@@ -1013,31 +1017,31 @@
         "y": 340,
         "wires": [
             [
-                "d0d9398a.9f8ec8"
+                "b37b20b.aae4fe"
             ]
         ]
     },
     {
-        "id": "d0d9398a.9f8ec8",
+        "id": "b37b20b.aae4fe",
         "type": "mongodb2 in",
-        "z": "101c2e45.e27f82",
+        "z": "9f6f748.a950888",
         "service": "_ext_",
         "configNode": "53c335d9.8fbbdc",
         "name": "delete all",
-        "collection": "receipe",
+        "collection": "recipe",
         "operation": "drop",
         "x": 1040,
         "y": 340,
         "wires": [
             [
-                "34ffc181.26259e"
+                "d1fdf9b0.b77168"
             ]
         ]
     },
     {
-        "id": "34ffc181.26259e",
+        "id": "d1fdf9b0.b77168",
         "type": "http response",
-        "z": "101c2e45.e27f82",
+        "z": "9f6f748.a950888",
         "name": "Response",
         "statusCode": "",
         "headers": {},
@@ -1046,11 +1050,11 @@
         "wires": []
     },
     {
-        "id": "fad6182c.7db828",
+        "id": "979bb4a7.b3da08",
         "type": "http in",
-        "z": "101c2e45.e27f82",
+        "z": "9f6f748.a950888",
         "name": "",
-        "url": "receipe/all",
+        "url": "recipe/all",
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
@@ -1058,31 +1062,31 @@
         "y": 300,
         "wires": [
             [
-                "62a038c6.e072b8"
+                "d47f1259.5f065"
             ]
         ]
     },
     {
-        "id": "62a038c6.e072b8",
+        "id": "d47f1259.5f065",
         "type": "mongodb2 in",
-        "z": "101c2e45.e27f82",
+        "z": "9f6f748.a950888",
         "service": "_ext_",
         "configNode": "53c335d9.8fbbdc",
         "name": "find all",
-        "collection": "receipe",
+        "collection": "recipe",
         "operation": "find.toArray",
         "x": 1030,
         "y": 300,
         "wires": [
             [
-                "55cb4665.9f6308"
+                "c811d84b.526d08"
             ]
         ]
     },
     {
-        "id": "55cb4665.9f6308",
+        "id": "c811d84b.526d08",
         "type": "http response",
-        "z": "101c2e45.e27f82",
+        "z": "9f6f748.a950888",
         "name": "Response",
         "statusCode": "",
         "headers": {},
@@ -1091,11 +1095,11 @@
         "wires": []
     },
     {
-        "id": "72eb8afa.8a7a84",
+        "id": "377c497f.9db846",
         "type": "http in",
-        "z": "101c2e45.e27f82",
+        "z": "9f6f748.a950888",
         "name": "",
-        "url": "receipe/addMany",
+        "url": "recipe/addMany",
         "method": "post",
         "upload": false,
         "swaggerDoc": "",
@@ -1103,31 +1107,31 @@
         "y": 380,
         "wires": [
             [
-                "d74ee3bb.9b1c2"
+                "e9d77296.98355"
             ]
         ]
     },
     {
-        "id": "3e21ce3f.ad8e92",
+        "id": "8c8b6cc1.e35c1",
         "type": "mongodb2 in",
-        "z": "101c2e45.e27f82",
+        "z": "9f6f748.a950888",
         "service": "_ext_",
         "configNode": "53c335d9.8fbbdc",
         "name": "add many",
-        "collection": "receipe",
+        "collection": "recipe",
         "operation": "insertMany",
         "x": 1180,
         "y": 380,
         "wires": [
             [
-                "f29b2e59.9abe2"
+                "d805f902.7161c8"
             ]
         ]
     },
     {
-        "id": "f29b2e59.9abe2",
+        "id": "d805f902.7161c8",
         "type": "http response",
-        "z": "101c2e45.e27f82",
+        "z": "9f6f748.a950888",
         "name": "Response",
         "statusCode": "",
         "headers": {},
@@ -1136,9 +1140,9 @@
         "wires": []
     },
     {
-        "id": "cbd6721e.2b895",
+        "id": "7f1b0058.c1908",
         "type": "debug",
-        "z": "fb56380d.4de328",
+        "z": "2f87e40d.7b5d7c",
         "name": "print",
         "active": true,
         "tosidebar": true,
@@ -1150,9 +1154,9 @@
         "wires": []
     },
     {
-        "id": "fd4811c5.1da59",
+        "id": "79a3f3d.4b7250c",
         "type": "http request",
-        "z": "fb56380d.4de328",
+        "z": "2f87e40d.7b5d7c",
         "name": "storage/addMany",
         "method": "POST",
         "ret": "obj",
@@ -1162,14 +1166,14 @@
         "y": 120,
         "wires": [
             [
-                "cbd6721e.2b895"
+                "7f1b0058.c1908"
             ]
         ]
     },
     {
-        "id": "6e26917b.d91d8",
+        "id": "8be9f00e.9ff55",
         "type": "function",
-        "z": "fb56380d.4de328",
+        "z": "2f87e40d.7b5d7c",
         "name": "demo data",
         "func": "var data = [\n  {\n    \"qrcode\": \"d0949188-d028-4429-83c4-8ed1a78ae3f8\",\n    \"name\": \"salmon\",\n    \"expiry_date\": 1527465600000\n  },\n  {\n    \"qrcode\": \"20e541f5-60a7-41f6-8b77-364a6d7261b4\",\n    \"name\": \"bok choy\",\n    \"expiry_date\": 1527465600000\n  },\n  {\n    \"qrcode\": \"d67083a0-3d9d-49ed-b6b8-7d5a90eaa5f9\",\n    \"name\": \"beef\",\n    \"expiry_date\": 1527465600000\n  },\n  {\n    \"qrcode\": \"b118e58c-ca30-4566-a227-e8824c92647f\",\n    \"name\": \"onion\",\n    \"expiry_date\": 1527465600000\n  },\n  {\n    \"qrcode\": \"0b7d931d-024e-4b5f-8e2c-9ceb2805c785\",\n    \"name\": \"bell pepper\",\n    \"expiry_date\": 1527465600000\n  },\n  {\n    \"qrcode\": \"96e10865-263e-4e23-8518-88ef0f1581eb\",\n    \"name\": \"carrot\",\n    \"expiry_date\": 1527465600000\n  },\n  {\n    \"qrcode\": \"bae26b53-40b5-4942-accf-96b29edd9c4f\",\n    \"name\": \"corn\",\n    \"expiry_date\": 1527465600000\n  },\n  {\n    \"qrcode\": \"a3fb13b5-8774-4180-bf29-6de2d28ab2c3\",\n    \"name\": \"pork\",\n    \"expiry_date\": 1527465600000\n  },\n  {\n    \"qrcode\": \"b6ec00a7-97de-4d97-b017-aca2a11e0197\",\n    \"name\": \"egg\",\n    \"expiry_date\": 1527465600000\n  },\n  {\n    \"qrcode\": \"ab04218d-194a-43be-8258-89e3e16e934a\",\n    \"name\": \"chickpea\",\n    \"expiry_date\": 1527465600000\n  },\n  {\n    \"qrcode\": \"a57aeb56-2892-45b2-a069-2ffc50be4a41\",\n    \"name\": \"fennel\",\n    \"expiry_date\": 1527465600000\n  },\n  {\n    \"qrcode\": \"2240e559-df9a-4438-9e0d-42fd807b120e\",\n    \"name\": \"red onion\",\n    \"expiry_date\": 1527465600000\n  },\n  {\n    \"qrcode\": \"67acab44-6773-436a-8786-c0bb67511928\",\n    \"name\": \"lemon\",\n    \"expiry_date\": 1527465600000\n  },\n  {\n    \"qrcode\": \"074dfd8d-ec38-4d7d-b6c7-5fb48b485bc6\",\n    \"name\": \"chicken\",\n    \"expiry_date\": 1527465600000\n  },\n  {\n    \"qrcode\": \"4de20c38-8a46-4e28-b932-a324005687d2\",\n    \"name\": \"tomato\",\n    \"expiry_date\": 1527465600000\n  },\n  {\n    \"qrcode\": \"e09b4091-5fb3-47da-8639-088a9252ded6\",\n    \"name\": \"parsley\",\n    \"expiry_date\": 1527465600000\n  },\n  {\n    \"qrcode\": \"30b15831-d276-4a16-8eed-d90820b93a55\",\n    \"name\": \"green bean\",\n    \"expiry_date\": 1527465600000\n  },\n  {\n    \"qrcode\": \"b9ac3d95-3c01-45b8-8540-5776ea2d085e\",\n    \"name\": \"lamb\",\n    \"expiry_date\": 1527465600000\n  },\n  {\n    \"qrcode\": \"cd47daed-4b8e-4694-a5e2-6a33bcdc7f24\",\n    \"name\": \"steak\",\n    \"expiry_date\": 1527465600000\n  },\n  {\n    \"qrcode\": \"146181c7-dd8b-43d6-a67f-be0c299809ce\",\n    \"name\": \"thyme\",\n    \"expiry_date\": 1527465600000\n  },\n  {\n    \"qrcode\": \"13e5b47e-8ee5-4379-a366-670736b4e97e\",\n    \"name\": \"scallion\",\n    \"expiry_date\": 1527465600000\n  },\n  {\n    \"qrcode\": \"8ede991c-aefa-486b-bbd1-9f1580c66f82\",\n    \"name\": \"cherry tomato\",\n    \"expiry_date\": 1527465600000\n  },\n  {\n    \"qrcode\": \"a2cc9804-b1a6-47a8-80cf-76ddb75225fc\",\n    \"name\": \"parsnip\",\n    \"expiry_date\": 1527465600000\n  }\n];\n\nreturn {payload: data};",
         "outputs": 1,
@@ -1178,14 +1182,14 @@
         "y": 80,
         "wires": [
             [
-                "fd4811c5.1da59"
+                "79a3f3d.4b7250c"
             ]
         ]
     },
     {
-        "id": "f58986e9.1e9d08",
+        "id": "7fe22610.1e8638",
         "type": "inject",
-        "z": "fb56380d.4de328",
+        "z": "2f87e40d.7b5d7c",
         "name": "Run",
         "topic": "",
         "payload": "{\"payload\":{\"barcode\":\"12345y\"}}",
@@ -1198,14 +1202,14 @@
         "y": 80,
         "wires": [
             [
-                "6e26917b.d91d8"
+                "8be9f00e.9ff55"
             ]
         ]
     },
     {
-        "id": "480aa67b.6814c8",
+        "id": "2d69899a.eb7256",
         "type": "http request",
-        "z": "fb56380d.4de328",
+        "z": "2f87e40d.7b5d7c",
         "name": "storage/deleteAll",
         "method": "POST",
         "ret": "obj",
@@ -1215,14 +1219,14 @@
         "y": 40,
         "wires": [
             [
-                "cbd6721e.2b895"
+                "7f1b0058.c1908"
             ]
         ]
     },
     {
-        "id": "9f2b6b5b.c679e8",
+        "id": "e502c572.cf2868",
         "type": "inject",
-        "z": "fb56380d.4de328",
+        "z": "2f87e40d.7b5d7c",
         "name": "Run",
         "topic": "",
         "payload": "{\"payload\":{\"barcode\":\"12345y\"}}",
@@ -1235,47 +1239,47 @@
         "y": 40,
         "wires": [
             [
-                "480aa67b.6814c8"
+                "2d69899a.eb7256"
             ]
         ]
     },
     {
-        "id": "97c44684.00a1b8",
+        "id": "f1f89c91.d615f",
         "type": "http request",
-        "z": "fb56380d.4de328",
-        "name": "receipe/addMany",
+        "z": "2f87e40d.7b5d7c",
+        "name": "recipe/addMany",
         "method": "POST",
         "ret": "obj",
-        "url": "https://smart-fridge-ke.herokuapp.com/receipe/addMany",
+        "url": "https://smart-fridge-ke.herokuapp.com/recipe/addMany",
         "tls": "",
         "x": 290,
         "y": 260,
         "wires": [
             [
-                "cbd6721e.2b895"
+                "7f1b0058.c1908"
             ]
         ]
     },
     {
-        "id": "fca1da17.6f4288",
+        "id": "51445582.0ed1fc",
         "type": "function",
-        "z": "fb56380d.4de328",
+        "z": "2f87e40d.7b5d7c",
         "name": "demo data",
-        "func": "var data = [\n  {\n    \"name\": \"Spicy Salmon With Bok Choy and Rice\",\n    \"description\": \"<p>We would like to recommend you below receipe based on the available ingredients in your fridge!</p>\\n\\n<h3>Spicy Salmon With Bok Choy and Rice</h3>\\n\\n<p>As satisfying as take-out, but much healthier—and ready in 20 minutes. Our recipe for Spicy Salmon with Bok Choy and Rice couldn’t be easier. Versatile salmon fillets, the most commonly used cut of the fish, cook quickly in the oven. While you boil the rice, whip up a quick glaze for the salmon before throwing it under the broiler for a few minutes. Look for baby bok choy in specialty Asian markets if your grocery store doesn’t carry the vegetable. Our perfectly cooked fish, basted in a sweet-and-spicy honey-chile sauce, proves the ideal complement to steamed bok choy and long-grain rice.</p>\\n\\n<h3>Steps</h3>\\n\\n<ol>\\n <li>Cook the rice according to the package directions.</li>\\n <li>Meanwhile, combine the honey, soy sauce, and red pepper. On a foil-lined rimmed baking sheet, broil the salmon fillets until opaque throughout, 8 to 10 minutes, basting with the honey mixture during the last 3 minutes.</li>\\n <li>Steam baby bok choy (cut into quarters) until tender, 8 to 10 minutes. Serve with the salmon and rice.</li>\\n</ol>\\n\\n<p>We hope you enjoy the food!</p>\\n\\n<p>\\n Regards, <br>\\n Smart Fridge\\n</p>\",\n    \"ingredients\": \"salmon, bok choy\"\n  },\n  {\n    \"name\": \"Southwestern Beef Chili With Corn\",\n    \"description\": \"<p>We would like to recommend you below receipe based on the available ingredients in your fridge!</p>\\n\\n<h3>Southwestern Beef Chili With Corn</h3>\\n\\n<p>Packed with flavor but not too spicy, this chili gets its southwestern flare from poblano peppers and chili powder. After cooking a base of onion, carrots, and peppers, you’ll brown the meat and stir in beans, tomato paste, and more. Serve the chili on its own, with hot sauce at the table, or with tortilla chips or a dollop of sour cream. Another plus: Our Southwestern Beef Chili with Corn freezes well. Double or even triple the recipe when you cook, then freeze the extra servings in separate containers to thaw and enjoy later in the season; on a cold, busy night, your future self will thank you.</p>\\n\\n<h3>Steps</h3>\\n\\n<ol>\\n  <li>Heat the oil in a large saucepan over medium-high heat. Add the carrots, onion, and poblano and cook, stirring, for 3 minutes.</li>\\n <li>Add the beef and cook, breaking it up with a spoon, until no longer pink, 3 to 5 minutes.</li>\\n <li>Add the tomato paste and cook, stirring, until it is slightly darkened, 1 minute.</li>\\n <li>Stir in the beans, chili powder, 3 cups water, ½ teaspoon salt, and ¼ teaspoon pepper.</li>\\n <li>Simmer over medium heat until the vegetables are tender, 8 to 10 minutes. Stir in the corn.</li>\\n <li>Divide the chili among bowls and top with the Cheddar and scallions.</li>\\n</ol>\\n\\n<p>We hope you enjoy the food!</p>\\n\\n<p>\\n Regards, <br>\\n Smart Fridge\\n</p>\",\n    \"ingredients\": \"beef, onion, bell pepper, carrot, corn\"\n  },\n  {\n    \"name\": \"Crispy Pork Cutlets With Fennel-Chickpea Slaw\",\n    \"description\": \"<p>We would like to recommend you below receipe based on the available ingredients in your fridge!</p>\\n\\n<h3>Crispy Pork Cutlets With Fennel-Chickpea Slaw</h3>\\n\\n<p>Don’t let the five-step procedure or the somewhat lengthy ingredient list fool you. Our Crispy Pork Cutlets With Fennel-Chickpea Slaw really do come together in half an hour. And, better yet, they don’t fall back on store-bought short cuts. With just a food processor and some sliced bread, you can make homemade bread crumbs, which will create the crunchy exterior for your “oven-fried” pork. If you can’t locate pork cutlets, place pork steaks on a cutting board. Hold the piece of meat flat with the palm of your hand and carefully slice it in half horizontally. Use a meat tenderizer to flatten the cutlets further, if desired.</p>\\n\\n<h3>Steps</h3>\\n\\n<ol>\\n <li>Heat oven to 425° F. Place an oven-proof wire rack set in a baking sheet. Pulse the bread until fine crumbs form in a food processor (you should have about 2½ cups). Add 1 tablespoon of the oil, ½ teaspoon salt, and ¼ teaspoon pepper and pulse once or twice to moisten.</li>\\n<li>Spread the bread crumbs on a rimmed baking sheet and bake, tossing once, until golden brown, 4 to 6 minutes. Let cool and transfer to a shallow bowl.</li>\\n<li>Place the flour in a second shallow bowl. Beat the egg whites with 1 tablespoon water in a third shallow bowl.</li>\\n<li>Season the pork with ½ teaspoon salt and ¼ teaspoon pepper. Coat with the flour (tapping off any excess), dip in the egg whites (shaking off any excess), then coat with the bread crumbs (pressing gently to help them adhere). Place on the prepared pan and bake until cooked through, 8 to 10 minutes.</li>\\n<li>Meanwhile, toss together the chickpeas, fennel, celery stalks and leaves, onion, lemon juice, the remaining 2 tablespoons of oil, ½ teaspoon salt, and ¼ teaspoon pepper in a medium bowl. Serve over the pork with the lemon wedges.</li>\\n</ol>\\n\\n<p>We hope you enjoy the food!</p>\\n\\n<p>\\n Regards, <br>\\n Smart Fridge\\n</p>\",\n    \"ingredients\": \"pork, egg, chickpeas, fennel, red onion, lemon\"\n  },\n  {\n    \"name\": \"Quick Spring Lamb and Vegetable Stew\",\n    \"description\": \"<p>We would like to recommend you below receipe based on the available ingredients in your fridge!</p>\\n\\n<h3>Quick Spring Lamb and Vegetable Stew</h3>\\n\\n<p>Hearty, satisfying, and warming, this lamb and vegetable stew is prepared in a single large pot. First, you’ll cut the lamb steaks into small pieces and brown the meat, then transfer it to a plate. Next, you’ll cook the carrots and onion, before adding a tablespoon of flour, which helps to thicken the brothy stew as it cooks. Simmer the remaining ingredients for about 10 minutes more, stir it all together, and you’re done. Since our recipe boasts carrots, green beans, and tomatoes, you won’t feel guilty about this all-in-one meal. On a chilly night, it’s the ideal simple supper.</p>\\n\\n<h3>Steps</h3>\\n\\n<ol>\\n<li>Heat 1 tablespoon of the oil in a large pot over medium-high heat. Season the lamb with 1/2 teaspoon each salt and pepper. Cook, turning occasionally, until medium-rare, 6 to 8 minutes; transfer to a plate.</li>\\n<li>Add the carrots, onion, and the remaining oil to the pot. Cook until beginning to soften, 3 to 4 minutes. Add the flour and cook for 1 minute. Add the wine and scrape up any brown bits.</li>\\n<li>Add the broth, tomatoes, and beans. Simmer until the vegetables are tender, 8 to 10 minutes. Stir in the lamb, parsley, 1/2 teaspoon salt, and 1/4 teaspoon pepper. Serve immediately.</li>\\n<li>To freeze: Cool the stew to room temperature and spoon into a freezer container or bag. Freeze for up to 3 months. To cook, thaw the stew in a bowl of cold water or overnight in the refrigerator. Transfer to a pot and cook, covered, stirring occasionally, until heated through, 10 to 20 minutes.</li>\\n</ol>\\n\\n<p>We hope you enjoy the food!</p>\\n\\n<p>\\n Regards, <br>\\n Smart Fridge\\n</p>\",\n    \"ingredients\": \"chicken, tomato, parsley, green beans, lamb, carrot\"\n  },\n  {\n    \"name\": \"Steak With Roasted Parsnips and Tomatoes\",\n    \"description\": \"<p>We would like to recommend you below receipe based on the available ingredients in your fridge!</p>\\n\\n<h3>Steak With Roasted Parsnips and Tomatoes</h3>\\n\\n<p>Simple enough to make for just two or four, but impressive enough to serve at a dinner party. This two-part meal appears, on its surface, to be much more involved than what the recipe actually requires. The vegetables, tossed with oil, herbs, salt, and pepper, roast in the oven at a high temperature, while you quickly sear the steaks over the stovetop. Serve the meat along your roasted vegetables, and add a green salad, if you’d like, for a delicious, protein-packed (and low-carb) supper. And the roasting trick works for any root vegetable; try it with potatoes, carrots, or beets for a twist.</p>\\n\\n<h3>Steps</h3>\\n\\n<ol>\\n<li>Heat oven to 450° F. Toss the parsnips, tomatoes, scallions, thyme, ¼ cup of the oil, and ¼ teaspoon each salt and pepper in a 9-by-13-inch baking dish.</li>\\n\\n<li>Cover the dish with foil and roast until the juices are bubbling, 15 to 20 minutes. Remove the foil and continue to roast until the parsnips are tender, 10 to 15 minutes more.</li>\\n\\n<li>Meanwhile, heat the remaining teaspoon of oil in a large skillet over medium-high heat. Season the steaks with ½ teaspoon each salt and pepper., Cook, in batches, until an instant-read thermometer inserted in the center of each piece registers 130° F, 2 to 3 minutes per side for medium-rare.</li>\\n\\n<li>Let the steaks rest for at least 5 minutes before slicing. Serve with the vegetables.</li>\\n</ol>\\n\\n<p>We hope you enjoy the food!</p>\\n\\n<p>\\n Regards, <br>\\n Smart Fridge\\n</p>\",\n    \"ingredients\": \"steak, thyme, scallion, cherry tomato, parsnip\"\n  }\n];\nreturn {payload: data};",
+        "func": "var data = [\n  {\n    \"name\": \"Spicy Salmon With Bok Choy and Rice\",\n    \"description\": \"<p>We would like to recommend you below recipe based on the available ingredients in your fridge!</p>\\n\\n<h3>Spicy Salmon With Bok Choy and Rice</h3>\\n\\n<p>As satisfying as take-out, but much healthier—and ready in 20 minutes. Our recipe for Spicy Salmon with Bok Choy and Rice couldn’t be easier. Versatile salmon fillets, the most commonly used cut of the fish, cook quickly in the oven. While you boil the rice, whip up a quick glaze for the salmon before throwing it under the broiler for a few minutes. Look for baby bok choy in specialty Asian markets if your grocery store doesn’t carry the vegetable. Our perfectly cooked fish, basted in a sweet-and-spicy honey-chile sauce, proves the ideal complement to steamed bok choy and long-grain rice.</p>\\n\\n<h3>Steps</h3>\\n\\n<ol>\\n <li>Cook the rice according to the package directions.</li>\\n <li>Meanwhile, combine the honey, soy sauce, and red pepper. On a foil-lined rimmed baking sheet, broil the salmon fillets until opaque throughout, 8 to 10 minutes, basting with the honey mixture during the last 3 minutes.</li>\\n <li>Steam baby bok choy (cut into quarters) until tender, 8 to 10 minutes. Serve with the salmon and rice.</li>\\n</ol>\\n\\n<p>We hope you enjoy the food!</p>\\n\\n<p>\\n Regards, <br>\\n Smart Fridge\\n</p>\",\n    \"ingredients\": \"salmon, bok choy\"\n  },\n  {\n    \"name\": \"Southwestern Beef Chili With Corn\",\n    \"description\": \"<p>We would like to recommend you below recipe based on the available ingredients in your fridge!</p>\\n\\n<h3>Southwestern Beef Chili With Corn</h3>\\n\\n<p>Packed with flavor but not too spicy, this chili gets its southwestern flare from poblano peppers and chili powder. After cooking a base of onion, carrots, and peppers, you’ll brown the meat and stir in beans, tomato paste, and more. Serve the chili on its own, with hot sauce at the table, or with tortilla chips or a dollop of sour cream. Another plus: Our Southwestern Beef Chili with Corn freezes well. Double or even triple the recipe when you cook, then freeze the extra servings in separate containers to thaw and enjoy later in the season; on a cold, busy night, your future self will thank you.</p>\\n\\n<h3>Steps</h3>\\n\\n<ol>\\n  <li>Heat the oil in a large saucepan over medium-high heat. Add the carrots, onion, and poblano and cook, stirring, for 3 minutes.</li>\\n <li>Add the beef and cook, breaking it up with a spoon, until no longer pink, 3 to 5 minutes.</li>\\n <li>Add the tomato paste and cook, stirring, until it is slightly darkened, 1 minute.</li>\\n <li>Stir in the beans, chili powder, 3 cups water, ½ teaspoon salt, and ¼ teaspoon pepper.</li>\\n <li>Simmer over medium heat until the vegetables are tender, 8 to 10 minutes. Stir in the corn.</li>\\n <li>Divide the chili among bowls and top with the Cheddar and scallions.</li>\\n</ol>\\n\\n<p>We hope you enjoy the food!</p>\\n\\n<p>\\n Regards, <br>\\n Smart Fridge\\n</p>\",\n    \"ingredients\": \"beef, onion, bell pepper, carrot, corn\"\n  },\n  {\n    \"name\": \"Crispy Pork Cutlets With Fennel-Chickpea Slaw\",\n    \"description\": \"<p>We would like to recommend you below recipe based on the available ingredients in your fridge!</p>\\n\\n<h3>Crispy Pork Cutlets With Fennel-Chickpea Slaw</h3>\\n\\n<p>Don’t let the five-step procedure or the somewhat lengthy ingredient list fool you. Our Crispy Pork Cutlets With Fennel-Chickpea Slaw really do come together in half an hour. And, better yet, they don’t fall back on store-bought short cuts. With just a food processor and some sliced bread, you can make homemade bread crumbs, which will create the crunchy exterior for your “oven-fried” pork. If you can’t locate pork cutlets, place pork steaks on a cutting board. Hold the piece of meat flat with the palm of your hand and carefully slice it in half horizontally. Use a meat tenderizer to flatten the cutlets further, if desired.</p>\\n\\n<h3>Steps</h3>\\n\\n<ol>\\n <li>Heat oven to 425° F. Place an oven-proof wire rack set in a baking sheet. Pulse the bread until fine crumbs form in a food processor (you should have about 2½ cups). Add 1 tablespoon of the oil, ½ teaspoon salt, and ¼ teaspoon pepper and pulse once or twice to moisten.</li>\\n<li>Spread the bread crumbs on a rimmed baking sheet and bake, tossing once, until golden brown, 4 to 6 minutes. Let cool and transfer to a shallow bowl.</li>\\n<li>Place the flour in a second shallow bowl. Beat the egg whites with 1 tablespoon water in a third shallow bowl.</li>\\n<li>Season the pork with ½ teaspoon salt and ¼ teaspoon pepper. Coat with the flour (tapping off any excess), dip in the egg whites (shaking off any excess), then coat with the bread crumbs (pressing gently to help them adhere). Place on the prepared pan and bake until cooked through, 8 to 10 minutes.</li>\\n<li>Meanwhile, toss together the chickpeas, fennel, celery stalks and leaves, onion, lemon juice, the remaining 2 tablespoons of oil, ½ teaspoon salt, and ¼ teaspoon pepper in a medium bowl. Serve over the pork with the lemon wedges.</li>\\n</ol>\\n\\n<p>We hope you enjoy the food!</p>\\n\\n<p>\\n Regards, <br>\\n Smart Fridge\\n</p>\",\n    \"ingredients\": \"pork, egg, chickpeas, fennel, red onion, lemon\"\n  },\n  {\n    \"name\": \"Quick Spring Lamb and Vegetable Stew\",\n    \"description\": \"<p>We would like to recommend you below recipe based on the available ingredients in your fridge!</p>\\n\\n<h3>Quick Spring Lamb and Vegetable Stew</h3>\\n\\n<p>Hearty, satisfying, and warming, this lamb and vegetable stew is prepared in a single large pot. First, you’ll cut the lamb steaks into small pieces and brown the meat, then transfer it to a plate. Next, you’ll cook the carrots and onion, before adding a tablespoon of flour, which helps to thicken the brothy stew as it cooks. Simmer the remaining ingredients for about 10 minutes more, stir it all together, and you’re done. Since our recipe boasts carrots, green beans, and tomatoes, you won’t feel guilty about this all-in-one meal. On a chilly night, it’s the ideal simple supper.</p>\\n\\n<h3>Steps</h3>\\n\\n<ol>\\n<li>Heat 1 tablespoon of the oil in a large pot over medium-high heat. Season the lamb with 1/2 teaspoon each salt and pepper. Cook, turning occasionally, until medium-rare, 6 to 8 minutes; transfer to a plate.</li>\\n<li>Add the carrots, onion, and the remaining oil to the pot. Cook until beginning to soften, 3 to 4 minutes. Add the flour and cook for 1 minute. Add the wine and scrape up any brown bits.</li>\\n<li>Add the broth, tomatoes, and beans. Simmer until the vegetables are tender, 8 to 10 minutes. Stir in the lamb, parsley, 1/2 teaspoon salt, and 1/4 teaspoon pepper. Serve immediately.</li>\\n<li>To freeze: Cool the stew to room temperature and spoon into a freezer container or bag. Freeze for up to 3 months. To cook, thaw the stew in a bowl of cold water or overnight in the refrigerator. Transfer to a pot and cook, covered, stirring occasionally, until heated through, 10 to 20 minutes.</li>\\n</ol>\\n\\n<p>We hope you enjoy the food!</p>\\n\\n<p>\\n Regards, <br>\\n Smart Fridge\\n</p>\",\n    \"ingredients\": \"chicken, tomato, parsley, green beans, lamb, carrot\"\n  },\n  {\n    \"name\": \"Steak With Roasted Parsnips and Tomatoes\",\n    \"description\": \"<p>We would like to recommend you below recipe based on the available ingredients in your fridge!</p>\\n\\n<h3>Steak With Roasted Parsnips and Tomatoes</h3>\\n\\n<p>Simple enough to make for just two or four, but impressive enough to serve at a dinner party. This two-part meal appears, on its surface, to be much more involved than what the recipe actually requires. The vegetables, tossed with oil, herbs, salt, and pepper, roast in the oven at a high temperature, while you quickly sear the steaks over the stovetop. Serve the meat along your roasted vegetables, and add a green salad, if you’d like, for a delicious, protein-packed (and low-carb) supper. And the roasting trick works for any root vegetable; try it with potatoes, carrots, or beets for a twist.</p>\\n\\n<h3>Steps</h3>\\n\\n<ol>\\n<li>Heat oven to 450° F. Toss the parsnips, tomatoes, scallions, thyme, ¼ cup of the oil, and ¼ teaspoon each salt and pepper in a 9-by-13-inch baking dish.</li>\\n\\n<li>Cover the dish with foil and roast until the juices are bubbling, 15 to 20 minutes. Remove the foil and continue to roast until the parsnips are tender, 10 to 15 minutes more.</li>\\n\\n<li>Meanwhile, heat the remaining teaspoon of oil in a large skillet over medium-high heat. Season the steaks with ½ teaspoon each salt and pepper., Cook, in batches, until an instant-read thermometer inserted in the center of each piece registers 130° F, 2 to 3 minutes per side for medium-rare.</li>\\n\\n<li>Let the steaks rest for at least 5 minutes before slicing. Serve with the vegetables.</li>\\n</ol>\\n\\n<p>We hope you enjoy the food!</p>\\n\\n<p>\\n Regards, <br>\\n Smart Fridge\\n</p>\",\n    \"ingredients\": \"steak, thyme, scallion, cherry tomato, parsnip\"\n  }\n];\nreturn {payload: data};",
         "outputs": 1,
         "noerr": 0,
         "x": 270,
         "y": 220,
         "wires": [
             [
-                "97c44684.00a1b8"
+                "f1f89c91.d615f"
             ]
         ]
     },
     {
-        "id": "5cd85c18.071194",
+        "id": "19c95e50.bfbd52",
         "type": "inject",
-        "z": "fb56380d.4de328",
+        "z": "2f87e40d.7b5d7c",
         "name": "Run",
         "topic": "",
         "payload": "{\"payload\":{\"barcode\":\"12345y\"}}",
@@ -1288,31 +1292,31 @@
         "y": 220,
         "wires": [
             [
-                "fca1da17.6f4288"
+                "51445582.0ed1fc"
             ]
         ]
     },
     {
-        "id": "d02f66ab.635bc8",
+        "id": "39e300e3.168dd",
         "type": "http request",
-        "z": "fb56380d.4de328",
-        "name": "receipe/deleteAll",
+        "z": "2f87e40d.7b5d7c",
+        "name": "recipe/deleteAll",
         "method": "POST",
         "ret": "obj",
-        "url": "https://smart-fridge-ke.herokuapp.com/receipe/deleteAll",
+        "url": "https://smart-fridge-ke.herokuapp.com/recipe/deleteAll",
         "tls": "",
         "x": 290,
         "y": 180,
         "wires": [
             [
-                "cbd6721e.2b895"
+                "7f1b0058.c1908"
             ]
         ]
     },
     {
-        "id": "86ada18d.c2211",
+        "id": "8ae83748.069198",
         "type": "inject",
-        "z": "fb56380d.4de328",
+        "z": "2f87e40d.7b5d7c",
         "name": "Run",
         "topic": "",
         "payload": "{\"payload\":{\"barcode\":\"12345y\"}}",
@@ -1325,14 +1329,14 @@
         "y": 180,
         "wires": [
             [
-                "d02f66ab.635bc8"
+                "39e300e3.168dd"
             ]
         ]
     },
     {
-        "id": "4bc18aaf.861fe4",
+        "id": "815975a1.5dc108",
         "type": "http in",
-        "z": "101c2e45.e27f82",
+        "z": "9f6f748.a950888",
         "name": "",
         "url": "ingredient/status",
         "method": "get",
@@ -1342,14 +1346,14 @@
         "y": 600,
         "wires": [
             [
-                "a0478d91.01bc3"
+                "7690b107.c7de6"
             ]
         ]
     },
     {
-        "id": "a0478d91.01bc3",
+        "id": "7690b107.c7de6",
         "type": "mongodb2 in",
-        "z": "101c2e45.e27f82",
+        "z": "9f6f748.a950888",
         "service": "_ext_",
         "configNode": "53c335d9.8fbbdc",
         "name": "search storage",
@@ -1359,14 +1363,14 @@
         "y": 600,
         "wires": [
             [
-                "353ec8bd.439e48"
+                "7f74f717.b032b8"
             ]
         ]
     },
     {
-        "id": "353ec8bd.439e48",
+        "id": "7f74f717.b032b8",
         "type": "function",
-        "z": "101c2e45.e27f82",
+        "z": "9f6f748.a950888",
         "name": "get name",
         "func": "return {\n    payload: {\n        qrcode: msg.payload[0].qrcode\n    },\n    req: msg.req,\n    res: msg.res,\n    name: msg.payload[0].name\n}",
         "outputs": 1,
@@ -1375,14 +1379,14 @@
         "y": 600,
         "wires": [
             [
-                "f7441894.7f6668"
+                "2f1936e5.b8001a"
             ]
         ]
     },
     {
-        "id": "cf81f186.1148",
+        "id": "20ebf5db.1fd74a",
         "type": "http response",
-        "z": "101c2e45.e27f82",
+        "z": "9f6f748.a950888",
         "name": "Response",
         "statusCode": "",
         "headers": {},
@@ -1391,9 +1395,9 @@
         "wires": []
     },
     {
-        "id": "f7441894.7f6668",
+        "id": "2f1936e5.b8001a",
         "type": "mongodb2 in",
-        "z": "101c2e45.e27f82",
+        "z": "9f6f748.a950888",
         "service": "_ext_",
         "configNode": "53c335d9.8fbbdc",
         "name": "search ingredient",
@@ -1403,14 +1407,14 @@
         "y": 640,
         "wires": [
             [
-                "43ad5231.21b53c"
+                "5ccdf1a9.86051"
             ]
         ]
     },
     {
-        "id": "43ad5231.21b53c",
+        "id": "5ccdf1a9.86051",
         "type": "function",
-        "z": "101c2e45.e27f82",
+        "z": "9f6f748.a950888",
         "name": "get status",
         "func": "return {\n    payload: {\n        name: msg.name,\n        status: msg.payload.length > 0\n    },\n    req: msg.req,\n    res: msg.res,\n}",
         "outputs": 1,
@@ -1419,24 +1423,24 @@
         "y": 640,
         "wires": [
             [
-                "cf81f186.1148"
+                "20ebf5db.1fd74a"
             ]
         ]
     },
     {
-        "id": "cc918105.9c7ca",
+        "id": "3fe795ee.0b7d2a",
         "type": "comment",
-        "z": "101c2e45.e27f82",
-        "name": "Collection: Receipe",
+        "z": "9f6f748.a950888",
+        "name": "Collection: recipe",
         "info": "",
         "x": 850,
         "y": 260,
         "wires": []
     },
     {
-        "id": "149afe.5f4de503",
+        "id": "d8c35b0.2d790a8",
         "type": "comment",
-        "z": "101c2e45.e27f82",
+        "z": "9f6f748.a950888",
         "name": "Collection: Storage",
         "info": "",
         "x": 850,
@@ -1444,9 +1448,9 @@
         "wires": []
     },
     {
-        "id": "1a981837.d1f188",
+        "id": "5f386aa4.4af2c4",
         "type": "comment",
-        "z": "101c2e45.e27f82",
+        "z": "9f6f748.a950888",
         "name": "Collection: Sensor Data",
         "info": "",
         "x": 140,
@@ -1454,9 +1458,9 @@
         "wires": []
     },
     {
-        "id": "fa7d67be.202f08",
+        "id": "1e30496a.2d5dc7",
         "type": "comment",
-        "z": "101c2e45.e27f82",
+        "z": "9f6f748.a950888",
         "name": "Collection: Ingredient",
         "info": "",
         "x": 140,
@@ -1464,9 +1468,9 @@
         "wires": []
     },
     {
-        "id": "9ad6f684.b024f8",
+        "id": "a8cef6b2.06ac08",
         "type": "ui_template",
-        "z": "dc65f90a.8ac5f8",
+        "z": "11f95ded.662fc2",
         "group": "52a8a458.be48fc",
         "name": "Ingredients",
         "order": 0,
@@ -1483,9 +1487,9 @@
         ]
     },
     {
-        "id": "ea1290ec.1ef82",
+        "id": "f6ec97a4.f026c8",
         "type": "http request",
-        "z": "dc65f90a.8ac5f8",
+        "z": "11f95ded.662fc2",
         "name": "Get all ingredients",
         "method": "GET",
         "ret": "obj",
@@ -1495,14 +1499,14 @@
         "y": 240,
         "wires": [
             [
-                "9ad6f684.b024f8"
+                "a8cef6b2.06ac08"
             ]
         ]
     },
     {
-        "id": "a70c6799.207878",
+        "id": "dee5151f.cc8b58",
         "type": "mongodb2 in",
-        "z": "101c2e45.e27f82",
+        "z": "9f6f748.a950888",
         "service": "_ext_",
         "configNode": "53c335d9.8fbbdc",
         "name": "search storage",
@@ -1512,14 +1516,14 @@
         "y": 680,
         "wires": [
             [
-                "926c8bb4.031b98"
+                "131edc32.ae0024"
             ]
         ]
     },
     {
-        "id": "926c8bb4.031b98",
+        "id": "131edc32.ae0024",
         "type": "function",
-        "z": "101c2e45.e27f82",
+        "z": "9f6f748.a950888",
         "name": "get name & expiry",
         "func": "return {\n    payload: {\n        qrcode: msg.payload[0].qrcode,\n        name: msg.payload[0].name,\n        expiry_date: msg.payload[0]['expiry_date']\n    },\n    req: msg.req,\n    res: msg.res,\n}",
         "outputs": 1,
@@ -1528,14 +1532,14 @@
         "y": 680,
         "wires": [
             [
-                "6f0226c2.7fad28"
+                "56cc912b.4e526"
             ]
         ]
     },
     {
-        "id": "9ffc8656.98a448",
+        "id": "3683e208.6b846e",
         "type": "http in",
-        "z": "101c2e45.e27f82",
+        "z": "9f6f748.a950888",
         "name": "",
         "url": "sensorData/latest",
         "method": "get",
@@ -1545,14 +1549,14 @@
         "y": 280,
         "wires": [
             [
-                "78a3b776.093bf8"
+                "6b627077.2e4ff"
             ]
         ]
     },
     {
-        "id": "8697c491.031538",
+        "id": "61fe7681.4c04f8",
         "type": "mongodb2 in",
-        "z": "101c2e45.e27f82",
+        "z": "9f6f748.a950888",
         "service": "_ext_",
         "configNode": "53c335d9.8fbbdc",
         "name": "find all",
@@ -1562,14 +1566,14 @@
         "y": 280,
         "wires": [
             [
-                "2ef96145.73e5ae"
+                "4b3079db.5df588"
             ]
         ]
     },
     {
-        "id": "2ef96145.73e5ae",
+        "id": "4b3079db.5df588",
         "type": "http response",
-        "z": "101c2e45.e27f82",
+        "z": "9f6f748.a950888",
         "name": "Response",
         "statusCode": "",
         "headers": {},
@@ -1578,9 +1582,9 @@
         "wires": []
     },
     {
-        "id": "78a3b776.093bf8",
+        "id": "6b627077.2e4ff",
         "type": "function",
-        "z": "101c2e45.e27f82",
+        "z": "9f6f748.a950888",
         "name": "set limit & sort",
         "func": "msg.payload = [\n    {},\n    {\n        limit: parseInt(msg.req.query[\"limit\"]),\n        sort: {timestamp: -1} \n    }\n]\nreturn msg;",
         "outputs": 1,
@@ -1589,14 +1593,14 @@
         "y": 280,
         "wires": [
             [
-                "8697c491.031538"
+                "61fe7681.4c04f8"
             ]
         ]
     },
     {
-        "id": "a2eaf12a.6839e",
+        "id": "cf86c45b.b0aa18",
         "type": "http request",
-        "z": "dc65f90a.8ac5f8",
+        "z": "11f95ded.662fc2",
         "name": "Get last 12 data",
         "method": "GET",
         "ret": "obj",
@@ -1606,30 +1610,30 @@
         "y": 80,
         "wires": [
             [
-                "897b7878.4fd308"
+                "afbbdbc9.d16da8"
             ]
         ]
     },
     {
-        "id": "98e1bc61.a0614",
+        "id": "62a029f9.bf8408",
         "type": "function",
-        "z": "dc65f90a.8ac5f8",
+        "z": "11f95ded.662fc2",
         "name": "Get temperatures",
-        "func": "var temperatures = [];\n\nfor (var i = msg.payload.length - 1; i >=1; i--) {\n    temperatures.push({\n        \"x\": msg.payload[i].timestamp, \n        \"y\": msg.payload[i].temperature\n    });\n}\n\nreturn {payload: [{\n        \"series\": [\"temperature\"],\n        \"data\": [temperatures],\n        \"labels\": [\"\"]\n    }]\n};",
+        "func": "var temperatures = [];\n\nfor (var i = msg.payload.length - 1; i >=1; i--) {\n    temperatures.push({\n        \"x\": parseFloat(msg.payload[i].timestamp), \n        \"y\": msg.payload[i].temperature\n    });\n}\n\nreturn {payload: [{\n        \"series\": [\"temperature\"],\n        \"data\": [temperatures],\n        \"labels\": [\"\"]\n    }]\n};",
         "outputs": 1,
         "noerr": 0,
         "x": 830,
         "y": 40,
         "wires": [
             [
-                "dd3d2c25.26e43"
+                "7263ddbf.7a8cd4"
             ]
         ]
     },
     {
-        "id": "dd3d2c25.26e43",
+        "id": "7263ddbf.7a8cd4",
         "type": "ui_chart",
-        "z": "dc65f90a.8ac5f8",
+        "z": "11f95ded.662fc2",
         "name": "",
         "group": "7fc7cc5d.31c0a4",
         "order": 1,
@@ -1669,25 +1673,25 @@
         ]
     },
     {
-        "id": "3b8d980b.e10648",
+        "id": "596456bb.3003b8",
         "type": "function",
-        "z": "dc65f90a.8ac5f8",
+        "z": "11f95ded.662fc2",
         "name": "Get humidities",
-        "func": "var humidities = [];\n\nfor (var i = msg.payload.length - 1; i >=1; i--) {\n    humidities.push({\n        \"x\": msg.payload[i].timestamp, \n        \"y\": msg.payload[i].humidity\n    });\n}\n\nreturn {payload: [{\n        \"series\": [\"humidity\"],\n        \"data\": [humidities],\n        \"labels\": [\"\"]\n    }]\n};",
+        "func": "var humidities = [];\n\nfor (var i = msg.payload.length - 1; i >=1; i--) {\n    humidities.push({\n        \"x\": parseFloat(msg.payload[i].timestamp), \n        \"y\": msg.payload[i].humidity\n    });\n}\n\nreturn {payload: [{\n        \"series\": [\"humidity\"],\n        \"data\": [humidities],\n        \"labels\": [\"\"]\n    }]\n};",
         "outputs": 1,
         "noerr": 0,
         "x": 820,
         "y": 80,
         "wires": [
             [
-                "7fc0f7d4.14b9c8"
+                "9f222038.9cc2"
             ]
         ]
     },
     {
-        "id": "7fc0f7d4.14b9c8",
+        "id": "9f222038.9cc2",
         "type": "ui_chart",
-        "z": "dc65f90a.8ac5f8",
+        "z": "11f95ded.662fc2",
         "name": "",
         "group": "7fc7cc5d.31c0a4",
         "order": 2,
@@ -1727,9 +1731,9 @@
         ]
     },
     {
-        "id": "9cbcdd52.c5d2",
+        "id": "caa26b05.73e178",
         "type": "ui_gauge",
-        "z": "dc65f90a.8ac5f8",
+        "z": "11f95ded.662fc2",
         "name": "",
         "group": "4885b5d.c1b764c",
         "order": 2,
@@ -1753,9 +1757,9 @@
         "wires": []
     },
     {
-        "id": "74f3dad0.4d3414",
+        "id": "ca7f1fbd.007e3",
         "type": "ui_gauge",
-        "z": "dc65f90a.8ac5f8",
+        "z": "11f95ded.662fc2",
         "name": "",
         "group": "4885b5d.c1b764c",
         "order": 3,
@@ -1779,9 +1783,9 @@
         "wires": []
     },
     {
-        "id": "f89255c4.41d028",
+        "id": "9a8266e8.e570b8",
         "type": "function",
-        "z": "dc65f90a.8ac5f8",
+        "z": "11f95ded.662fc2",
         "name": "Get last temperature",
         "func": "return {payload: msg.payload[0].temperature};",
         "outputs": 1,
@@ -1790,14 +1794,14 @@
         "y": 120,
         "wires": [
             [
-                "9cbcdd52.c5d2"
+                "caa26b05.73e178"
             ]
         ]
     },
     {
-        "id": "11b15ce3.a29123",
+        "id": "4c5266e7.49fcb8",
         "type": "function",
-        "z": "dc65f90a.8ac5f8",
+        "z": "11f95ded.662fc2",
         "name": "Get last humidity",
         "func": "return {payload: msg.payload[0].humidity};",
         "outputs": 1,
@@ -1806,14 +1810,14 @@
         "y": 160,
         "wires": [
             [
-                "74f3dad0.4d3414"
+                "ca7f1fbd.007e3"
             ]
         ]
     },
     {
-        "id": "be2e8674.83f4f8",
+        "id": "7ff2cf55.709bd",
         "type": "function",
-        "z": "101c2e45.e27f82",
+        "z": "9f6f748.a950888",
         "name": "set array",
         "func": "msg.payload = [msg.payload]\nreturn msg;",
         "outputs": 1,
@@ -1822,14 +1826,14 @@
         "y": 240,
         "wires": [
             [
-                "5b245936.723908"
+                "4711813.0f8a88"
             ]
         ]
     },
     {
-        "id": "d74ee3bb.9b1c2",
+        "id": "e9d77296.98355",
         "type": "function",
-        "z": "101c2e45.e27f82",
+        "z": "9f6f748.a950888",
         "name": "set array",
         "func": "msg.payload = [msg.payload]\nreturn msg;",
         "outputs": 1,
@@ -1838,14 +1842,14 @@
         "y": 380,
         "wires": [
             [
-                "3e21ce3f.ad8e92"
+                "8c8b6cc1.e35c1"
             ]
         ]
     },
     {
-        "id": "56acec83.b668b4",
+        "id": "319ecb8b.a4d714",
         "type": "function",
-        "z": "101c2e45.e27f82",
+        "z": "9f6f748.a950888",
         "name": "set array",
         "func": "msg.payload = [msg.payload]\nreturn msg;",
         "outputs": 1,
@@ -1854,44 +1858,44 @@
         "y": 160,
         "wires": [
             [
-                "d5bc7f00.7ab94"
+                "4c282365.8f3aec"
             ]
         ]
     },
     {
-        "id": "ba250865.bae258",
+        "id": "64c2083.aa399f8",
         "type": "e-mail",
-        "z": "4a623330.943f7c",
+        "z": "9d194143.c296d",
         "server": "smtp.gmail.com",
         "port": "465",
         "secure": true,
         "name": "chiaweiwoo123@gmail.com",
         "dname": "send email",
         "x": 1230,
-        "y": 240,
+        "y": 260,
         "wires": []
     },
     {
-        "id": "11efba9f.24cea5",
+        "id": "689d30e8.1c8f7",
         "type": "function",
-        "z": "4a623330.943f7c",
+        "z": "9d194143.c296d",
         "name": "construct email",
-        "func": "function getRandomInt(max) {\n  return Math.floor(Math.random() * Math.floor(max));\n}\n\nvar index = getRandomInt(msg.payload.length)\nmsg.topic = \"Recommended receipe for your day!\"\nmsg.from = \"Smart Fridge\"\nmsg.payload = \"<p>Dear customer,<p> \" + msg.payload[index].description\nreturn msg;",
+        "func": "function getRandomInt(max) {\n  return Math.floor(Math.random() * Math.floor(max));\n}\n\nvar index = getRandomInt(msg.payload.length)\nmsg.topic = \"Recommended recipe for your day!\"\nmsg.from = \"Smart Fridge\"\nmsg.payload = \"<p>Dear customer,<p> \" + msg.payload[index].description\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "x": 840,
         "y": 260,
         "wires": [
             [
-                "ba250865.bae258",
-                "6cbc7195.82d5d"
+                "64c2083.aa399f8",
+                "d488eda2.a3841"
             ]
         ]
     },
     {
-        "id": "f4a234c0.e44548",
+        "id": "53ab9aa0.0aa274",
         "type": "switch",
-        "z": "4a623330.943f7c",
+        "z": "9d194143.c296d",
         "name": "is empty?",
         "property": "payload.length",
         "propertyType": "msg",
@@ -1912,18 +1916,18 @@
         "y": 280,
         "wires": [
             [
-                "11efba9f.24cea5"
+                "689d30e8.1c8f7"
             ],
             [
-                "7a540726.88dc68"
+                "9af9dd56.5c2e4"
             ]
         ]
     },
     {
-        "id": "7a540726.88dc68",
+        "id": "9af9dd56.5c2e4",
         "type": "function",
-        "z": "4a623330.943f7c",
-        "name": "no receipe",
+        "z": "9d194143.c296d",
+        "name": "no recipe",
         "func": "return {payload: \"No matches found.\"}",
         "outputs": 1,
         "noerr": 0,
@@ -1931,16 +1935,16 @@
         "y": 300,
         "wires": [
             [
-                "6cbc7195.82d5d"
+                "d488eda2.a3841"
             ]
         ]
     },
     {
-        "id": "c4b2937f.45df9",
+        "id": "6ab2cb39.8fa444",
         "type": "http in",
-        "z": "101c2e45.e27f82",
+        "z": "9f6f748.a950888",
         "name": "",
-        "url": "receipe/recommend",
+        "url": "recipe/recommend",
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
@@ -1948,31 +1952,31 @@
         "y": 420,
         "wires": [
             [
-                "20d140b3.0467a"
+                "5bdf2512.98d9bc"
             ]
         ]
     },
     {
-        "id": "20d140b3.0467a",
+        "id": "5bdf2512.98d9bc",
         "type": "mongodb2 in",
-        "z": "101c2e45.e27f82",
+        "z": "9f6f748.a950888",
         "service": "_ext_",
         "configNode": "53c335d9.8fbbdc",
-        "name": "find all receipes",
-        "collection": "receipe",
+        "name": "find all recipes",
+        "collection": "recipe",
         "operation": "find.toArray",
         "x": 1080,
         "y": 420,
         "wires": [
             [
-                "78a4edb1.d12214"
+                "6bea369a.3e58f8"
             ]
         ]
     },
     {
-        "id": "9148d689.464778",
+        "id": "96bc3094.0699d",
         "type": "http response",
-        "z": "101c2e45.e27f82",
+        "z": "9f6f748.a950888",
         "name": "Response",
         "statusCode": "",
         "headers": {},
@@ -1981,25 +1985,25 @@
         "wires": []
     },
     {
-        "id": "78a4edb1.d12214",
+        "id": "6bea369a.3e58f8",
         "type": "function",
-        "z": "101c2e45.e27f82",
+        "z": "9f6f748.a950888",
         "name": "convert to array",
-        "func": "receipes = msg.payload\n\nfor (var i = 0; i < receipes.length; i++) {\n    receipes[i][\"ingredients_array\"] = receipes[i].ingredients.split(\",\").map(function (str) {\n      return str.trim().toLowerCase();\n    });\n}\n\nmsg.receipes = msg.payload;\nmsg.payload = {};\n\nreturn msg;",
+        "func": "recipes = msg.payload\n\nfor (var i = 0; i < recipes.length; i++) {\n    recipes[i][\"ingredients_array\"] = recipes[i].ingredients.split(\",\").map(function (str) {\n      return str.trim().toLowerCase();\n    });\n}\n\nmsg.recipes = msg.payload;\nmsg.payload = {};\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "x": 1280,
         "y": 420,
         "wires": [
             [
-                "5c2d6123.89a28"
+                "3e32ed68.9c5232"
             ]
         ]
     },
     {
-        "id": "5c2d6123.89a28",
+        "id": "3e32ed68.9c5232",
         "type": "mongodb2 in",
-        "z": "101c2e45.e27f82",
+        "z": "9f6f748.a950888",
         "service": "_ext_",
         "configNode": "53c335d9.8fbbdc",
         "name": "find all ingredients",
@@ -2009,47 +2013,47 @@
         "y": 460,
         "wires": [
             [
-                "517c15a4.8340ac"
+                "ba750224.f7b9e"
             ]
         ]
     },
     {
-        "id": "517c15a4.8340ac",
+        "id": "ba750224.f7b9e",
         "type": "function",
-        "z": "101c2e45.e27f82",
+        "z": "9f6f748.a950888",
         "name": "find matches",
-        "func": "ingredients = msg.payload;\nreceipes = msg.receipes\n\nfor (var i = 0; i < ingredients.length; i++) {\n    for (var j = 0; j < receipes.length; j++) {\n        var item = ingredients[i].name.trim().toLowerCase();\n        var required_items = receipes[j][\"ingredients_array\"];\n        var index = required_items.indexOf(item);\n        if(index >= 0)\n            required_items = required_items.splice(index, 1);\n    }\n}\n\nrecommended_receipes = [];\nfor (var i = 0; i < receipes.length; i++) {\n    if(receipes[i][\"ingredients_array\"].length === 0){\n        delete receipes[i][\"ingredients_array\"]\n        recommended_receipes.push(receipes[i]);\n    }\n        \n}\n\nmsg.payload = recommended_receipes\ndelete msg[\"receipes\"]\n\nreturn msg;",
+        "func": "ingredients = msg.payload;\nrecipes = msg.recipes\n\nfor (var i = 0; i < ingredients.length; i++) {\n    for (var j = 0; j < recipes.length; j++) {\n        var item = ingredients[i].name.trim().toLowerCase();\n        var required_items = recipes[j][\"ingredients_array\"];\n        var index = required_items.indexOf(item);\n        if(index >= 0)\n            required_items = required_items.splice(index, 1);\n    }\n}\n\nrecommended_recipes = [];\nfor (var i = 0; i < recipes.length; i++) {\n    if(recipes[i][\"ingredients_array\"].length === 0){\n        delete recipes[i][\"ingredients_array\"]\n        recommended_recipes.push(recipes[i]);\n    }\n        \n}\n\nmsg.payload = recommended_recipes\ndelete msg[\"recipes\"]\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "x": 1270,
         "y": 460,
         "wires": [
             [
-                "9148d689.464778"
+                "96bc3094.0699d"
             ]
         ]
     },
     {
-        "id": "6a8dc110.68f9f",
+        "id": "f5ff552b.b38838",
         "type": "http request",
-        "z": "4a623330.943f7c",
-        "name": "Get recommended receipe",
+        "z": "9d194143.c296d",
+        "name": "Get recommended recipe",
         "method": "GET",
         "ret": "obj",
-        "url": "https://smart-fridge-ke.herokuapp.com/receipe/recommend",
+        "url": "https://smart-fridge-ke.herokuapp.com/recipe/recommend",
         "tls": "",
         "x": 460,
         "y": 280,
         "wires": [
             [
-                "f4a234c0.e44548"
+                "53ab9aa0.0aa274"
             ]
         ]
     },
     {
-        "id": "93301707.8e6b68",
+        "id": "fd5d7682.e11368",
         "type": "http request",
-        "z": "4a623330.943f7c",
+        "z": "9d194143.c296d",
         "name": "Get warning status",
         "method": "GET",
         "ret": "obj",
@@ -2059,14 +2063,14 @@
         "y": 460,
         "wires": [
             [
-                "30c1500b.4e11a"
+                "a1e2b4aa.c212a8"
             ]
         ]
     },
     {
-        "id": "30c1500b.4e11a",
+        "id": "a1e2b4aa.c212a8",
         "type": "switch",
-        "z": "4a623330.943f7c",
+        "z": "9d194143.c296d",
         "name": "to warn?",
         "property": "payload.warning",
         "propertyType": "msg",
@@ -2087,17 +2091,18 @@
         "y": 460,
         "wires": [
             [
-                "1f020c3.33d4af4"
+                "17ffe3c8.5324cc",
+                "39b6b15d.a2c1de"
             ],
             [
-                "bdc857ad.191b98"
+                "5abf47a.59fbdb8"
             ]
         ]
     },
     {
-        "id": "6cbc7195.82d5d",
+        "id": "d488eda2.a3841",
         "type": "debug",
-        "z": "4a623330.943f7c",
+        "z": "9d194143.c296d",
         "name": "logging",
         "active": true,
         "tosidebar": true,
@@ -2105,46 +2110,46 @@
         "tostatus": false,
         "complete": "payload",
         "x": 1220,
-        "y": 280,
+        "y": 300,
         "wires": []
     },
     {
-        "id": "1f020c3.33d4af4",
+        "id": "17ffe3c8.5324cc",
         "type": "function",
-        "z": "4a623330.943f7c",
+        "z": "9d194143.c296d",
         "name": "construct email",
         "func": "msg.topic = \"Your fridge is getting too warm!\"\nmsg.from = \"Smart Fridge\"\nmsg.payload = \"<p>Dear customer,</p> <p>Based on the last hour observation, the average temperature of the fridge is \" + msg.payload.average_temperature.toFixed(2) + \"°C which is considered unusual reading.</p> <p>Please check your power supply and fridge.</p> <p>Regards, <br> Smart Fridge</p>\";\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "x": 840,
-        "y": 440,
+        "y": 460,
         "wires": [
             [
-                "6cbc7195.82d5d",
-                "ba250865.bae258"
+                "d488eda2.a3841",
+                "64c2083.aa399f8"
             ]
         ]
     },
     {
-        "id": "bdc857ad.191b98",
+        "id": "5abf47a.59fbdb8",
         "type": "function",
-        "z": "4a623330.943f7c",
+        "z": "9d194143.c296d",
         "name": "no warning",
         "func": "return {payload: \"Everything looks fine!\"}",
         "outputs": 1,
         "noerr": 0,
         "x": 830,
-        "y": 480,
+        "y": 500,
         "wires": [
             [
-                "6cbc7195.82d5d"
+                "d488eda2.a3841"
             ]
         ]
     },
     {
-        "id": "c52f19f8.2fba38",
+        "id": "bac53852.6efc58",
         "type": "http request",
-        "z": "4a623330.943f7c",
+        "z": "9d194143.c296d",
         "name": "Get expiring ingredients",
         "method": "GET",
         "ret": "obj",
@@ -2154,14 +2159,14 @@
         "y": 100,
         "wires": [
             [
-                "bf5073d5.13b9"
+                "ec6a366b.f73d38"
             ]
         ]
     },
     {
-        "id": "6aad1e44.a838f",
+        "id": "33f19cf0.2e7ca4",
         "type": "http in",
-        "z": "101c2e45.e27f82",
+        "z": "9f6f748.a950888",
         "name": "",
         "url": "ingredient/expiring",
         "method": "get",
@@ -2171,14 +2176,14 @@
         "y": 760,
         "wires": [
             [
-                "cd47da4f.1c65a8"
+                "4815a42d.729c0c"
             ]
         ]
     },
     {
-        "id": "cd47da4f.1c65a8",
+        "id": "4815a42d.729c0c",
         "type": "mongodb2 in",
-        "z": "101c2e45.e27f82",
+        "z": "9f6f748.a950888",
         "service": "_ext_",
         "configNode": "53c335d9.8fbbdc",
         "name": "find all",
@@ -2188,14 +2193,14 @@
         "y": 760,
         "wires": [
             [
-                "c2903241.18f96"
+                "a8906d2b.c5ee4"
             ]
         ]
     },
     {
-        "id": "c2903241.18f96",
+        "id": "a8906d2b.c5ee4",
         "type": "function",
-        "z": "101c2e45.e27f82",
+        "z": "9f6f748.a950888",
         "name": "check expiry",
         "func": "function getDate(date){\n    return new Date(date.toDateString());\n}\n\nfunction getDaysDifference(d1, d2){\n    var timeDiff = d2.getTime() - d1.getTime();\n    var diffDays = timeDiff / (1000 * 3600 * 24); \n    return diffDays;\n}\n\nvar today = new Date();\nvar ingredients = msg.payload;\nvar expirying_ingredients = [];\n\nfor (var i = 0; i < ingredients.length; i++) {\n    var expiry = getDate(new Date(ingredients[i].expiry_date));\n    difference = getDaysDifference(today, expiry)\n        \n    if(difference <= 1)\n        expirying_ingredients.push(ingredients[i].name);\n    \n}\n\nmsg.payload = expirying_ingredients;\n\nreturn msg;",
         "outputs": 1,
@@ -2204,14 +2209,14 @@
         "y": 760,
         "wires": [
             [
-                "994404c6.ca8df8"
+                "e9785b9b.c9e948"
             ]
         ]
     },
     {
-        "id": "994404c6.ca8df8",
+        "id": "e9785b9b.c9e948",
         "type": "http response",
-        "z": "101c2e45.e27f82",
+        "z": "9f6f748.a950888",
         "name": "Response",
         "statusCode": "",
         "headers": {},
@@ -2220,9 +2225,9 @@
         "wires": []
     },
     {
-        "id": "bf5073d5.13b9",
+        "id": "ec6a366b.f73d38",
         "type": "switch",
-        "z": "4a623330.943f7c",
+        "z": "9d194143.c296d",
         "name": "is empty?",
         "property": "payload.length",
         "propertyType": "msg",
@@ -2243,50 +2248,51 @@
         "y": 100,
         "wires": [
             [
-                "941b681b.4f35a8"
+                "6fda36fc.f65588",
+                "817fb247.0262c"
             ],
             [
-                "782eb6ba.9d3588"
+                "a112b5cb.b213f8"
             ]
         ]
     },
     {
-        "id": "941b681b.4f35a8",
+        "id": "6fda36fc.f65588",
         "type": "function",
-        "z": "4a623330.943f7c",
+        "z": "9d194143.c296d",
         "name": "construct email",
-        "func": "var items = \"\";\nvar ingredients = msg.payload;\nfor (var i = 0; i < ingredients.length; i++) {\n    items += \"<li>\" + ingredients[i] + \"</li>\"\n}\nitems = \"<ul>\" + items + \"</ul>\"\n\nmsg.from = \"Smart Fridge\"\nmsg.payload = \"<p>Dear customer,</p> <p>Just a kind reminder to inform you that below foods are expiring: </p>\" + items + \" <p>Regards, <br> Smart Fridge</p>\"\nreturn msg;",
+        "func": "var items = \"\";\nvar ingredients = msg.payload;\nfor (var i = 0; i < ingredients.length; i++) {\n    items += \"<li>\" + ingredients[i] + \"</li>\"\n}\nitems = \"<ul>\" + items + \"</ul>\"\n\nmsg.topic = \"Your food is expiring!\"\nmsg.from = \"Smart Fridge\"\nmsg.payload = \"<p>Dear customer,</p> <p>Just a kind reminder to inform you that below foods are expiring: </p>\" + items + \" <p>Regards, <br> Smart Fridge</p>\"\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "x": 840,
-        "y": 80,
+        "y": 100,
         "wires": [
             [
-                "6cbc7195.82d5d",
-                "ba250865.bae258"
+                "d488eda2.a3841",
+                "64c2083.aa399f8"
             ]
         ]
     },
     {
-        "id": "782eb6ba.9d3588",
+        "id": "a112b5cb.b213f8",
         "type": "function",
-        "z": "4a623330.943f7c",
+        "z": "9d194143.c296d",
         "name": "everything fresh",
         "func": "return {payload: \"All ingredients are fine.\"}",
         "outputs": 1,
         "noerr": 0,
         "x": 840,
-        "y": 120,
+        "y": 140,
         "wires": [
             [
-                "6cbc7195.82d5d"
+                "d488eda2.a3841"
             ]
         ]
     },
     {
-        "id": "ac4e798b.101ce8",
+        "id": "dcc87be.703b588",
         "type": "http in",
-        "z": "101c2e45.e27f82",
+        "z": "9f6f748.a950888",
         "name": "",
         "url": "sensorData/warn",
         "method": "get",
@@ -2296,14 +2302,14 @@
         "y": 320,
         "wires": [
             [
-                "d3dcc13a.ea8da"
+                "9a651955.d29c88"
             ]
         ]
     },
     {
-        "id": "d3dcc13a.ea8da",
+        "id": "9a651955.d29c88",
         "type": "function",
-        "z": "101c2e45.e27f82",
+        "z": "9f6f748.a950888",
         "name": "set limit & sort",
         "func": "msg.payload = [\n    {},\n    {\n        limit: 12,\n        sort: {timestamp: -1} \n    }\n]\nreturn msg;",
         "outputs": 1,
@@ -2312,14 +2318,14 @@
         "y": 320,
         "wires": [
             [
-                "61cc197.fb5f8e8"
+                "ae1f8f43.64d4e"
             ]
         ]
     },
     {
-        "id": "61cc197.fb5f8e8",
+        "id": "ae1f8f43.64d4e",
         "type": "mongodb2 in",
-        "z": "101c2e45.e27f82",
+        "z": "9f6f748.a950888",
         "service": "_ext_",
         "configNode": "53c335d9.8fbbdc",
         "name": "find all",
@@ -2329,14 +2335,14 @@
         "y": 320,
         "wires": [
             [
-                "46c7cf62.cd95d"
+                "f531584.ec40aa8"
             ]
         ]
     },
     {
-        "id": "1883b635.1c940a",
+        "id": "7c567271.0516cc",
         "type": "http response",
-        "z": "101c2e45.e27f82",
+        "z": "9f6f748.a950888",
         "name": "Response",
         "statusCode": "",
         "headers": {},
@@ -2345,25 +2351,25 @@
         "wires": []
     },
     {
-        "id": "46c7cf62.cd95d",
+        "id": "f531584.ec40aa8",
         "type": "function",
-        "z": "101c2e45.e27f82",
+        "z": "9f6f748.a950888",
         "name": "check tolerance",
-        "func": "var tolerance = 28;\nvar average_temperature = 0;\nvar readings = msg.payload;\n\nfor (var i = 0; i < readings.length; i++) {\n    average_temperature += readings[i].temperature;\n}\n\naverage_temperature /= readings.length;\nmsg.payload = {\n    average_temperature: average_temperature,\n    warning: average_temperature >= tolerance\n}\n\nreturn msg;",
+        "func": "var tolerance = 30;\nvar average_temperature = 0;\nvar readings = msg.payload;\n\nfor (var i = 0; i < readings.length; i++) {\n    average_temperature += readings[i].temperature;\n}\n\naverage_temperature /= readings.length;\nmsg.payload = {\n    average_temperature: average_temperature,\n    warning: average_temperature >= tolerance\n}\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "x": 360,
         "y": 360,
         "wires": [
             [
-                "1883b635.1c940a"
+                "7c567271.0516cc"
             ]
         ]
     },
     {
-        "id": "897b7878.4fd308",
+        "id": "afbbdbc9.d16da8",
         "type": "switch",
-        "z": "dc65f90a.8ac5f8",
+        "z": "11f95ded.662fc2",
         "name": "is empty?",
         "property": "payload.length",
         "propertyType": "msg",
@@ -2381,17 +2387,17 @@
         "y": 80,
         "wires": [
             [
-                "98e1bc61.a0614",
-                "3b8d980b.e10648",
-                "f89255c4.41d028",
-                "11b15ce3.a29123"
+                "62a029f9.bf8408",
+                "596456bb.3003b8",
+                "9a8266e8.e570b8",
+                "4c5266e7.49fcb8"
             ]
         ]
     },
     {
-        "id": "fb08e2b7.e8c43",
+        "id": "b9b6404e.03a5d",
         "type": "inject",
-        "z": "4a623330.943f7c",
+        "z": "9d194143.c296d",
         "name": "Run everyday at 12pm",
         "topic": "",
         "payload": "",
@@ -2403,8 +2409,51 @@
         "x": 190,
         "y": 300,
         "wires": [
+            []
+        ]
+    },
+    {
+        "id": "97c5e8e1.6626f8",
+        "type": "twilio out",
+        "z": "9d194143.c296d",
+        "twilio": "4c42d0b2.92e01",
+        "twilioType": "sms",
+        "url": "",
+        "number": "+6591591836",
+        "name": "SMS",
+        "x": 1210,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "817fb247.0262c",
+        "type": "function",
+        "z": "9d194143.c296d",
+        "name": "construct sms",
+        "func": "msg.payload = 'Dear customer, just a kind reminder to inform you that your foods are expiring: ' + msg.payload.join(', ')\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 840,
+        "y": 60,
+        "wires": [
             [
-                "6a8dc110.68f9f"
+                "97c5e8e1.6626f8"
+            ]
+        ]
+    },
+    {
+        "id": "39b6b15d.a2c1de",
+        "type": "function",
+        "z": "9d194143.c296d",
+        "name": "construct sms",
+        "func": "msg.payload = 'Dear customer, based on the last hour observation, the average temperature of the fridge is '+ msg.payload.average_temperature.toFixed(2) + '°C which is considered unusual reading. Please check your power supply and fridge.'\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 840,
+        "y": 420,
+        "wires": [
+            [
+                "97c5e8e1.6626f8"
             ]
         ]
     }
