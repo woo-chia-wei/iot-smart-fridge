@@ -28,6 +28,13 @@
         "info": ""
     },
     {
+        "id": "a353e2ae.f2af",
+        "type": "tab",
+        "label": "Demo",
+        "disabled": false,
+        "info": ""
+    },
+    {
         "id": "20f43bba.d95ca4",
         "type": "ui_base",
         "theme": {
@@ -1162,7 +1169,7 @@
         "ret": "obj",
         "url": "https://smart-fridge-ke.herokuapp.com/recipe/addMany",
         "tls": "",
-        "x": 290,
+        "x": 280,
         "y": 260,
         "wires": [
             [
@@ -1215,7 +1222,7 @@
         "ret": "obj",
         "url": "https://smart-fridge-ke.herokuapp.com/recipe/deleteAll",
         "tls": "",
-        "x": 290,
+        "x": 280,
         "y": 180,
         "wires": [
             [
@@ -1858,7 +1865,7 @@
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 870,
+        "x": 860,
         "y": 420,
         "wires": [
             [
@@ -1875,7 +1882,7 @@
         "name": "find all recipes",
         "collection": "recipe",
         "operation": "find.toArray",
-        "x": 1080,
+        "x": 1060,
         "y": 420,
         "wires": [
             [
@@ -1902,7 +1909,7 @@
         "func": "recipes = msg.payload\n\nfor (var i = 0; i < recipes.length; i++) {\n    recipes[i][\"ingredients_array\"] = recipes[i].ingredients.split(\",\").map(function (str) {\n      return str.trim().toLowerCase();\n    });\n}\n\nmsg.recipes = msg.payload;\nmsg.payload = {};\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
-        "x": 1280,
+        "x": 1260,
         "y": 420,
         "wires": [
             [
@@ -1919,7 +1926,7 @@
         "name": "find all ingredients",
         "collection": "ingredient",
         "operation": "find.toArray",
-        "x": 1090,
+        "x": 1070,
         "y": 460,
         "wires": [
             [
@@ -1935,7 +1942,7 @@
         "func": "ingredients = msg.payload;\nrecipes = msg.recipes\n\nfor (var i = 0; i < ingredients.length; i++) {\n    for (var j = 0; j < recipes.length; j++) {\n        var item = ingredients[i].name.trim().toLowerCase();\n        var required_items = recipes[j][\"ingredients_array\"];\n        var index = required_items.indexOf(item);\n        if(index >= 0)\n            required_items = required_items.splice(index, 1);\n    }\n}\n\nrecommended_recipes = [];\nfor (var i = 0; i < recipes.length; i++) {\n    if(recipes[i][\"ingredients_array\"].length === 0){\n        delete recipes[i][\"ingredients_array\"]\n        recommended_recipes.push(recipes[i]);\n    }\n        \n}\n\nmsg.payload = recommended_recipes\ndelete msg[\"recipes\"]\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
-        "x": 1270,
+        "x": 1250,
         "y": 460,
         "wires": [
             [
@@ -2364,6 +2371,71 @@
         "wires": [
             [
                 "97c5e8e1.6626f8"
+            ]
+        ]
+    },
+    {
+        "id": "c209d67f.499428",
+        "type": "inject",
+        "z": "a353e2ae.f2af",
+        "name": "Run",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 110,
+        "y": 40,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8fd4d43d.db0598",
+        "type": "function",
+        "z": "a353e2ae.f2af",
+        "name": "mock data",
+        "func": "msg.payload = {\n    temperature: 33.0,\n    humidity: 0.8,\n    timestamp: msg.payload\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 270,
+        "y": 40,
+        "wires": [
+            [
+                "4c7ac0b6.17e1"
+            ]
+        ]
+    },
+    {
+        "id": "200c4edf.c1c382",
+        "type": "debug",
+        "z": "a353e2ae.f2af",
+        "name": "print",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "x": 650,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "4c7ac0b6.17e1",
+        "type": "http request",
+        "z": "a353e2ae.f2af",
+        "name": "send sensor data",
+        "method": "POST",
+        "ret": "obj",
+        "url": "https://smart-fridge-ke.herokuapp.com/sensorData/add",
+        "tls": "",
+        "x": 470,
+        "y": 40,
+        "wires": [
+            [
+                "200c4edf.c1c382"
             ]
         ]
     }

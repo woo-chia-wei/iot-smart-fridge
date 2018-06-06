@@ -28,6 +28,13 @@
         "info": ""
     },
     {
+        "id": "a353e2ae.f2af",
+        "type": "tab",
+        "label": "Demo",
+        "disabled": false,
+        "info": ""
+    },
+    {
         "id": "20f43bba.d95ca4",
         "type": "ui_base",
         "theme": {
@@ -109,96 +116,6 @@
                 "sy": 48,
                 "gx": 6,
                 "gy": 6,
-                "cx": 6,
-                "cy": 6,
-                "px": 0,
-                "py": 0
-            }
-        }
-    },
-    {
-        "id": "3978f7e8.31b968",
-        "type": "ui_base",
-        "theme": {
-            "name": "theme-light",
-            "lightTheme": {
-                "default": "#0094CE",
-                "baseColor": "#0094CE",
-                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
-                "edited": true,
-                "reset": false
-            },
-            "darkTheme": {
-                "default": "#097479",
-                "baseColor": "#b43905",
-                "baseFont": "Tahoma,Geneva,sans-serif",
-                "edited": true,
-                "reset": false
-            },
-            "customTheme": {
-                "name": "Untitled Theme 1",
-                "default": "#4B7930",
-                "baseColor": "#4B7930",
-                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
-            },
-            "themeState": {
-                "base-color": {
-                    "default": "#0094CE",
-                    "value": "#0094CE",
-                    "edited": true
-                },
-                "page-titlebar-backgroundColor": {
-                    "value": "#0094CE",
-                    "edited": false
-                },
-                "page-backgroundColor": {
-                    "value": "#fafafa",
-                    "edited": false
-                },
-                "page-sidebar-backgroundColor": {
-                    "value": "#ffffff",
-                    "edited": false
-                },
-                "group-textColor": {
-                    "value": "#1bbfff",
-                    "edited": false
-                },
-                "group-borderColor": {
-                    "value": "#ffffff",
-                    "edited": false
-                },
-                "group-backgroundColor": {
-                    "value": "#ffffff",
-                    "edited": false
-                },
-                "widget-textColor": {
-                    "value": "#111111",
-                    "edited": false
-                },
-                "widget-backgroundColor": {
-                    "value": "#0094ce",
-                    "edited": false
-                },
-                "widget-borderColor": {
-                    "value": "#ffffff",
-                    "edited": false
-                },
-                "base-font": {
-                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
-                }
-            }
-        },
-        "site": {
-            "name": "Raspberry PI Dashboard",
-            "hideToolbar": "false",
-            "allowSwipe": "false",
-            "allowTempTheme": "true",
-            "dateFormat": "DD/MM/YYYY",
-            "sizes": {
-                "sx": 50,
-                "sy": 50,
-                "gx": 12,
-                "gy": 12,
                 "cx": 6,
                 "cy": 6,
                 "px": 0,
@@ -1252,7 +1169,7 @@
         "ret": "obj",
         "url": "https://smart-fridge-ke.herokuapp.com/recipe/addMany",
         "tls": "",
-        "x": 290,
+        "x": 280,
         "y": 260,
         "wires": [
             [
@@ -1305,7 +1222,7 @@
         "ret": "obj",
         "url": "https://smart-fridge-ke.herokuapp.com/recipe/deleteAll",
         "tls": "",
-        "x": 290,
+        "x": 280,
         "y": 180,
         "wires": [
             [
@@ -1610,7 +1527,8 @@
         "y": 80,
         "wires": [
             [
-                "afbbdbc9.d16da8"
+                "afbbdbc9.d16da8",
+                "8a0dc300.c3bc4"
             ]
         ]
     },
@@ -1931,7 +1849,7 @@
         "func": "return {payload: \"No matches found.\"}",
         "outputs": 1,
         "noerr": 0,
-        "x": 830,
+        "x": 820,
         "y": 300,
         "wires": [
             [
@@ -1948,7 +1866,7 @@
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 870,
+        "x": 860,
         "y": 420,
         "wires": [
             [
@@ -1965,7 +1883,7 @@
         "name": "find all recipes",
         "collection": "recipe",
         "operation": "find.toArray",
-        "x": 1080,
+        "x": 1060,
         "y": 420,
         "wires": [
             [
@@ -1992,7 +1910,7 @@
         "func": "recipes = msg.payload\n\nfor (var i = 0; i < recipes.length; i++) {\n    recipes[i][\"ingredients_array\"] = recipes[i].ingredients.split(\",\").map(function (str) {\n      return str.trim().toLowerCase();\n    });\n}\n\nmsg.recipes = msg.payload;\nmsg.payload = {};\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
-        "x": 1280,
+        "x": 1260,
         "y": 420,
         "wires": [
             [
@@ -2009,7 +1927,7 @@
         "name": "find all ingredients",
         "collection": "ingredient",
         "operation": "find.toArray",
-        "x": 1090,
+        "x": 1070,
         "y": 460,
         "wires": [
             [
@@ -2025,7 +1943,7 @@
         "func": "ingredients = msg.payload;\nrecipes = msg.recipes\n\nfor (var i = 0; i < ingredients.length; i++) {\n    for (var j = 0; j < recipes.length; j++) {\n        var item = ingredients[i].name.trim().toLowerCase();\n        var required_items = recipes[j][\"ingredients_array\"];\n        var index = required_items.indexOf(item);\n        if(index >= 0)\n            required_items = required_items.splice(index, 1);\n    }\n}\n\nrecommended_recipes = [];\nfor (var i = 0; i < recipes.length; i++) {\n    if(recipes[i][\"ingredients_array\"].length === 0){\n        delete recipes[i][\"ingredients_array\"]\n        recommended_recipes.push(recipes[i]);\n    }\n        \n}\n\nmsg.payload = recommended_recipes\ndelete msg[\"recipes\"]\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
-        "x": 1270,
+        "x": 1250,
         "y": 460,
         "wires": [
             [
@@ -2042,7 +1960,7 @@
         "ret": "obj",
         "url": "https://smart-fridge-ke.herokuapp.com/recipe/recommend",
         "tls": "",
-        "x": 460,
+        "x": 450,
         "y": 280,
         "wires": [
             [
@@ -2456,5 +2374,84 @@
                 "97c5e8e1.6626f8"
             ]
         ]
+    },
+    {
+        "id": "c209d67f.499428",
+        "type": "inject",
+        "z": "a353e2ae.f2af",
+        "name": "Run",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 110,
+        "y": 40,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8fd4d43d.db0598",
+        "type": "function",
+        "z": "a353e2ae.f2af",
+        "name": "mock data",
+        "func": "msg.payload = {\n    temperature: 33.0,\n    humidity: 0.8,\n    timestamp: msg.payload\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 270,
+        "y": 40,
+        "wires": [
+            [
+                "4c7ac0b6.17e1"
+            ]
+        ]
+    },
+    {
+        "id": "200c4edf.c1c382",
+        "type": "debug",
+        "z": "a353e2ae.f2af",
+        "name": "print",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "x": 630,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "4c7ac0b6.17e1",
+        "type": "http request",
+        "z": "a353e2ae.f2af",
+        "name": "send sensor data",
+        "method": "POST",
+        "ret": "obj",
+        "url": "https://smart-fridge-ke.herokuapp.com/sensorData/add",
+        "tls": "",
+        "x": 470,
+        "y": 40,
+        "wires": [
+            [
+                "200c4edf.c1c382"
+            ]
+        ]
+    },
+    {
+        "id": "8a0dc300.c3bc4",
+        "type": "debug",
+        "z": "11f95ded.662fc2",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 580,
+        "y": 360,
+        "wires": []
     }
 ]
